@@ -1,0 +1,15 @@
+1) Do Home
+    -Design
+    -Implement
+2) Do Skills
+    -Design
+    -Implement
+3) Do Projects
+    -Design
+    -Implement
+4) Do Resume
+    -Design
+    -Implement
+5) Do Contact Me
+    -Design
+    -Implement

@@ -1,0 +1,40 @@
+.section2 {
+    background-image: linear-gradient(to right bottom, #321269, #165d58);
+}
+
+ h1 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.section2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+.section2 ul li {
+    list-style-type: none;
+    margin-bottom: 2vh;
+    padding: 8px;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+.section2 ul li a {
+    padding: 2vh;
+   
+}
+
+.section2 ul li:hover {
+    background-color: rgba(255, 255, 255, 0.351); /* Adjust the background color on hover */
+    transform: scale(1.11);
+    color: black;
+}
+
