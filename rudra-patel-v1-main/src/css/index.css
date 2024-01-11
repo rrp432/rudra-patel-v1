@@ -3,8 +3,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     width: 100%;
     padding: 0;
-    margin: 0;
-    background-color: #000000da;    
+    background-color: #000000da; 
+    border-top: solid 2px rgb(48, 107, 87);   
 }
 
 .sections {
@@ -16,26 +16,25 @@ body {
     overflow: auto;
 }
 
-
-
-
 ::-webkit-scrollbar {
     width: 6px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(232, 229, 222);
+    background-color: gray;
     border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background-image: linear-gradient(25deg,rgb(0, 102, 136), #00000000);
+    
+    background-color: rgb(52, 52, 52);   
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-image: linear-gradient(25deg,rgb(32, 136, 0), #000000);
+    
+    background-color: rgb(232, 229, 222); 
     border-radius: 6px;
 }
 /* Track */

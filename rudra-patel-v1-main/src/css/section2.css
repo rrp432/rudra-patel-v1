@@ -1,40 +1,143 @@
 .section2 {
-    background-image: linear-gradient(to right bottom, #321269, #165d58);
-}
-
- h1 {
-    text-align: center;
+    background-image: linear-gradient(45deg, rgb(24, 37, 70), rgb(4, 60, 50));
     color: white;
-    font-weight: 400;
-    font-size: 2em;
+    position: relative;
 }
 
-.section2 ul {
+#education {
+    scroll-timeline: my-timeline;
+  }
+  
+
+#education::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Ensure it spans the entire viewport height */
+    scroll-timeline-name: my-timeline;
+  }
+
+.section2 h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+    position: relative;
+  }
+
+  .expand-button {
+    position: relative;
+    left: 47%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-bottom:10px ;
+    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    height: 3vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* CSS transition for animation */
+    animation: jump 1s infinite ease;
+    text-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+                0 -8px 16px 0 rgba(0,0,0,0.19);
+}
+
+  @keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 10vh;
+    padding-bottom: 15vh;
+    
+    
+}
+
+.timeline-line {
+    width: .1px;
+    position: absolute;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1;
+    border-radius: 20em;
+    box-shadow: 0 0 12px #ffffffef,
+                0 0 8px #ffffff,
+                0 0 4px #ffffff;
+}
+
+.timeline-node-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+  }
+
+.timeline-node-container:hover .course-details {
+    box-shadow: 0 0 12px #ffffffcf;
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(207, 207, 207, 0.132);
+    z-index: 2;
+    color: rgb(237, 226, 226);
+    border-radius: 30px;
+    
+}
+
+.course-details p{
+    margin-bottom: 0;
+}
+.course-details ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
     justify-content: center;
-    gap: 8px;
+    padding: .5em;
+    margin-top: 0;
+
 }
 
-.section2 ul li {
-    list-style-type: none;
-    margin-bottom: 2vh;
-    padding: 8px;
-    border-radius: 25px;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    color: white;
+.course-details ul li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3px;
+    background-color: rgba(207, 207, 207, 0.132);
+    border-radius: 30px;
+    padding: 10px;
+  
+    font-size: small;
 }
 
-.section2 ul li a {
-    padding: 2vh;
-   
+.timeline-node-container:nth-child(even) {
+    margin-right: 20em;
+
 }
 
-.section2 ul li:hover {
-    background-color: rgba(255, 255, 255, 0.351); /* Adjust the background color on hover */
-    transform: scale(1.11);
-    color: black;
+.timeline-node-container:nth-child(odd) {
+  margin-left: 20em;
 }
-

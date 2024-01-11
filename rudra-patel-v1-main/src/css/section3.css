@@ -1,74 +1,42 @@
 .section3 {
-  background-image: linear-gradient(45deg, rgb(5, 41, 131), rgb(4, 60, 50));
+    background-image: linear-gradient(to right bottom, #321269, #165d58);
 }
 
-.section3 h1 {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  font-size: 2em;
-  text-shadow: 1px 1px black;
+ h1 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
 }
 
-.section3 .projects-type {
-  margin: 1vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1vh;
+.section3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
 }
 
-.section3 .project {
-  margin: 1vh;
-  max-width: 450px;
-  height: 300px; /* Set a fixed height for all projects */
-  text-align: center;
-  border-radius: 50px;
-  background-color: rgba(213, 214, 215, 0.148);
-  color: white;
-  font-weight: 100;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease-in-out;
-  margin-bottom: 2vh;
-  
+.section3 ul li {
+    list-style-type: none;
+    margin-bottom: 2vh;
+    padding: 8px;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    color: white;
 }
 
-.section3 .project-heading {
-  font-weight: 300;
-  position: sticky;
-  top: 0; /* Stick to the top */
-  z-index: 100; /* Ensure it's above the content */
-  padding: 1vh; /* Add padding for better readability */
-  margin: 0;
-  
+.section3 ul li a {
+    padding: 2vh;
+   
 }
 
-.section3 .project .project-meta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: auto; /* Add scroll if content overflows vertically */
-  scrollbar-width: 0; /* Firefox */
-  margin: 2vh;
-  
-}
-.section3 .project:hover {
-  transform: scale(1.02) translateY(-6px); 
+.section3 ul li:hover {
+    background-color: rgba(255, 255, 255, 0.351); /* Adjust the background color on hover */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.334);
 
-}
-.section3 .project .project-meta::-webkit-scrollbar {
-  width: 0; /* Set the width of the scrollbar to 0 for Webkit browsers (Chrome, Safari) */
-}
-
-.section3 .project:hover .project-meta {
-  overflow: auto; /* Show scrollbar on hover */
-  scrollbar-width: 0; /* Firefox */
-}
-
-.section3 .project:hover .project-meta::-webkit-scrollbar {
-  width: 0; /* Reset the width for Webkit browsers on hover */
+    transform: scale(1.11);
+    color: black;
 }
 
