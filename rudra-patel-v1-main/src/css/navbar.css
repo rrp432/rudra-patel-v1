@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .burger-menu {
+    .burger-menu {/**/
         display: block; /* Show the burger menu on smaller screens */
     }
 
