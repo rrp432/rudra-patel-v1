@@ -5,7 +5,7 @@
     overflow: hidden;
     margin-top: 7vh; /* Adjust margin for responsiveness */
     width: 100%;
-    background-image: linear-gradient(to left bottom,rgb(15, 99, 67), #332053);
+    background: linear-gradient(45deg, #0b4b51, #04203b);
     border-bottom-left-radius: 3vw; /* Adjust border-radius for responsiveness */
     border-bottom-right-radius: 3vw; /* Adjust border-radius for responsiveness */
     padding-bottom: 10vh;
@@ -19,8 +19,8 @@
 }
 .section1 .intro h1 {
     font-size: 4vw; /* Adjust font-size for responsiveness */
-    color: #e6c49d;
-    text-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5); /* Adjust text-shadow for responsiveness */
+    color: #bdb7c6;
+    text-shadow: 0.2vw 0.2vw .5vw rgba(0, 0, 0, 0.5); /* Adjust text-shadow for responsiveness */
     font-weight: 200;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -29,7 +29,7 @@
 
 .section1 .intro h2{
     color: #ffffff;
-    font-size: 2.3vw;
+    font-size: 2.2vw;
     font-weight: 150;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -45,10 +45,12 @@
     width: 25vw; /* Adjust width for responsiveness */
     height: auto;
     image-resolution: 1048px;
+    border-radius: 20%;
 }
 
 
 .sections > section:not(:first-child) {
-    border-radius: 3vw; /* Adjust border-radius for responsiveness */
+    border-radius: 5vw;
+    font-weight: 200; /* Adjust border-radius for responsiveness */
 }
 
