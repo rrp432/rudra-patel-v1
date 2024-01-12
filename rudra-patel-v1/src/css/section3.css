@@ -1,12 +1,14 @@
 .section3 {
+    
     background: linear-gradient(135deg, #3494e6, #be7849);
 }
 
- h1 {
+.section3 h1 {
     text-align: center;
-    color: white;
-    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
     font-size: 2em;
+    position: relative;
 }
 
 .section3 ul {

@@ -13,8 +13,16 @@ body {
     flex-direction: column;
     gap: 1em;
     overflow: auto;
+
 }
 
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 2em;
+    position: relative;
+  }
 ::-webkit-scrollbar {
     width: 6px;
 }

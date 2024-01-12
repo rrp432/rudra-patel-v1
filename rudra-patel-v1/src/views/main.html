@@ -14,16 +14,16 @@
     <title>Personal portfolio</title>
 </head>
 <body>
-
     <nav class="navbar">
-        <ul>
+      
+        <ul class="menu-items">
             <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
             <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
             <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
             <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
-            <li><a href="#connect" onclick="scrollToSection('connect')">Connect</a></li>
-        </ul>
-        <button class="burger-menu">&#9776;</button>
+            <li><a href="#certification" onclick="scrollToSection('certification')">Certification</a></li>
+            </ul>
+        
     </nav>
     
 
@@ -42,9 +42,22 @@
         
         
             </div>
-            <div class="profile">
-                <img src="/src/img/profileCredits.png">
+            <div class="me">
+                <div class="profile">
+                    <img src="/src/img/profileCredits.png">
+                </div>
+               
+                <div class="connect">
+                    <ul class="logos">
+                        <li class="logo"><a href="linkdein.com"><img src="/src/img/linkedin.png" alt=""></a></li>
+                        <li class="logo"><a><img src="/src/img/github.png" alt=""></a></li>
+                        <li class="logo"><a><img src="/src/img/phone.jpg" alt=""></a></li>
+                        <li class="logo"><a><img src="/src/img/email.png" alt=""></a></li>
+
+                    </ul>
+                </div>
             </div>
+           
     
     </section>
 <!--
@@ -218,116 +231,113 @@
    - Incorporate a server-side component for data storage and authentication.
 -->
 
-<section id="projects" class="section4">
-     
-    <h1>Projects</h1>
-        
-        <div class="projects-type">
-            <div class="project"> 
-                <h2 class="project-heading">Notes</h2>
-                <p class="project-meta">
-                    A simple note-taking application that allows me to create, edit, save, and delete notes for my skills. The app is built using HTML5, CSS3, JavaScript, and PHP with a MySQL database for data storage.
-                </p>
-                <div class="tags">
-                    <a>JavaScript</a>
-                    <a>Html5</a>
-                    <a>Css3</a>
-                    <a>Python</a>
+    <section id="projects" class="section4">
+        <h1>Projects</h1>
+            <div class="projects-type">
+                <div class="project"> 
+                    <h2 class="project-heading">Notes</h2>
+                    <p class="project-meta">
+                        A simple note-taking application that allows me to create, edit, save, and delete notes for my skills. The app is built using HTML5, CSS3, JavaScript, and PHP with a MySQL database for data storage.
+                    </p>
+                    <div class="tags">
+                        <a>JavaScript</a>
+                        <a>Html5</a>
+                        <a>Css3</a>
+                        <a>Python</a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="project"> 
-                <h2 class="project-heading">ChatBot</h2>
-                <p class="project-meta">
-                    A chatbot designed to assist users in answering common questions about my portfolio. It uses natural language processing (NLP) techniques such as keyword extraction and sentiment analysis.
-                </p>
-                <div class="tags">
-                    <a>JavaScript</a>
-                    <a>Html5</a>
-                    <a>Css3</a>
-                    <a>Python</a>
+                
+                <div class="project"> 
+                    <h2 class="project-heading">ChatBot</h2>
+                    <p class="project-meta">
+                        A chatbot designed to assist users in answering common questions about my portfolio. It uses natural language processing (NLP) techniques such as keyword extraction and sentiment analysis.
+                    </p>
+                    <div class="tags">
+                        <a>JavaScript</a>
+                        <a>Html5</a>
+                        <a>Css3</a>
+                        <a>Python</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project"> 
-                <h2 class="project-heading">Two Factor Authentication</h2>
-                <p class="project-meta">
-                    Two Factor Authentication (2FA) web application developed using Python's Flask-Ask library. This project was created as an exercise to understand how two-factor authentication works within a web application framework.
-                    The idea is to allow a user with the appropriate code to add a div.
-                </p>
-                <div class="tags">
-                    <a>JavaScript</a>
-                    <a>Html5</a>
-                    <a>Css3</a>
-                    <a>Python</a>
+                <div class="project"> 
+                    <h2 class="project-heading">Two Factor Authentication</h2>
+                    <p class="project-meta">
+                        Two Factor Authentication (2FA) web application developed using Python's Flask-Ask library. This project was created as an exercise to understand how two-factor authentication works within a web application framework.
+                        The idea is to allow a user with the appropriate code to add a div.
+                    </p>
+                    <div class="tags">
+                        <a>JavaScript</a>
+                        <a>Html5</a>
+                        <a>Css3</a>
+                        <a>Python</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project"> 
-                <h2 class="project-heading">Music Database Design and Querying</h2>
-                <p class="project-meta">
-                    I designed and implemented a relational database for a music service, akin to Spotify or Amazon Music, using SQLite and SQL. The database features tables for artists, albums, songs, users, playlists, and ratings, minimizing data redundancy through foreign keys and normalization.
-                </p>
-                <div class="tags">
-                    <a>Python</a>
-                    <a>SQLite</a>
-                    <a>SQL</a>
-                    <a>Database Schema Design</a>
-                    <a>Query Optimization</a>
+                <div class="project"> 
+                    <h2 class="project-heading">Music Database Design and Querying</h2>
+                    <p class="project-meta">
+                        I designed and implemented a relational database for a music service, akin to Spotify or Amazon Music, using SQLite and SQL. The database features tables for artists, albums, songs, users, playlists, and ratings, minimizing data redundancy through foreign keys and normalization.
+                    </p>
+                    <div class="tags">
+                        <a>Python</a>
+                        <a>SQLite</a>
+                        <a>SQL</a>
+                        <a>Database Schema Design</a>
+                        <a>Query Optimization</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project"> 
-                <h2 class="project-heading">Kindergarten Classroom Simulation</h2>
-                <p class="project-meta">
-                    I developed a comprehensive project using Singly Linked Lists, 2D arrays, and Circular Linked Lists to model classroom activities. The simulation efficiently manages student entry, seating arrangements, and a musical chairs game. It implements fair student seating logic based on seating availability and height order, enhancing gameplay realism.
-                </p>
-                <div class="tags">
-                    <a>Java</a>
-                    <a>OOPs</a>
-                    <a>Linked List</a>
-                    <a>Arrays</a>
+                <div class="project"> 
+                    <h2 class="project-heading">Kindergarten Classroom Simulation</h2>
+                    <p class="project-meta">
+                        I developed a comprehensive project using Singly Linked Lists, 2D arrays, and Circular Linked Lists to model classroom activities. The simulation efficiently manages student entry, seating arrangements, and a musical chairs game. It implements fair student seating logic based on seating availability and height order, enhancing gameplay realism.
+                    </p>
+                    <div class="tags">
+                        <a>Java</a>
+                        <a>OOPs</a>
+                        <a>Linked List</a>
+                        <a>Arrays</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project"> 
-                <h2 class="project-heading">Huffman Coding for Text Data Compression</h2>
+                <div class="project"> 
+                    <h2 class="project-heading">Huffman Coding for Text Data Compression</h2>
+                    <p class="project-meta">
+                        I designed and implemented a highly efficient Huffman Coding algorithm in Java, achieving up to a 60% reduction in file sizes. The implementation ensures data integrity throughout the compression process, showcasing advanced expertise in algorithmic efficiency and accuracy. Graph traversal algorithms (DFS and BFS) were applied for efficient exploration and analysis of graph structures.
+                    </p>
+                    <div class="tags">
+                        <a>Java</a>
+                        <a>OOPs</a>
+                        <a>Graph</a>
+                        <a>Trees</a>
+                        <a>Array</a>
+                    </div>
+                </div>
+
+            <div class="project">
+                <h2 class="project-heading">Infinity War</h2>
                 <p class="project-meta">
-                    I designed and implemented a highly efficient Huffman Coding algorithm in Java, achieving up to a 60% reduction in file sizes. The implementation ensures data integrity throughout the compression process, showcasing advanced expertise in algorithmic efficiency and accuracy. Graph traversal algorithms (DFS and BFS) were applied for efficient exploration and analysis of graph structures.
+                    Leveraging advanced graph algorithms and implementing adjacency matrices, this project tackles intricate challenges. Java classes were designed and created for seamless input/output, utilizing advanced data structures like Array Lists and HashMap for efficient data management.
                 </p>
                 <div class="tags">
                     <a>Java</a>
                     <a>OOPs</a>
                     <a>Graph</a>
-                    <a>Trees</a>
+                    <a>HashMap</a>
                     <a>Array</a>
                 </div>
             </div>
-
-        <div class="project">
-            <h2 class="project-heading">Infinity War</h2>
-            <p class="project-meta">
-                Leveraging advanced graph algorithms and implementing adjacency matrices, this project tackles intricate challenges. Java classes were designed and created for seamless input/output, utilizing advanced data structures like Array Lists and HashMap for efficient data management.
-            </p>
-            <div class="tags">
-                <a>Java</a>
-                <a>OOPs</a>
-                <a>Graph</a>
-                <a>HashMap</a>
-                <a>Array</a>
-            </div>
+            
         </div>
-        
-    </div>
-
     </section>
     
  
-    <section id="connect" class="section5">
-        <div>
-            <!-- Contact Content -->
-        </div>
+    <section id="certification" class="section5">
+        <h1>Certification</h1>
+       
     </section>
+
     <section id="feedback" class="section6">
         <div>
             <!-- Resume Content -->

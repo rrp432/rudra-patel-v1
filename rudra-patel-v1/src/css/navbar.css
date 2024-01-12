@@ -11,10 +11,11 @@
     border-bottom-right-radius: 20px;
     transition: background-color 0.3s ease;
 }
-.burger-menu{
-    display: none;
+.burger-menu {
+    display: none; /* Hide the burger menu initially on larger screens */
+    cursor: pointer;
 }
-.navbar ul {
+.navbar .menu-items {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -55,29 +56,25 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-radius 1s ease;
 }
 
-@media screen and (max-width: 600px) {
-    .burger-menu {/**/
+@media only screen and (max-width: 600px) {
+    .burger-menu {
         display: block; /* Show the burger menu on smaller screens */
     }
 
-    .navbar ul {
-        display: none; /* Hide the regular menu */
+    .menu-items {
+        display: none; /* Hide the menu items by default on smaller screens */
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.182);
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
         position: absolute;
-        top: 40px; /* Adjust as needed */
-        right: 0;
-        height: 20px;
+        top: 60px; /* Adjust the top position as needed */
+        left: 0;
         width: 100%;
+        background-color: #ffffff; /* Adjust background color */
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
-    .navbar ul.show {
-        display: flex; /* Show the menu when checkbox is checked */
-    }
-
-    #menu-toggle:checked + .burger-menu + ul {
-        display: flex; /* Show the menu when checkbox is checked */
+    .menu-items.show {
+        display: flex; /* Show the menu items when the class 'show' is added */
     }
 }
