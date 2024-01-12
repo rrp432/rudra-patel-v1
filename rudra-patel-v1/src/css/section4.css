@@ -1,0 +1,104 @@
+
+.section4 {
+  background-image: linear-gradient(45deg, rgb(5, 41, 131), rgb(4, 60, 50));
+}
+
+.section4 h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 2em;
+  text-shadow: 1px 1px black;
+}
+
+.section4 .projects-type {
+  margin: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.section4 .project {
+  margin: 1vh;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgba(213, 214, 215, 0.148);
+  color: white;
+  font-weight: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  overflow: hidden; 
+  transition: transform 0.2s ease-in-out;
+}
+
+.section4 .project:hover {
+  transform: scale(1.02) translateY(-6px);
+  box-shadow: 0 4px 8px rgba(247, 245, 245, 0.334); 
+}
+
+.section4 .project-heading {
+  padding-top: 1vh;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.section4 .project .project-meta {
+  flex-grow: 1;
+  overflow: hidden;
+  scrollbar-width: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh ; /* Adjust margin for better centering */
+  
+}
+
+.section4 .project .tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vh;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.section4 .project .tags a {
+  font-size: small;
+  padding: 1vh;
+  border-radius: 20px;
+  margin: 1vh; /* Add margin between tags for better spacing */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.section4 .project .tags a:hover {
+  transform: scale(1.06); 
+  background-color:rgba(4, 71, 85, 0.088);
+  box-shadow: 0 2px 3px rgba(247, 245, 245, 0.178);
+  color: rgb(255, 255, 255);
+  cursor: pointer; /* Lighten the background on hover */
+}
+
+
+.section4 .project .project-meta::-webkit-scrollbar {
+  width: 0; /* Set the width of the scrollbar to 0 for Webkit browsers (Chrome, Safari) */
+}
+
+.section4 .project:hover .project-meta {
+  overflow: auto; /* Show scrollbar on hover */
+  scrollbar-width: thin; /* Firefox */
+}
+
+
+
+
+
