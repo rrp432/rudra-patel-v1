@@ -69,7 +69,7 @@
     border-radius: 20%;
 }
 .section1 .connect .logos{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content:center;
     padding: 0;
@@ -82,14 +82,10 @@
 }
 .section1 .connect .logo img{
  display: flex;
- object-fit: contain;
  height: 50%;
  width: 100%;
  max-height: 3em;
- border-radius: 50%;
- 
-
-    
+ border-radius: 50%;   
 }
 .section1 .connect{
     display: flex;
@@ -99,8 +95,24 @@
     height: 20vh;
 
 }
+.logo a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
 
-
+.contact-info {
+    margin-top: 0;
+    font-size: 16px; /* Increase font size for better visibility */
+    padding: 1em;
+    display: none;
+    transition: display 0.3s ease-in-out;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.174);
+    border-radius:30px ;
+    
+}
 .sections > section:not(:first-child) {
     border-radius: 5vw;
     font-weight: 200; 
@@ -136,7 +148,7 @@
     }
 
     .section1 .connect .logos {
-        display: fle;
+        display: flex;
         padding: 0;
         margin: 0;
     }
@@ -146,8 +158,9 @@
         max-height: 1.5em;
         margin: 0;
         padding: 0;
+ 
     }
-
+    
     .section1 .connect {
         height: auto; /* Set height to auto for responsiveness */
         justify-content:center;
