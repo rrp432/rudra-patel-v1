@@ -1,20 +1,18 @@
+/* Default styles for larger screens */
 .navbar {
     top: 0;
     overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.182);
+    background-color: rgba(255, 255, 255, 0.06);
+    top: 3px;
     right: 0;
-    backdrop-filter: blur(50px);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(100px);
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
-.burger-menu {
-    display: none; /* Hide the burger menu initially on larger screens */
-    cursor: pointer;
-}
+
 .navbar .menu-items {
     display: flex;
     flex-wrap: wrap;
@@ -56,25 +54,10 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-radius 1s ease;
 }
 
-@media only screen and (max-width: 600px) {
-    .burger-menu {
-        display: block; /* Show the burger menu on smaller screens */
-    }
-
-    .menu-items {
-        display: none; /* Hide the menu items by default on smaller screens */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust the top position as needed */
-        left: 0;
-        width: 100%;
-        background-color: #ffffff; /* Adjust background color */
-        padding: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .menu-items.show {
-        display: flex; /* Show the menu items when the class 'show' is added */
-    }
+/* Media query for smaller screens (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .navbar {
+      display: none;
+       }
+    
 }

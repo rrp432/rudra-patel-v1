@@ -22,7 +22,7 @@
             <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
             <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
             <li><a href="#certification" onclick="scrollToSection('certification')">Certification</a></li>
-            </ul>
+        </ul>
         
     </nav>
     
@@ -52,7 +52,7 @@
                         <li class="logo"><a href="https://www.linkedin.com/in/rrp3827/"><img src="/src/img/linkedin.png" alt=""></a></li>
                         <li class="logo"><a href="https://github.com/rrp432/"><img src="/src/img/github.png" alt=""></a></li>
                         <li class="logo"><a class="show-contact" data-type="phone"><img src="/src/img/phone.jpg" alt=""></a></li>
-                        <li class="logo"><a class="show-contact" data-type="email"><img src="/src/img/email.png" alt=""></a></li>
+                        <li class="logo"><a class="show-contact" data-type="email"><img src="/src/img/email.jpg" alt=""></a></li>
                     </ul>
                 </div>
                 <div id="contact-info" class="contact-info" style="display: none;"></div>  
@@ -60,16 +60,7 @@
                
     
     </section>
-<!--
-  <div class="section">
-    <p>This is the initial content of the section.</p>
-    <div class="expanded-content" id="expandedContent">
-      <p>This is the additional content that will be revealed.</p>
-    </div>
-  </div>
 
-
--->
     <section id="education" class="section2">
         <h1>Education</h1>
         <a class="expand-button" onclick="toggleSection()"> Read more</a>
@@ -200,36 +191,30 @@
 
     <section id="skills" class="section3">
         <h1>Skills</h1>
-        <ul class="programmingLang">
-            <li><a>Java</a></li>
-            <li><a>Python</a></li>
-            <li><a>C++</a></li>
-            <li><a>C</a></li>
-        </ul>
-        <ul class="databaseSystems">
-            <li><a>MySQL</a></li>
-            <li><a>Microsoft Access</a></li>
-            <li><a>Oracle SQL</a></li>
-        </ul>
-        <ul class="webTechnologies">
-            <li><a>HTML</a></li>
-            <li><a>CSS</a></li>
-            <li><a>Bootstrap</a></li>
-            <li><a>JavaScript</a></li>
-            <li><a>Git</a></li>
-            <li><a>Php</a></li>
-        </ul>
+        <div class="SkillsContainer">
+            <ul class="programmingLang">
+                <li><a>Java</a></li>
+                <li><a>Python</a></li>
+                <li><a>C++</a></li>
+                <li><a>C</a></li>
+            </ul>
+            <ul class="databaseSystems">
+                <li><a>MySQL</a></li>
+                <li><a>Microsoft Access</a></li>
+                <li><a>Oracle SQL</a></li>
+            </ul>
+            <ul class="webTechnologies">
+                <li><a>HTML</a></li>
+                <li><a>CSS</a></li>
+                <li><a>Bootstrap</a></li>
+                <li><a>JavaScript</a></li>
+                <li><a>Git</a></li>
+                <li><a>Php</a></li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Features:
 
-1) Make projects clickable to open a modal window within the page, displaying project descriptions, screenshots, etc.
-   - Use JavaScript and HTML divs to create the modal window.
-   - Style the modal window using CSS.
-
-2) Implement a secure login system for dynamically adding projects via a button click.
-   - Incorporate a server-side component for data storage and authentication.
--->
 
     <section id="projects" class="section4">
         <h1>Projects</h1>

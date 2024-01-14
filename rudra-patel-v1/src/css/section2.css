@@ -90,8 +90,6 @@
     align-items: center;
     position: relative;
     width: 45%;
-  
-
   }
 
 .timeline-node-container .course-details:hover {
@@ -111,6 +109,8 @@
     border-radius: 30px;
     margin: 1em;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* CSS transition for sliding effect */
+    transform: translateY(1);
     
 }
 
@@ -151,6 +151,15 @@
 
 @media (max-width: 1181px) {
   .timeline-line {
-    display: none;
+    display: block;
+    height:95% ;
+    left: 5em;
   }
+
+  .section2 .expand-button {
+    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+  }
+
+  
 }
+
