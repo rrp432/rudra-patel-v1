@@ -1,45 +1,4 @@
-// Navigation Smooth Scroll Functionality
-document.addEventListener("DOMContentLoaded", function() {
-    // Select all navigation links
-    const navLinks = document.querySelectorAll('.navbar a');
-  
-    // Attach click event listeners to each navigation link
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-  
-            // Get the target section ID from the link's href attribute
-            const targetSectionId = link.getAttribute('href').substring(1);
-  
-            // Call the scrollToSectionHeading function with the target section ID
-            scrollToSectionHeading(targetSectionId);
-        });
-    });
-  
-    // Function to smoothly scroll to the center of the target section's heading
-    function scrollToSectionHeading(sectionId) {
-        const section = document.querySelector('#' + sectionId);
-        if (section) {
-            // Find the first heading element within the section
-            const heading = section.querySelector('h1, h2, h3, h4, h5, h6');
-            
-            if (heading) {
-                // Get the bounding rectangle of the heading element
-                const rect = heading.getBoundingClientRect();
-  
-                // Calculate the scroll position to center the heading
-                const scrollPosition = window.scrollY + (rect.top + rect.height / 2) - (window.innerHeight / 2);
-  
-                // Smoothly scroll to the calculated position
-                window.scrollTo({
-                    top: scrollPosition,
-                    behavior: 'smooth'
-                });
-            }
-        }
-    }
-  });
-  
+
   // Toggle Expanded Content Functionality
   function toggleSection() {
     var expandedContent = document.getElementById("expandedContent");
@@ -55,11 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   
-  // Toggle Menu Functionality
-  function toggleMenu() {
-    var menuItems = document.querySelector('.menu-items');
-    menuItems.classList.toggle('show');
-  }
+ 
   
   // Contact Information Display and Click Functionality
   document.addEventListener("DOMContentLoaded", function () {
@@ -100,9 +55,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
-  // Toggle Menu Functionality for Mobile
-  function toggleMenu() {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('show-dropdown');
-  }
+
   

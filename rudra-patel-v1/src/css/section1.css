@@ -1,18 +1,22 @@
+/* General styles for the main section */
 .section1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(45deg, #08123a, #01624f);
-
+    background: linear-gradient(-45deg, #0b4b51, #04203b);
+    
 }
+
+
+/* Container styles within the main section */
 .section1 .conatiner{
     display: flex;
     justify-content: space-around;
-
 }
 
+/* Styles for the introductory content */
 .section1 .intro {
     display: flex;
     flex-wrap: wrap;
@@ -20,30 +24,31 @@
     padding: 7em;
 }
 
+/* Heading 1 styles */
 .section1 .intro h1 {
     color: #ffffff;
-    font-weight:100;
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: 3em;
 }
 
-
-.section1 .intro h2{
+/* Heading 2 styles */
+.section1 .intro h2 {
     color: #ffffff;
-    font-weight: 200;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
+
+/* Paragraph styles */
 .section1 .intro p {
     color: #f7f7f7;
     font-weight: 100;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
 }
 
-.me{
+/* Styles for the 'me' section */
+.me {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,153 +56,153 @@
     margin-top: 1em;
     padding-bottom: 2vh;
 }
-.section1 .profile img {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width: 50%;
-    max-width: 90%;
-    margin: auto;
-    margin-top: 1em;
-    left: 0;
-    image-resolution: 1048px;
-}
-.section1 .connect .logos{
+
+
+
+/* Styles for the connect section */
+.section1 .connect .logos {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     padding: 0;
     list-style: none;
     gap: 2em;
     padding-left: 1em;
-
-     
-
 }
-.section1 .connect .logo img{
- display: flex;
- height: 50%;
- width: 100%;
- max-height: 3em;
- border-radius: 50%;  
- background-color: transparent; 
+
+/* Logo image styles */
+.section1 .connect .logo img {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    max-height: 3em;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 8px 16px rgba(0, 0, 0, 0.1),
+                0 16px 24px rgba(0, 0, 0, 0.1),
+                0 32px 48px rgba(0, 0, 0, 0.1);
 }
-.section1 .connect{
+
+
+/* Connect section styles */
+.section1 .connect {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
     height: 20vh;
 
 }
+
+/* Hover effect for logo images */
 .logo img:hover {
-    box-shadow: 0 0 10px #00ffeaef,
-                0 0 8px #11cf24,
+    border-radius: 0;
+    background-color: white;
+    box-shadow: 0 0 12px #00ffeaef,
+                0 0 8px #117acf,
                 0 0 4px #ffffff;
     cursor: pointer;
-    transform: scale(1.3) translateY(-1px) ;
-
+    transform: scale(1.1);
 }
 
+/* Contact information styles */
 .contact-info {
     margin-top: 0;
-    font-size: 12px; /* Increase font size for better visibility */
+    font-size: 12px;
     padding: 1em;
     display: none;
-    transition: display 0.3s ease-in-out;
     cursor: pointer;
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.174);
-    border-radius:30px ;
-    
+    background-color: rgb(15, 27, 57);
+    border-radius: 30px;
+    transition: all 0.3s ease;
 }
-.sections > section:not(:first-child) {
-    border-radius: 5vw;
-    font-weight: 200; 
-
-    
+.contact-info:hover{
+    background-color: rgba(69, 136, 255);
 }
-
-/* Mobile styles using media query */
+/* Media query for mobile styles */
 @media only screen and (max-width: 1000px) {
+    /* Mobile-specific styles */
 
+    /* Re-adjusting styles for the main section */
     .section1 {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 0;
+        
     }
 
+    /* Adjusting styles for the introductory content */
     .section1 .intro {
-        width: 80%;
-        margin-top: 0;
-        padding-top: 0;
-        font-size: .5em;
+        align-items: center;
+        margin-top: 7em;
+        padding-top: 7em;
+        margin-bottom: 0;
+        padding-bottom: 2em;
+        font-size: 0.5em;
+        border: solid 2px white;
     }
 
+    /* Adjusting styles for the 'me' section */
     .section1 .me {
-      
-        width: 80%;
-        gap:1em;
+        padding-top: 0;
+        margin-top: 0;
+        width: 50%;
+        gap: 1em;
     }
 
-    .section1 .profile img {
-        width: 50%; /* Adjust width for responsiveness */
-        margin-top: 2em auto; /* Center the image */
-        background-color: #04203b00;
-    }
 
-    .section1 .connect .logos {
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-
+    /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         border-radius: 100%;
-        width: 100%; /* Set width to 100% for responsiveness */
-        max-height: 2.2em;
+        width: 100%;
+        max-height: 3em;
         margin: 0;
         padding: 0;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: transform 0.36s ease-in-out,
+                    box-shadow 0.36s ease-in-out,
+                    opacity 0.36s ease-in-out,
+                    background-color 0.36s ease-in;
     }
-    
-    .section1 .connect {
-        height: auto; /* Set height to auto for responsiveness */
-        justify-content:center;
-        align-items: center;
-       
-        margin: 0;
-        padding: 0;
 
+    /* Adjusting styles for the connect section */
+    .section1 .connect {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
-    .section1 .intro{
+
+    /* Adjusting styles for the introductory content in mobile view */
+    .section1 .intro {
         width: 80%;
         text-align: left;
-
     }
 
+    /* Adjusting styles for Heading 1 in mobile view */
     .section1 .intro h1 {
         margin: 0;
         padding: 0;
         text-align: left;
         font-weight: 400;
-
     }
-    
-    .section1 .intro h2{
+
+    /* Adjusting styles for Heading 2 in mobile view */
+    .section1 .intro h2 {
         margin-top: 3px;
         margin-bottom: 3px;
         padding: 0;
         font-size: 2em;
         text-align: left;
         font-weight: 400;
-
-        
     }
+
+    /* Adjusting styles for paragraphs in mobile view */
     .section1 .intro p {
         font-weight: 400;
         font-size: 1.8em;
         margin: 3px;
         padding: 0;
     }
-    
 }

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/index.css">
-    <link rel="stylesheet" href="/src/css/navbar.css">
-    <link rel="stylesheet" href="/src/css/section1.css">
-    <link rel="stylesheet" href="/src/css/section2.css">
-    <link rel="stylesheet" href="/src/css/section3.css">
-    <link rel="stylesheet" href="/src/css/section4.css">
-    <link rel="stylesheet" href="/src/css/section5.css">
-    <link rel="stylesheet" href="/src/css/section6.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/index.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/navbar.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section1.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section2.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section3.css">
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section4.css">
+    
     <title>Personal portfolio</title>
 </head>
 <body>
@@ -21,7 +20,8 @@
             <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
             <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
             <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
-            <li><a href="#certification" onclick="scrollToSection('certification')">Certification</a></li>
+            <li><a href="/rudra-patel-v1/src/img/rudra_resume.pdf" download="rudra_resume.pdf">Resume</a>
+            </li>
         </ul>
         
     </nav>
@@ -37,22 +37,18 @@
                    I am on the lookout for exciting software development opportunities to contribute my skills
                    and creativity.</p>
                 <p>With a solid foundation in programming languages like Java, C, C++, and Python, along with hands-on experience in database systems, web technologies, and version control using Git, I bring a versatile skill set to the table.</p>
-        
                 <p>Let's collaborate on projects that push boundaries, leverage cutting-edge technologies, and make a lasting impact.</p>
         
         
             </div>
             <div class="me">
-                <div class="profile">
-                    <img src="/src/img/profileCredits.png">
-                </div>
-               
+
                 <div class="connect">
                     <ul class="logos">
-                        <li class="logo"><a href="https://www.linkedin.com/in/rrp3827/"><img src="/src/img/linkedin.png" alt=""></a></li>
-                        <li class="logo"><a href="https://github.com/rrp432/"><img src="/src/img/github.png" alt=""></a></li>
-                        <li class="logo"><a class="show-contact" data-type="phone"><img src="/src/img/phone.jpg" alt=""></a></li>
-                        <li class="logo"><a class="show-contact" data-type="email"><img src="/src/img/email.jpg" alt=""></a></li>
+                        <li class="logo"><a href="https://www.linkedin.com/in/rrp3827/"><img src="/rudra-patel-v1/src/img/linkedin.png" alt=""></a></li>
+                        <li class="logo"><a href="https://github.com/rrp432/"><img src="/rudra-patel-v1/src/img/github.png" alt=""></a></li>
+                        <li class="logo"><a class="show-contact" data-type="phone"><img src="/rudra-patel-v1/src/img/phone.png" alt=""></a></li>
+                        <li class="logo"><a class="show-contact" data-type="email"><img src="/rudra-patel-v1/src/img/email.png" alt=""></a></li>
                     </ul>
                 </div>
                 <div id="contact-info" class="contact-info" style="display: none;"></div>  
@@ -67,7 +63,27 @@
         <div class="expanded-content" id="expandedContent" style="display: none;">
             <div class="timeline">
                 <div class="timeline-line"></div>
-    
+                <div class="timeline-node-container">
+                    <div class="course-details">
+                        <p>Fall '20</p>
+                        <ul>
+                            <li>Programming in C++</li>
+                            <li>Computer Logic & Discrete Math</li>
+                            <li>Precalculus</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-node-container">
+                    <div class="course-details">
+                        <p>Spring '21</p>
+                        <ul>
+                            <li>Programming in C++ II</li>
+                            <li>College Compositon I</li>
+                            <li>Calculus I</li>
+                        </ul>
+                    </div>
+                </div>
+                
                 <div class="timeline-node-container">
                     <div class="course-details">
                         <p>Summer I '21</p>
@@ -92,12 +108,11 @@
                       <div class="course-details">
                         <p>Fall '21</p>
                         <ul>
-                            <li>OOPS</li>
+                            <li>Database Design and Concepts</li>
                             <li>Java Programming</li>
                             <li>DS & Algorithms</li>
-                            <li>Principles Of Macroeconomics</li>
+                            <li>Principles Of <br> Macroeconomics</li>
                             <li>Engineering Physics I</li>
-                            <li>Engineering Physics I LAB</li>
                         </ul>
                     </div>
                 </div>
@@ -124,7 +139,6 @@
                 </div>
                 
                 <div class="timeline-node-container">
-
                       <div class="course-details">
                         <p>Fall '22</p>
                         <ul>
@@ -133,7 +147,6 @@
                             <li>DS & Algorithms</li>
                             <li>Computer Architecture</li>
                             <li>R Programming</li>
-                            <li>Python</li>
                         </ul>
                     </div>
                 </div>
@@ -161,24 +174,24 @@
                     </div>
                 </div>
                 <div class="timeline-node-container">
-                      <div class="course-details">
+                      <div id = "CurrTerm"class="course-details">
                         <p>Spring '24</p>
                         <ul>
-                            <li>OOPS</li>
-                            <li>Java Programming</li>
-                            <li>MS Access</li>
-                            <li>Cybersecurity</li>
+                            <li>Software Methodology</li>
+                            <li>Systems Programming</li>
+                            <li>Principles of Programming<br>Languages</li>
+                            <li>Numerical Analysis Computing</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-node-container">
                       <div class="course-details">
-                        <p>Spring '24</p>
+                        <p>Fall '24</p>
                         <ul>
-                            <li>OOPS</li>
-                            <li>Java Programming</li>
-                            <li>MS Access</li>
-                            <li>Cybersecurity</li>
+                            <li>Design Analysis</li>
+                            <li>Elective I</li>
+                            <li>Physics II</li>
+                            <li>Elective I</li>
                         </ul>
                     </div>
                 </div>
@@ -208,6 +221,7 @@
                 <li><a>CSS</a></li>
                 <li><a>Bootstrap</a></li>
                 <li><a>JavaScript</a></li>
+
                 <li><a>Git</a></li>
                 <li><a>Php</a></li>
             </ul>
@@ -229,7 +243,9 @@
                         <a>Html5</a>
                         <a>Css3</a>
                         <a>Python</a>
+                       
                     </div>
+                      <span class="completion-date">Completion Date: TBD</span>
                 </div>
                 
                 <div class="project"> 
@@ -243,6 +259,7 @@
                         <a>Css3</a>
                         <a>Python</a>
                     </div>
+                    <span class="completion-date">Completion Date: TBD</span>
                 </div>
 
                 <div class="project"> 
@@ -257,6 +274,7 @@
                         <a>Css3</a>
                         <a>Python</a>
                     </div>
+                    <span class="completion-date">Completion Date: TBD</span>
                 </div>
 
                 <div class="project"> 
@@ -271,6 +289,7 @@
                         <a>Database Schema Design</a>
                         <a>Query Optimization</a>
                     </div>
+                     <span class="completion-date">Completion Date: Fall'23</span>
                 </div>
 
                 <div class="project"> 
@@ -284,6 +303,7 @@
                         <a>Linked List</a>
                         <a>Arrays</a>
                     </div>
+                     <span class="completion-date">Completion Date: Spring'23</span>
                 </div>
 
                 <div class="project"> 
@@ -298,6 +318,7 @@
                         <a>Trees</a>
                         <a>Array</a>
                     </div>
+                     <span class="completion-date">Completion Date: Spring'23</span>
                 </div>
 
             <div class="project">
@@ -312,26 +333,27 @@
                     <a>HashMap</a>
                     <a>Array</a>
                 </div>
+                 <span class="completion-date">Completion Date: Spring'23</span>
             </div>
             
         </div>
     </section>
     
  
-    <section id="certification" class="section5">
-        <h1>Certification</h1>
-       
-    </section>
-
-    <section id="feedback" class="section6">
-        <div>
-            <!-- Resume Content -->
-        </div>
-    </section>
     
 </div>
-
-<script src="/src/js/index.js"></script>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Rudra Patel. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href= "#" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="/rudra-patel-v1/src/js/scroll.js"></script>
+<script src="/rudra-patel-v1/src/js/index.js"></script>
 
 </body>
 </html>

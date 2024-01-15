@@ -5,11 +5,9 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.06);
-    top: 3px;
+    background-color: rgba(255, 255, 255, 0);
     right: 0;
-    backdrop-filter: blur(100px);
-    border-radius: 30px;
+    backdrop-filter: blur(80px);
     transition: background-color 0.3s ease;
 }
 
@@ -17,9 +15,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 5vh;
     margin: 2px;
+    padding-right: 2em;
     list-style-type: none;
     overflow: hidden;
     text-align: center;
@@ -29,29 +28,25 @@
 .navbar a {
     display: block;
     color: rgb(255, 255, 255);
-    font-size: small;
+    font-weight: 100;
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    border: solid 2px rgba(10, 10, 10, 0);
     border-radius: 30px;
 }
 
 .navbar a:hover {
-    transform: scale(0.95);
+    transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0);
-    color: rgba(255, 255, 255, 0.901);
-    border: solid 2px #ffffff;
-    border-radius: 20px;
+    color: rgba(78, 171, 184, 0.901);
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 1s ease;
+
 }
 
 .navbar a:focus,
 .navbar a:active {
-    background-color: rgb(255, 255, 255);
-    color: rgb(135, 122, 148);
-    border: solid 2px #ffffffe0;
+    color: rgba(0, 225, 255, 0.901);
     border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-radius 1s ease;
 }
 
 /* Media query for smaller screens (max-width: 767px) */

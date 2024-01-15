@@ -1,27 +1,16 @@
 .section3 {
-    
     background: linear-gradient(135deg, #3494e6, #be7849);
-    width: auto;
+    width: 100%;
+    padding-bottom: 1em;
 }
 
-.section3 h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: 200;
-    font-size: 2em;
-    position: relative;
-}
-.section3 .SkillsContainer{
-    margin: 0 2em 2em 2em;
-
-}
 .section3 ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 1em;
-    margin: 0;
+    padding: 0;
     
 }
 
@@ -38,7 +27,7 @@
 
 .section3 ul li a {
     padding: 2vh;
-    transition: background-color 0.3s, color 0.3s; /* Added transition for a smoother hover effect */
+    transition: background-color 0.3s, color 0.3s;
    
 }
 
@@ -66,8 +55,17 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.334);
     transform: scale(1.10);
 }
+.space{
+    display: none;
+}
+
+/* ... Your existing styles ... */
 
 @media only screen and (max-width: 768px) {
+    .space {
+        display: block;
+    }
+
     .section3 h1 {
         margin-bottom: 0;
     }
@@ -77,28 +75,27 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-left: 0; /* Adjusted margin for better alignment */
+        margin-left: 2vh; /* Adjusted margin for better alignment */
         width: 90%; /* Increased width for better utilization of space */
-        
     }
 
     .section3 .SkillsContainer ul {
-        margin-top: 1em;
-        
+        padding: 0;
+        margin: 0;; /* Remove padding for better control over spacing */
     }
 
     .section3 .SkillsContainer ul li {
         margin: 0; /* Reduced margin for better spacing between skills */
         padding: 0;
-        margin-bottom:0 ;
+        margin-bottom: 0;
     }
 
     .section3 .SkillsContainer ul li a {
         padding: 10px; /* Increased padding for better touch interaction */
+        margin: 3px; /* Added margin for spacing between skills */
 
         border-radius: 30px;
         background-color: #4e54c800;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow for a subtle effect */
         color: #f4f4f4;
         display: block; /* Ensured full width for better click/tap area */
         text-align: center; /* Centered text within the button */
