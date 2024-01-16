@@ -35,9 +35,11 @@ h1 {
 /* Add this CSS to your existing styles or create a new CSS file */
 
 .feedback-section {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin-top: 50px;
+    background-color: #0b4b51; /* Adjust to match your website color scheme */
+    color: white;
+    margin-bottom: 2em;
+    padding: 2em; /* Add padding for spacing */
+    border-radius: 3vw; /* Match the border radius of your sections */
 }
 
 #feedbackForm {
@@ -48,26 +50,33 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
+    color: white; /* Adjust text color */
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px; /* Adjust padding */
     margin-bottom: 16px;
+    border: 1px solid #ffffff8c; /* Adjust border color */
+    border-radius: 5px; /* Adjust border radius */
+    background-color: #ffffff1f; /* Adjust background color */
+    color: white; /* Adjust text color */
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Adjust padding */
     border: none;
+    border-radius: 5px; /* Adjust border radius */
     cursor: pointer;
 }
 
 button:hover {
     background-color: #45a049;
 }
+
 
 
 
