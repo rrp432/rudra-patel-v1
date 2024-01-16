@@ -1,27 +1,16 @@
 .section2 {
-  background: linear-gradient(45deg, #573376, #0b4b51);
+  background-image: linear-gradient(135deg, rgb(111, 152, 255), rgb(12, 5, 40));
   color: white;
-    position: relative;
+  position: relative;
+
 }
 
-#education {
-    scroll-timeline: my-timeline;
-  }
-  
 
-#education::before {
-    content: "";
-    position: sticky;
-    top: 0;
-    height: 100vh; /* Ensure it spans the entire viewport height */
-    scroll-timeline-name: my-timeline;
-  }
 
 .section2 h1 {
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: 200;
-    font-size: 2em;
     position: relative;
   }
 
@@ -31,20 +20,12 @@
     align-items: center;
     position: relative;
     transform: translateX(-50%);
-    
     margin-bottom:10px ;
-    
-    
     background-color: rgba(0, 0, 0, 0);
-    
-    color: white;
-    
-    height: 3vh;
-    
+    color: white;  
+    height: 3vh; 
     cursor: pointer;
-    
-    transition: background-color 0.3s ease; /* CSS transition for animation */
-    
+    transition: background-color 0.3s ease;
     animation: jump 1s infinite ease;
     text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.503),
                 0 -8px 16px 0 rgba(0,0,0,0.19);
@@ -89,14 +70,17 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 45%;
-  
+    width: 40%;
 
   }
 
 .timeline-node-container .course-details:hover {
-    box-shadow: 0 0 12px #ffffffcf;
-    cursor: pointer;
+  background-color: rgba(8, 19, 63, 0.573);
+  transition: background-color .2s ease-in-out;
+  
+  box-shadow: 0 0 12px #ffffffcf;
+  cursor: pointer;
+    
 }
 
 .course-details {
@@ -111,11 +95,13 @@
     border-radius: 30px;
     margin: 1em;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    
+    transition: transform 0.3s ease; /* CSS transition for sliding effect */
+    transform: translateY(1);
+     
 }
 
-.course-details p{
-    margin-bottom: 0;
+.course-details h1{
+    margin-top: 0;   
 }
 .course-details ul {
     display: flex;
@@ -149,8 +135,29 @@
   justify-content: flex-end;
 }
 
+
+#CurrTerm:hover{
+  transition: background-color .3s ease,
+  box-shadow .3s ease;
+  transform: translateY(1);
+  box-shadow: 0 0 16px #96ff4bef,
+              0 0 12px #5eae25ef,
+              0 0 8px #ffffffef;
+
+}
 @media (max-width: 1181px) {
   .timeline-line {
-    display: none;
+    display: block;
+    height:95% ;
+    left: 2em;
   }
-}
+
+  .section2 .expand-button {
+    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+  }
+  .timeline-node-container{
+    width: 80%;
+  }
+ 
+
+ }
