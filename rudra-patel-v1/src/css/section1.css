@@ -121,36 +121,32 @@
 .contact-info:hover{
     background-color: rgba(69, 136, 255);
 }
-/* Media query for mobile styles */
+
+/* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
-    /* Mobile-specific styles */
 
     /* Re-adjusting styles for the main section */
     .section1 {
         flex-direction: column;
         margin-top: 0;
-        
     }
 
     /* Adjusting styles for the introductory content */
     .section1 .intro {
         align-items: center;
-        margin-top: 7em;
-        padding-top: 7em;
         margin-bottom: 0;
         padding-bottom: 2em;
-        font-size: 0.5em;
-        border: solid 2px white;
+        width: 80%; /* Adjusting width for better readability */
+        text-align: left; /* Aligning text to the left */
     }
 
     /* Adjusting styles for the 'me' section */
     .section1 .me {
         padding-top: 0;
         margin-top: 0;
-        width: 50%;
+        width: 100%; /* Utilize full width */
         gap: 1em;
     }
-
 
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
@@ -174,12 +170,6 @@
         padding: 0;
     }
 
-    /* Adjusting styles for the introductory content in mobile view */
-    .section1 .intro {
-        width: 80%;
-        text-align: left;
-    }
-
     /* Adjusting styles for Heading 1 in mobile view */
     .section1 .intro h1 {
         margin: 0;
@@ -201,8 +191,8 @@
     /* Adjusting styles for paragraphs in mobile view */
     .section1 .intro p {
         font-weight: 400;
-        font-size: 1.8em;
-        margin: 3px;
+        font-size: 1em;
+        margin: 10px 0; /* Adding margin for better spacing */
         padding: 0;
     }
 }
