@@ -124,7 +124,9 @@
 
 /* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
-
+    .sections{
+        margin: 0;
+    }
     /* Re-adjusting styles for the main section */
     .section1 {
         flex-direction: column;
