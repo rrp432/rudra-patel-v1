@@ -1,0 +1,148 @@
+/* Base styles for both larger screens and phones */
+.section4 {
+  background: linear-gradient(45deg, #573376, #0b4b51);
+}
+
+.section4 h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  position: relative;
+}
+
+.section4 .projects-type {
+  margin: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+/* Project Card Styles */
+.section4 .project {
+  margin: 1vh;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgba(213, 214, 215, 0.148);
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  padding: 2vh;
+}
+
+/* Hover Effect on Project Card */
+.section4 .project:hover {
+  transform: scale(1.02) translateY(-3px);
+  box-shadow: 0 4px 8px rgba(247, 245, 245, 0.334);
+  cursor: pointer;
+}
+
+/* Change color on hover for project heading */
+.section4 .project:hover .project-heading {
+  color: rgb(94, 205, 25);
+}
+
+.section4 .project-heading {
+  padding-top: 1vh;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.section4 .project .project-meta {
+  flex-grow: 1;
+  overflow: hidden;
+  scrollbar-width: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+}
+
+/* Tags Styling */
+.section4 .project .tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vh;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.section4 .project .tags a {
+  font-size: small;
+  padding: vh;
+  border-radius: 20px;
+  margin: 1vh;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.section4 .project .project-meta::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Status Tag Styles */
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px; /* Add spacing between status tag and completion date */
+}
+
+/* Completion Date Styles */
+.completion-date {
+  margin-top: 10px;
+  font-style: italic;
+  color: #b0b0b0;
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+  .section4 .project {
+    max-width: 80%;
+    padding: vh;
+    margin: 0.8vh;
+  }
+
+  .section4 .project-heading {
+    font-size: 1.2em; /* Adjust heading font size for phones */
+    padding-top: 0vh;
+    margin-top: 2vh;
+  }
+
+  .section4 .project .tags {
+    margin-bottom: 1vh;
+  }
+
+  .section4 .project .tags a {
+    font-size: smaller;
+    padding: 0.5vh;
+    margin: 0.5vh;
+  }
+
+  .section4 .project .project-meta {
+    margin: 1vh;
+  }
+
+  .section4 .project .project-meta p {
+    font-size: small;
+  }
+
+  /* Adjust heading alignment for smaller screens */
+  .section2 h1,
+  .section3 h1,
+  .section4 h1 {
+    text-align: left;
+    padding-left: 5vh;
+  }
+}
