@@ -151,11 +151,11 @@
 
     }
     
-
+    
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         border-radius: 100%;
-        width: 80%;
+        width: 100%;
         margin: 0;
         padding: 0;
         transition: transform 0.36s ease-in-out,
@@ -169,7 +169,7 @@
         height: auto;
         justify-content: center;
         align-items: center;
-        margin: 0;
+        margin: 2vh;
         padding: 0;
     }
 
