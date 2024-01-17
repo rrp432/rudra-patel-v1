@@ -46,7 +46,7 @@
 
 /* Change color on hover for project heading */
 .section4 .project:hover .project-heading {
-  color: rgb(94, 205, 25);
+  color: rgb(10, 250, 174);
 }
 
 .section4 .project-heading {
@@ -145,4 +145,20 @@
     text-align: left;
     padding-left: 5vh;
   }
+
+  /* Touch Effect on Project Card for Phones */
+.section4 .project:active {
+    transform: scale(0.98) translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Change color on touch for project heading */
+  .section4 .project:active .project-heading {
+    color: rgb(0, 255, 234);
+  }
 }
+
+
+
+  
+
