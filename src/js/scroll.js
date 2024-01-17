@@ -25,34 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function openResume() {
-        window.open('img/rudra_resume.pdf', '_blank');
-    }
-
-    // Attach the updateActiveSection function to the scroll event
-    document.addEventListener('scroll', updateActiveSection);
-
-    // Initial call to set the active section on page load
-    updateActiveSection();
-
-    // Function to check if an element is in the viewport
-    function isInViewport(elem) {
-        const rect = elem.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    // Function to update the active state based on the current section
-    function updateActiveSection() {
-        sections.forEach((section, index) => {
-            if (isInViewport(section)) {
-                navLinks.forEach((link) => link.classList.remove('active'));
-                navLinks[index].classList.add('active');
-            }
-        });
-    }
 });
