@@ -98,7 +98,7 @@
 /* Hover effect for logo images */
 .logo img:hover {
     border-radius: 0;
-    background-color: white;
+    background-color: rgb(10, 250, 174);
     box-shadow: 0 0 12px #00ffeaef,
                 0 0 8px #117acf,
                 0 0 4px #ffffff;
@@ -150,12 +150,12 @@
         gap: 1em;
 
     }
+    
 
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         border-radius: 100%;
-        width: 100%;
-        max-height: 3em;
+        width: 80%;
         margin: 0;
         padding: 0;
         transition: transform 0.36s ease-in-out,

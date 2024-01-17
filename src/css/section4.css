@@ -154,7 +154,7 @@
 
   /* Change color on touch for project heading */
   .section4 .project:active .project-heading {
-    color: rgb(0, 255, 234);
+    color: rgb(10, 250, 174);
   }
 }
 
