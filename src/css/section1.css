@@ -154,8 +154,12 @@
     
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 100%;
-        width: 50%;
+        width: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
         transition: transform 0.36s ease-in-out,
@@ -174,7 +178,6 @@
         margin: 0;
         padding: 0;
         
-        border: solid 2px white;
     }
 
     /* Adjusting styles for Heading 1 in mobile view */
