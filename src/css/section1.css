@@ -155,7 +155,7 @@
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         border-radius: 100%;
-        width: 100%;
+        width: 50%;
         margin: 0;
         padding: 0;
         transition: transform 0.36s ease-in-out,
@@ -164,14 +164,16 @@
                     background-color 0.36s ease-in;
     }
 
-    /* Adjusting styles for the connect section */
+    /* Adjusting styles for 
+    the connect section */
     .section1 .connect {
+        display: flex;
         height: auto;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
-        width: 80%;
+        
         border: solid 2px white;
     }
 

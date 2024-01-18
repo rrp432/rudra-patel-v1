@@ -32,14 +32,13 @@
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    border-radius: 30px;
 }
 
 .navbar a:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0);
     color: rgb(43, 134, 105);
-    transition: background-color 0.3s ease, color 0.3s ease, border-radius 1s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius .2s ease;
     
 }
 
@@ -48,7 +47,7 @@
 .navbar a:focus,
 .navbar a:active {
     color: rgb(10, 250, 174);
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
     0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 24px rgba(0, 0, 0, 0.1),
