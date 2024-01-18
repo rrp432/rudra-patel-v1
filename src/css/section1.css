@@ -172,6 +172,7 @@
         margin: 0;
         padding: 0;
         width: 80%;
+        border: solid 2px white;
     }
 
     /* Adjusting styles for Heading 1 in mobile view */
