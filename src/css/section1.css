@@ -55,6 +55,7 @@
     width: 50%;
     margin-top: 1em;
     padding-bottom: 2vh;
+    
 }
 
 .section1 .logos{
@@ -112,6 +113,7 @@
     background-color: rgb(15, 27, 57);
     border-radius: 30px;
     transition: all 0.3s ease;
+ 
 }
 
 /* Contact info hover effect */
@@ -124,7 +126,6 @@
 @media only screen and (max-width: 1000px) {
     .sections {
         margin: 0;
-    
     }
 
     /* Re-adjusting styles for the main section */
@@ -136,23 +137,27 @@
     /* Adjusting styles for the introductory content */
     .section1 .intro {
         align-items: center;
-        width: 100%; /* Utilize full width */
-        text-align: center; /* Center-align text for better readability */
+        width: 90%; /* Utilize full width */
+        text-align: left; /* Center-align text for better readability */
         padding: 1em; /* Add padding for better spacing */
     }
 
     /* Adjusting styles for the 'me' section */
     .section1 .me {
         width: 100%; /* Utilize full width */
-        gap: 1em;
+        gap: 2em;
     }
 
+    .section1 .logos{
+        padding: 0;
+        margin: 0;
+    }
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         display: block; /* Make the images block-level */
         margin: 0 auto; /* Center-align images */
         border-radius: 50%; /* Use 50% for a circular border radius */
-        width: 70%; /* Adjust width for better responsiveness */
+        width: 100%; /* Adjust width for better responsiveness */
         max-width: 100%; /* Ensure images don't exceed their container */
         height: auto;
         transition: transform 0.36s ease-in-out, box-shadow 0.36s ease-in-out, opacity 0.36s ease-in-out, background-color 0.36s ease-in;
@@ -161,11 +166,11 @@
     /* Adjusting styles for the connect section */
     .section1 .connect {
         display: flex;
-        flex-direction: column; /* Adjust flex direction for better layout */
+        flex-direction: row; /* Adjust flex direction for better layout */
         align-items: center;
         justify-content: center;
         margin: 0;
-        padding: 1em; /* Add padding for better spacing */
+        padding: 1em;
     }
 
     /* Adjusting styles for Heading 1 in mobile view */
