@@ -57,17 +57,22 @@
     padding-bottom: 2vh;
 }
 
+.section1 .logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    list-style: none;
+}
 
 
 /* Styles for the connect section */
-.section1 .connect .logos {
+.section1 .connect {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    list-style: none;
-    gap: 2em;
-    padding-left: 1em;
+    width: 100%;
+    height: auto;
 }
 
 /* Logo image styles */
@@ -84,19 +89,8 @@
                 0 32px 48px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Connect section styles */
-.section1 .connect {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 20vh;
-
-}
-
 /* Hover effect for logo images */
-.logo img:hover {
+.section1 .connect .logo img:hover {
     border-radius: 0;
     background-color: rgb(10, 250, 174);
     box-shadow: 0 0 12px #00ffeaef,
@@ -104,10 +98,11 @@
                 0 0 4px #ffffff;
     cursor: pointer;
     transform: scale(1.1);
+    border-radius: 20px;
 }
 
 /* Contact information styles */
-.contact-info {
+.section1 .contact-info {
     margin-top: 0;
     font-size: 12px;
     padding: 1em;
@@ -118,15 +113,20 @@
     border-radius: 30px;
     transition: all 0.3s ease;
 }
-.contact-info:hover{
+
+/* Contact info hover effect */
+.section1 .contact-info:hover {
     background-color: rgba(69, 136, 255);
 }
 
+
 /* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
-    .sections{
+    .sections {
         margin: 0;
+    
     }
+
     /* Re-adjusting styles for the main section */
     .section1 {
         flex-direction: column;
@@ -136,73 +136,60 @@
     /* Adjusting styles for the introductory content */
     .section1 .intro {
         align-items: center;
-        margin-bottom: 0;
-        padding-bottom: 2em;
-        width: 80%; /* Adjusting width for better readability */
-        text-align: left; /* Aligning text to the left */
+        width: 100%; /* Utilize full width */
+        text-align: center; /* Center-align text for better readability */
+        padding: 1em; /* Add padding for better spacing */
     }
 
     /* Adjusting styles for the 'me' section */
     .section1 .me {
-        padding-top: 0;
-        margin-top: 0;
-        width: 90%; /* Utilize full width */
+        width: 100%; /* Utilize full width */
         gap: 1em;
-
     }
-    
-    
+
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        width: 100%;
+        display: block; /* Make the images block-level */
+        margin: 0 auto; /* Center-align images */
+        border-radius: 50%; /* Use 50% for a circular border radius */
+        width: 70%; /* Adjust width for better responsiveness */
+        max-width: 100%; /* Ensure images don't exceed their container */
         height: auto;
-        margin: 0;
-        padding: 0;
-        transition: transform 0.36s ease-in-out,
-                    box-shadow 0.36s ease-in-out,
-                    opacity 0.36s ease-in-out,
-                    background-color 0.36s ease-in;
+        transition: transform 0.36s ease-in-out, box-shadow 0.36s ease-in-out, opacity 0.36s ease-in-out, background-color 0.36s ease-in;
     }
 
-    /* Adjusting styles for 
-    the connect section */
+    /* Adjusting styles for the connect section */
     .section1 .connect {
         display: flex;
-        height: auto;
-        justify-content: center;
+        flex-direction: column; /* Adjust flex direction for better layout */
         align-items: center;
+        justify-content: center;
         margin: 0;
-        padding: 0;
-        
+        padding: 1em; /* Add padding for better spacing */
     }
 
     /* Adjusting styles for Heading 1 in mobile view */
     .section1 .intro h1 {
         margin: 0;
         padding: 0;
-        text-align: left;
-        font-weight: 400;
+        font-size: 2em; /* Increase font size for Heading 1 */
+        font-weight: 600; /* Increase font weight for Heading 1 */
     }
 
     /* Adjusting styles for Heading 2 in mobile view */
     .section1 .intro h2 {
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin-top: 10px; /* Adjust top margin for Heading 2 */
+        margin-bottom: 10px; /* Adjust bottom margin for Heading 2 */
         padding: 0;
-        font-size: 2em;
-        text-align: left;
-        font-weight: 400;
+        font-size: 1.5em; /* Adjust font size for Heading 2 */
+        font-weight: 500; /* Adjust font weight for Heading 2 */
     }
 
     /* Adjusting styles for paragraphs in mobile view */
     .section1 .intro p {
         font-weight: 400;
         font-size: 1em;
-        margin: 10px 0; /* Adding margin for better spacing */
+        margin: 10px 0;
         padding: 0;
     }
 }
