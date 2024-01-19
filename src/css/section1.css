@@ -145,17 +145,21 @@
     /* Adjusting styles for the 'me' section */
     .section1 .me {
         width: 100%; /* Utilize full width */
-        gap: 2em;
+        
     }
 
     .section1 .logos{
+        width: 90%;
         padding: 0;
         margin: 0;
+      
+       
     }
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
         display: block; /* Make the images block-level */
         margin: 0 auto; /* Center-align images */
+       
         border-radius: 50%; /* Use 50% for a circular border radius */
         width: 100%; /* Adjust width for better responsiveness */
         max-width: 100%; /* Ensure images don't exceed their container */
