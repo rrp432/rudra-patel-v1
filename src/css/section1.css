@@ -6,7 +6,6 @@
     overflow: hidden;
     width: 100%;
     background: linear-gradient(-45deg, #0b4b51, #04203b);
-    
 }
 
 
@@ -49,19 +48,22 @@
 
 /* Styles for the 'me' section */
 .me {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 50%;
     margin-top: 1em;
     padding-bottom: 2vh;
-    
+
 }
 
 .section1 .logos{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     width: 60%;
     list-style: none;
 }
@@ -71,9 +73,10 @@
 .section1 .connect {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
+
 }
 
 /* Logo image styles */
@@ -104,7 +107,8 @@
 
 /* Contact information styles */
 .section1 .contact-info {
-    margin-top: 0;
+    
+    margin-top: 2em;
     font-size: 12px;
     padding: 1em;
     display: none;
@@ -113,6 +117,7 @@
     background-color: rgb(15, 27, 57);
     border-radius: 30px;
     transition: all 0.3s ease;
+
  
 }
 
@@ -124,10 +129,7 @@
 
 /* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
-    .sections {
-        margin: 0;
-    }
-
+   
     /* Re-adjusting styles for the main section */
     .section1 {
         flex-direction: column;
@@ -140,6 +142,7 @@
         width: 90%; /* Utilize full width */
         text-align: left; /* Center-align text for better readability */
         padding: 1em; /* Add padding for better spacing */
+        padding-top:2em ;
     }
 
     /* Adjusting styles for the 'me' section */
@@ -159,7 +162,7 @@
     .section1 .connect .logo img {
         display: block; /* Make the images block-level */
         margin: 0 auto; /* Center-align images */
-       
+        max-height: 3rem;
         border-radius: 50%; /* Use 50% for a circular border radius */
         width: 100%; /* Adjust width for better responsiveness */
         max-width: 100%; /* Ensure images don't exceed their container */
