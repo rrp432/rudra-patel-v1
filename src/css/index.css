@@ -7,21 +7,16 @@ body {
 }
 
 .sections {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     overflow: auto;
     gap:2vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 
 }
-.section1{
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw; 
-}
+
 .sections > section:not(:first-child) {
-    border-radius: 3vw;
     font-weight: 200;
 }
 h1 {
