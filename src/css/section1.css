@@ -5,12 +5,11 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(-45deg, #0b4b51, #04203b);  
-
+    background: linear-gradient(-45deg, #04656e, #07335c);
 }
 
 /* Container styles within the main section */
-.section1 .conatiner{
+.section1 .container {
     display: flex;
     justify-content: space-around;
 }
@@ -22,30 +21,14 @@
     width: 60%;
     padding: 5em;
     margin-bottom: 1vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
-    0 8px 16px rgba(0, 0, 0, 0.1),
-    0 16px 24px rgba(0, 0, 0, 0.1),
-    0 32px 48px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1),
+                0 16px 24px rgba(0, 0, 0, 0.1),
+                0 32px 48px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: rgba(27, 27, 27, 0.21);
-
     animation: slideInLeft 1s ease-in-out;
-
     animation-fill-mode: both;
-
-}
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-        
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-
-    }
 }
 
 /* Heading 1 styles */
@@ -54,30 +37,11 @@
     margin-bottom: 2vh;
     font-size: 3em;
     position: relative;
-
-    /* Gradient background with text clip */
     background: linear-gradient(to right, #24b435, #00c8ff);
     -webkit-background-clip: text;
     color: transparent;
-
-    /* Adding a subtle text shadow for depth */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-   
-    /* Animation for a subtle pulsating effect */
     animation: pulsate 2s;
-
-}
-
-@keyframes pulsate {
-    0% {
-        transform: scale(1.8);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
 
 /* Heading 2 styles */
@@ -85,8 +49,9 @@
     color: #ffffff;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    /* Underline effect on hover for emphasis */
     position: relative;
+    font-weight: 200;
+
 }
 
 .section1 .intro h2::after {
@@ -94,8 +59,7 @@
     display: block;
     width: 100%;
     height: 3px;
-   /* Gradient background with text clip */
-   background: linear-gradient(to right, #24b435, #00c8ff);
+    background: linear-gradient(to right, #24b435, #00c8ff);
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -109,19 +73,19 @@
     transform-origin: bottom left;
 }
 
+
+
+
 /* Paragraph styles */
 .section1 .intro p {
     color: #f7f7f7;
     font-weight: 300;
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 2vh;
     margin-bottom: 2vh;
     opacity: 0.8;
-
-    /* Adding a subtle fade-in effect on scroll */
-    animation: fadeIn 1s ease-in-out;
- 
+    animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -133,7 +97,6 @@
     }
 }
 
-
 /* Styles for the 'me' section */
 .me {
     width: 80%;
@@ -144,20 +107,16 @@
     width: 60%;
     margin-top: 1em;
     padding-bottom: 2vh;
-    
 }
 
-.section1 .logos{
+.section1 .logos {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-    
+    justify-content: space-evenly;
     gap: 3rem;
     width: 100%;
     list-style: none;
-
 }
-
 
 /* Styles for the connect section */
 .section1 .connect {
@@ -166,7 +125,6 @@
     justify-content: flex-start;
     width: 100%;
     height: auto;
-
 }
 
 /* Logo image styles */
@@ -177,32 +135,26 @@
     max-height: 3em;
     border-radius: 50%;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
                 0 8px 16px rgba(0, 0, 0, 0.1),
                 0 16px 24px rgba(0, 0, 0, 0.1),
                 0 32px 48px rgba(0, 0, 0, 0.1);
-    animation: popUp 0.5s ease-in-out forwards;
- 
-
+    animation: popUp .5s ease-in-out forwards;
 }
+
 @keyframes popUp {
     0% {
-        background-color: #00d9ff;
-        transform: scale(0.001); /* Start with a smaller size */
-    }
-    70%{
-        opacity: 0.9;
+        transform: scale(1);
     }
     100% {
-        transform: scale(1.2); /* Gradually return to the original size */
-        
+        transform: scale(1.2);
     }
 }
 
 /* Hover effect for logo images */
 .section1 .connect .logo img:hover {
     border-radius: 0;
-    background-color: rgb(10, 250, 174);
+    background-color: #0afaae;
     box-shadow: 0 0 12px #00ffeaef,
                 0 0 8px #117acf,
                 0 0 4px #ffffff;
@@ -210,6 +162,7 @@
     transform: scale(1.1);
     border-radius: 7px;
 }
+
 .section1 .connect .logo:nth-child(1) img {
     animation-delay: 0.1s;
 }
@@ -228,7 +181,6 @@
 
 /* Contact information styles */
 .section1 .contact-info {
-    
     padding-top: 4em;
     font-size: 12px;
     padding: 1em;
@@ -238,8 +190,6 @@
     background-color: rgb(15, 27, 57);
     border-radius: 30px;
     transition: all 0.3s ease;
-
- 
 }
 
 /* Contact info hover effect */
@@ -247,10 +197,8 @@
     background-color: rgba(69, 136, 255);
 }
 
-
 /* Mobile-specific styles */
 @media only screen and (max-width: 1000px) {
-   
     /* Re-adjusting styles for the main section */
     .section1 {
         flex-direction: column;
@@ -259,50 +207,48 @@
     /* Adjusting styles for the introductory content */
     .section1 .intro {
         align-items: center;
-        width: 90%; /* Utilize full width */
-        text-align: left; /* Center-align text for better readability */
-        padding: 1em; /* Add padding for better spacing */
-        padding-top:4em ;
-
-        animation: slideInTop 1.5s ease-in-out;
+        width: 90%;
+        text-align: left;
+        padding: 1em;
+        padding-top: 4em;
+        z-index: 1;
+        animation: slideInTop 1s ease-in-out;
         animation-fill-mode: both;
     }
 
     /* Animation keyframes for smaller screens */
     @keyframes slideInTop {
         0% {
-            transform: translateY(-100%);
+            transform: translateX(-100%);
             opacity: 0;
         }
-
         100% {
-            transform: translateY(0);
+            transform: translateX(0);
             opacity: 1;
         }
     }
 
-
     /* Adjusting styles for the 'me' section */
     .section1 .me {
-        width: 100%; /* Utilize full width */
-        
+        width: 100%;
     }
 
-    .section1 .logos{
+    .section1 .logos {
         width: 90%;
         padding: 0;
         margin: 0;
         gap: 1em;
         justify-content: space-between;
     }
+
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
-        display: block; /* Make the images block-level */
-        margin: 0 auto; /* Center-align images */
+        display: block;
+        margin: 0 auto;
         max-height: 3rem;
-        border-radius: 80%; /* Use 50% for a circular border radius */
-        width: 80%; /* Adjust width for better responsiveness */
-        max-width: 100%; /* Ensure images don't exceed their container */
+        border-radius: 80%;
+        width: 80%;
+        max-width: 100%;
         height: auto;
         transition: transform 0.36s ease-in-out, box-shadow 0.36s ease-in-out, opacity 0.36s ease-in-out, background-color 0.36s ease-in;
     }
@@ -310,7 +256,7 @@
     /* Adjusting styles for the connect section */
     .section1 .connect {
         display: flex;
-        flex-direction: row; /* Adjust flex direction for better layout */
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin: 0;
@@ -321,18 +267,18 @@
     .section1 .intro h1 {
         margin: 0;
         padding: 0;
-        font-size: 2em; /* Increase font size for Heading 1 */
-        font-weight: 600; /* Increase font weight for Heading 1 */
+        font-size: 2em;
+        font-weight: 600;
     }
 
-    /* Adjusting styles for Heading 2 in mobile view */
     .section1 .intro h2 {
-        margin-top: 10px; /* Adjust top margin for Heading 2 */
-        margin-bottom: 10px; /* Adjust bottom margin for Heading 2 */
+        margin: 0;
         padding: 0;
-        font-size: 1.5em; /* Adjust font size for Heading 2 */
-        font-weight: 500; /* Adjust font weight for Heading 2 */
+        text-align: center;
+        font-weight: 200;
     }
+
+
 
     /* Adjusting styles for paragraphs in mobile view */
     .section1 .intro p {
