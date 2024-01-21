@@ -3,14 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/index.css">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/navbar.css">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section1.css">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section2.css">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section3.css">
-    <link rel="stylesheet" href="/rudra-patel-v1/src/css/section4.css">
-    
-    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="/rudra-patel-v1/src/css/styles.css">
+    <title>Rudra portfolio</title>
 </head>
 <body>
     <nav class="navbar">   
@@ -19,9 +13,7 @@
             <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
             <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
             <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
- 
         </ul>  
-
     </nav>
     
 
@@ -60,140 +52,11 @@
         <h1>Education</h1>
         <a class="expand-button" onclick="toggleSection()"> Read more</a>
         <div class="expanded-content" id="expandedContent" style="display: none;">
-            <div class="timeline">
-                <div class="timeline-line"></div>
-                <div class="timeline-node-container">
-                    <div class="course-details">
-                        <p>Fall '20</p>
-                        <ul>
-                            <li>Programming in C++</li>
-                            <li>Computer Logic & Discrete Math</li>
-                            <li>Precalculus</li>
-                        </ul>
-                    </div>
-                
-                </div>
-                <div class="timeline-node-container">
-                    <div class="course-details">
-                        <p>Spring '21</p>
-                        <ul>
-                            <li>Programming in C++ II</li>
-                            <li>College Compositon I</li>
-                            <li>Calculus I</li>
-                        </ul>
-                    </div>
-                </div>              
-                <div class="timeline-node-container">
-                    <div class="course-details">
-                        <p>Summer I '21</p>
-                        <ul>
-                            <li>College Student Success</li>
-                            <li>Calculus II</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                    <div class="course-details">
-                        <p>Summer II '21</p>
-                        <ul>
-                            <li>Colleg Comp II</li>
-                            <li>Speech</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Fall '21</p>
-                        <ul>
-                            <li>Database Design and Concepts</li>
-                            <li>Java Programming</li>
-                            <li>DS & Algorithms</li>
-                            <li>Principles Of <br> Macroeconomics</li>
-                            <li>Engineering Physics I</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Winter '22</p>
-                        <ul>
-                            <li>Cultures & Values</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Spring '22</p>
-                        <ul>
-                            <li>Cybersecurity</li>
-                            <li>Calculus III</li>
-                            <li>Principles of Sociology</li>
-                            <li>Data Structures And Adavance</li>
-                            <li>Introduction to Operating Systems</li>
-                        </ul>
-                    </div>
-                </div>        
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Fall '22</p>
-                        <ul>
-                            <li>OOPS</li>
-                            <li>Java Programming</li>
-                            <li>DS & Algorithms</li>
-                            <li>Computer Architecture</li>
-                            <li>R Programming</li>
-                        </ul>
-                    </div>
-                </div> 
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Spring '23</p>
-                        <ul>
-                            <li>OOPS</li>
-                            <li>Java Programming</li>
-                            <li>MS Access</li>
-                            <li>Cybersecurity</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Fall '23</p>
-                        <ul>
-                            <li>OOPS</li>
-                            <li>Java Programming</li>
-                            <li>MS Access</li>
-                            <li>Cybersecurity</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div id = "CurrTerm"class="course-details">
-                        <p>Spring '24</p>
-                        <ul>
-                            <li>Software Methodology</li>
-                            <li>Systems Programming</li>
-                            <li>Principles of Programming<br>Languages</li>
-                            <li>Numerical Analysis Computing</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-node-container">
-                      <div class="course-details">
-                        <p>Fall '24</p>
-                        <ul>
-                            <li>Design Analysis</li>
-                            <li>Elective I</li>
-                            <li>Physics II</li>
-                            <li>Elective I</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="timeline" id="educationTimeline">
+                <!-- Timeline nodes will be dynamically added here using JavaScript -->
             </div>
-          </div>
-          
+        </div>
     </section>
-    
 
     <section id="skills" class="section3">
         <h1>Skills</h1>
@@ -220,8 +83,6 @@
             </ul>
         </div>
     </section>
-
-
 
     <section id="projects" class="section4">
         <h1>Projects</h1>
@@ -349,6 +210,7 @@
 </footer>
 <script src="/rudra-patel-v1/src/js/scroll.js"></script>
 <script src="/rudra-patel-v1/src/js/index.js"></script>
+<script src="/rudra-patel-v1/src/js/edu.js"></script>
 
 </body>
 </html>

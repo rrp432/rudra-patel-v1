@@ -1,0 +1,14 @@
+[
+    { "term": "Fall '20", "courses": ["Programming in C++", "Computer Logic & Discrete Math", "Precalculus"] },
+    { "term": "Spring '21", "courses": ["Programming in C++ II", "College Composition I", "Calculus I"] },
+    { "term": "Summer I '21", "courses": ["College Student Success", "Calculus II"] },
+    { "term": "Summer II '21", "courses": ["Colleg Comp II", "Speech"] },
+    { "term": "Fall '21", "courses": ["Database Design and Concepts", "Java Programming", "DS & Algorithms", "Principles Of Macroeconomics", "Engineering Physics I"] },
+    { "term": "Winter '22", "courses": ["Cultures & Values"] },
+    { "term": "Spring '22", "courses": ["Cybersecurity", "Calculus III", "Principles of Sociology", "Data Structures And Adavance", "Introduction to Operating Systems"] },
+    { "term": "Fall '22", "courses": ["OOPS", "Java Programming", "DS & Algorithms", "Computer Architecture", "R Programming"] },
+    { "term": "Spring '23", "courses": ["OOPS", "Java Programming", "MS Access", "Cybersecurity"] },
+    { "term": "Fall '23", "courses": ["OOPS", "Java Programming", "MS Access", "Cybersecurity"] },
+    { "term": "Spring '24", "courses": ["Software Methodology", "Systems Programming", "Principles of Programming Languages", "Numerical Analysis Computing"] },
+    { "term": "Fall '24", "courses": ["Design Analysis", "Elective I", "Physics II", "Elective I"] }
+]

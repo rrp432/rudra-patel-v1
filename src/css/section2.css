@@ -1,18 +1,15 @@
 .section2 {
-  background: linear-gradient(-45deg, #0b4b51, #04203b);
+  background: linear-gradient(-135deg, #0b4b51, #0b3861);
   color: white;
   position: relative;
-
 }
 
-
-
 .section2 h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: 200;
-    position: relative;
-  }
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  position: relative;
+}
 
   .expand-button {
     display: flex;
@@ -44,7 +41,7 @@
   }
 
 
-.timeline {
+  .timeline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +49,8 @@
     margin-top: 5vh;
     margin-left: 5vh;
     margin-right: 5vh;
-}
+    position: relative; /* Added position relative for centering */
+  }
 
 .timeline-line {
     width: .1px;
@@ -149,25 +147,24 @@
 }
 
 @media (max-width: 1500px) {
-
   .timeline-line {
     left: 20%;
+    height: 90%;
   }
 
   .section2 .expand-button {
-    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+    margin-bottom: 5px;
   }
- 
-  .timeline-node-container .course-details{
+
+  .timeline-node-container .course-details {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
- 
+}
 
- }
- @media (max-width: 650px) {
+@media (max-width: 650px) {
   .timeline-line {
     left: 2em;
     height: 90%;
@@ -175,18 +172,19 @@
   }
 
   .section2 .expand-button {
-    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+    margin-bottom: 5px;
   }
-  .timeline-node-container{
+
+  .timeline-node-container {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .timeline-node-container .course-details{
+
+  .timeline-node-container .course-details {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
- 
 }
