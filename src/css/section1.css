@@ -5,12 +5,9 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(-45deg, #0b4b51, #04203b);
-    
-    
-    
-}
+    background: linear-gradient(-45deg, #0b4b51, #04203b);  
 
+}
 
 /* Container styles within the main section */
 .section1 .conatiner{
@@ -22,41 +19,65 @@
 .section1 .intro {
     display: flex;
     flex-wrap: wrap;
-    width: 55%;
-    padding: 6em;
+    width: 60%;
+    padding: 5em;
+    margin-bottom: 1vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
     0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 24px rgba(0, 0, 0, 0.1),
     0 32px 48px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 10px;
+    background: rgba(27, 27, 27, 0.21);
 
-    /* Animation */
-    animation: slideInLeft 0.5s ease-in-out;
+    animation: slideInLeft 1s ease-in-out;
+
     animation-fill-mode: both;
+
 }
 
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
+        
         opacity: 0;
     }
     100% {
         transform: translateX(0);
         opacity: 1;
+
     }
 }
 
-
 /* Heading 1 styles */
 .section1 .intro h1 {
-    color: #15ff00;
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-bottom: 2vh;
     font-size: 3em;
+    position: relative;
+
+    /* Gradient background with text clip */
     background: linear-gradient(to right, #24b435, #00c8ff);
     -webkit-background-clip: text;
     color: transparent;
+
+    /* Adding a subtle text shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
    
+    /* Animation for a subtle pulsating effect */
+    animation: pulsate 2s;
+
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1.8);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Heading 2 styles */
@@ -64,15 +85,54 @@
     color: #ffffff;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    /* Underline effect on hover for emphasis */
+    position: relative;
+}
+
+.section1 .intro h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+   /* Gradient background with text clip */
+   background: linear-gradient(to right, #24b435, #00c8ff);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.section1 .intro h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* Paragraph styles */
 .section1 .intro p {
     color: #f7f7f7;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 1.2rem; /* Adjusted font size */
+    line-height: 1.6;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    opacity: 0.8;
+
+    /* Adding a subtle fade-in effect on scroll */
+    animation: fadeIn 1s ease-in-out;
+ 
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
 
 /* Styles for the 'me' section */
 .me {
@@ -122,12 +182,16 @@
                 0 16px 24px rgba(0, 0, 0, 0.1),
                 0 32px 48px rgba(0, 0, 0, 0.1);
     animation: popUp 0.5s ease-in-out forwards;
-    animation-delay: 1.6s;
+ 
 
 }
 @keyframes popUp {
     0% {
+        background-color: #00d9ff;
         transform: scale(0.001); /* Start with a smaller size */
+    }
+    70%{
+        opacity: 0.9;
     }
     100% {
         transform: scale(1.2); /* Gradually return to the original size */
@@ -165,7 +229,7 @@
 /* Contact information styles */
 .section1 .contact-info {
     
-    margin-top: 2em;
+    padding-top: 4em;
     font-size: 12px;
     padding: 1em;
     display: none;
@@ -228,7 +292,8 @@
         width: 90%;
         padding: 0;
         margin: 0;
-        justify-content: center;
+        gap: 1em;
+        justify-content: space-between;
     }
     /* Adjusting styles for the logo images in the connect section */
     .section1 .connect .logo img {
