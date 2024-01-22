@@ -19,7 +19,7 @@
     margin-bottom: 2em;
     width: 50%;
     object-fit: cover; /* Ensure the image covers the entire container */
-    animation: popUp .5s ease-in-out forwards;
+    animation: popUp 1s ease-in-out backwards;
 }
 
 /* Styles for the introductory content */
@@ -45,6 +45,10 @@
         transform: translateX(-99%);
 
     }
+    90% {
+        transform: translateX(5%);
+
+    }
     100% {
         transform: translateX(0);
     
@@ -61,7 +65,7 @@
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    animation: pulsate 2s;
+
 }
 
 /* Heading 2 styles */
@@ -101,15 +105,17 @@
     margin-top: 2vh;
     margin-bottom: 2vh;
     opacity: 0.8;
-    animation: fadeIn 2s ease-in-out;
+    
+    animation: fadeIn .5s ease-in-out;
 }
 
 @keyframes fadeIn {
+    
     0% {
         opacity: 0;
     }
     100% {
-        opacity: 0.8;
+        opacity: 0.9;
     }
 }
 
@@ -155,17 +161,30 @@
                 0 8px 16px rgba(0, 0, 0, 0.1),
                 0 16px 24px rgba(0, 0, 0, 0.1),
                 0 32px 48px rgba(0, 0, 0, 0.1);
-    animation: popUp .5s ease-in-out forwards;
+    animation: popUp 1s ease-in-out forwards;
+
+    
 }
 
 @keyframes popUp {
     0% {
+        opacity: 0;
+        transform: scale(0);
+        transform: translateY(100%);
+    }
+    90%{
+        opacity: 0.5;
         transform: scale(1);
+        transform: translateY(-25%);
     }
     100% {
+        opacity: 1;
         transform: scale(1.2);
+        transform: translateY(0);
     }
 }
+
+
 
 /* Hover effect for logo images */
 .section1 .connect .logo img:hover {
@@ -179,19 +198,19 @@
 }
 
 .section1 .connect .logo:nth-child(1) img {
-    animation-delay: 0.1s;
+    animation-delay: 0.40s;
 }
 .section1 .connect .logo:nth-child(2) img {
-    animation-delay: 0.15s;
+    animation-delay: 0.45s;
 }
 .section1 .connect .logo:nth-child(3) img {
-    animation-delay: 0.2s;
+    animation-delay: 0.5s;
 }
 .section1 .connect .logo:nth-child(4) img {
-    animation-delay: 0.25s;
+    animation-delay: 0.55s;
 }
 .section1 .connect .logo:nth-child(5) img {
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 
 /* Contact information styles */

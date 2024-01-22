@@ -1,0 +1,44 @@
+[
+    {
+        "heading": "Library Kiosk",
+        "description": "Implementation of a Library Kiosk project where a team collaboratively works on creating a library system. The project involves creating classes such as `Book`, `Library`, and `Date` to manage a library's catalog. The `Kiosk` class serves as the user interface for processing commands from the console, allowing users to add, remove, check out, return books, and display the library catalog.",
+        "tags": ["Java", "Object-Oriented Design", "Console Application", "Arrays", "Scanning"],
+        "completion_date": "TBD"
+    },
+    {
+        "heading": "2-Player Chess",
+        "description": "Implementation of the game of Chess for two players. The program draws the chessboard in the terminal, prompts players for moves, and enforces game rules. Features include legal moves for all pieces, castling, en passant, promotion, check detection, checkmate identification, illegal move handling, resigning, and draw offers.",
+        "tags": ["Java", "Object-Oriented Design", "Chess", "Bitbucket", "Command Line"],
+        "completion_date": "TBD"
+    },
+    {
+        "heading": "Payroll Processing System",
+        "description": "Development of a Payroll Processing System to manage payments for employees in a company. The project includes the implementation of classes such as `Employee`, `Fulltime`, `Parttime`, `Management`, `Profile`, `Company`, `PayrollProcessing`, and `RunProject2`. The system processes various commands entered on the console, handles exceptions, and provides functionality for adding/removing employees, calculating payments, and printing earning statements.",
+        "tags": ["Java", "Object-Oriented Design", "Inheritance", "JUnit Testing", "Exception Handling", "Console Application"],
+        "completion_date": "TBD"
+    },
+    {
+        "heading": "Music Database Design and Querying",
+        "description": "I designed and implemented a relational database for a music service, akin to Spotify or Amazon Music, using SQLite and SQL. The database features tables for artists, albums, songs, users, playlists, and ratings, minimizing data redundancy through foreign keys and normalization.",
+        "tags": ["Python", "SQLite", "SQL", "Database Schema Design", "Query Optimization"],
+        "completion_date": "Fall'23"
+    },
+    {
+        "heading": "Kindergarten Classroom Simulation",
+        "description": "I developed a comprehensive project using Singly Linked Lists, 2D arrays, and Circular Linked Lists to model classroom activities. The simulation efficiently manages student entry, seating arrangements, and a musical chairs game. It implements fair student seating logic based on seating availability and height order, enhancing gameplay realism.",
+        "tags": ["Java", "OOPs", "Linked List", "Arrays"],
+        "completion_date": "Spring'23"
+    },
+    {
+        "heading": "Huffman Coding for Text Data Compression",
+        "description": "I designed and implemented a highly efficient Huffman Coding algorithm in Java, achieving up to a 60% reduction in file sizes. The implementation ensures data integrity throughout the compression process, showcasing advanced expertise in algorithmic efficiency and accuracy. Graph traversal algorithms (DFS and BFS) were applied for efficient exploration and analysis of graph structures.",
+        "tags": ["Java", "OOPs", "Graph", "Trees", "Array"],
+        "completion_date": "Spring'23"
+    },
+    {
+        "heading": "Infinity War",
+        "description": "Leveraging advanced graph algorithms and implementing adjacency matrices, this project tackles intricate challenges. Java classes were designed and created for seamless input/output, utilizing advanced data structures like Array Lists and HashMap for efficient data management.",
+        "tags": ["Java", "OOPs", "Graph", "HashMap", "Array"],
+        "completion_date": "Spring'23"
+    }
+]

@@ -35,19 +35,19 @@
 }
 
 .programmingLang li:hover,
-.programmingLang li:active {
+.programmingLang li a:active {
     background: linear-gradient(to right, #4e54c8, #8f94fb);
     color: #ffffff;
 }
 
 .databaseSystems li:hover,
-.databaseSystems li:active{
+.databaseSystems li a:active{
     background: linear-gradient(to right, #f2994a, #f2c94c);
     color: #fff;
 }
 
 .webTechnologies li:hover,
-.webTechnologies li:active {
+.webTechnologies li a:active {
     background: linear-gradient(to right, #56ccf2, #2f80ed);
     color: #fff;
 }
