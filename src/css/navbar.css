@@ -52,11 +52,15 @@
     0 16px 24px rgba(0, 0, 0, 0.1),
     0 32px 48px rgba(0, 0, 0, 0.1);
 }
-
+.navbar .profile-image{
+    display: none;
+}
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
-    .navbar {
-      display: none;
+    .navbar .menu-items{
+        display: none;
        }
-    
+       
 }
+
+

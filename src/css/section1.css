@@ -14,21 +14,41 @@
     justify-content: space-around;
 }
 
+.section1 .profile-image {
+    display: flex;
+    margin-bottom: 2em;
+    width: 50%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    animation: popUp .5s ease-in-out forwards;
+}
+
 /* Styles for the introductory content */
 .section1 .intro {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
     padding: 5em;
-    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 3vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
                 0 8px 16px rgba(0, 0, 0, 0.1),
                 0 16px 24px rgba(0, 0, 0, 0.1),
                 0 32px 48px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background: rgba(27, 27, 27, 0.21);
-    animation: slideInLeft 1s ease-in-out;
-    animation-fill-mode: both;
+    background: rgba(27, 27, 27, 0.11);
+    animation: slideInLeft 1.2s ease-in-out;
+    backdrop-filter: blur(80px);
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-99%);
+
+    }
+    100% {
+        transform: translateX(0);
+    
+    }
 }
 
 /* Heading 1 styles */
@@ -51,7 +71,6 @@
     margin-bottom: 2vh;
     position: relative;
     font-weight: 200;
-
 }
 
 .section1 .intro h2::after {
@@ -72,9 +91,6 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
-
 
 /* Paragraph styles */
 .section1 .intro p {
@@ -160,7 +176,6 @@
                 0 0 4px #ffffff;
     cursor: pointer;
     transform: scale(1.1);
-    border-radius: 7px;
 }
 
 .section1 .connect .logo:nth-child(1) img {
@@ -203,7 +218,9 @@
     .section1 {
         flex-direction: column;
     }
-
+    .section1 .profile-image {
+        display: none;
+    }
     /* Adjusting styles for the introductory content */
     .section1 .intro {
         align-items: center;
@@ -219,11 +236,11 @@
     /* Animation keyframes for smaller screens */
     @keyframes slideInTop {
         0% {
-            transform: translateX(-100%);
+            transform: translateY(-100%);
             opacity: 0;
         }
         100% {
-            transform: translateX(0);
+            transform: translateY(0);
             opacity: 1;
         }
     }
@@ -268,7 +285,7 @@
         margin: 0;
         padding: 0;
         font-size: 2em;
-        font-weight: 600;
+        font-weight: 300;
     }
 
     .section1 .intro h2 {
@@ -278,11 +295,9 @@
         font-weight: 200;
     }
 
-
-
     /* Adjusting styles for paragraphs in mobile view */
     .section1 .intro p {
-        font-weight: 400;
+        font-weight: 150;
         font-size: 1em;
         margin: 10px 0;
         padding: 0;
