@@ -4,6 +4,8 @@ body {
     width: 100%;
     touch-action: manipulation;
     background-color: #000000da; 
+    touch-action: manipulation;
+
 }
 
 .sections {
