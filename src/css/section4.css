@@ -1,6 +1,6 @@
 /* Base styles for both larger screens and phones */
 .section4 {
-  background: linear-gradient(45deg, #210836, #0b4b51);
+  background: linear-gradient(-45deg, #04656e, #07335c);
 }
 
 .section4 h1 {
@@ -148,13 +148,14 @@
   }
 
   /* Touch Effect on Project Card for Phones */
-.section4 .project:active {
+.section4 .project:active,  .project:focus {
     transform: scale(0.98) translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   /* Change color on touch for project heading */
-  .section4 .project:active .project-heading {
+  .section4 .project:active .project-heading,
+            .project:focus .project-heading {
     color: rgb(10, 250, 174);
   }
 }

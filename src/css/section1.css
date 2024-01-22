@@ -5,7 +5,7 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background: linear-gradient(-45deg, #04656e, #07335c);
+    background: linear-gradient(-45deg, #154145, #07335c);
 }
 
 /* Container styles within the main section */
@@ -56,9 +56,9 @@
 
 /* Heading 1 styles */
 .section1 .intro h1 {
-    margin-top: 3vh;
+    margin-top: 2vh;
     margin-bottom: 2vh;
-    font-size: 3em;
+    font-size: 3.5em;
     position: relative;
     background: linear-gradient(to right, #24b435, #00c8ff);
     -webkit-background-clip: text;
