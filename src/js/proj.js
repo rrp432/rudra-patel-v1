@@ -1,5 +1,3 @@
-// proj.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch project data from proj.json
     fetch('/rudra-patel-v1/src/js/proj.json')
@@ -8,6 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
             // Iterate through each project and add dynamically to the HTML
             data.forEach(project => {
                 addProject(project);
+            });
+
+            // Add click and touch event listener to each project
+            const projectElements = document.querySelectorAll('.project');
+            projectElements.forEach((projectElement, index) => {
+                projectElement.addEventListener('click', () => {
+                    handleProjectClick(projectElement, data[index]);
+                });
+
+                // Add touch event listener
+                projectElement.addEventListener('touchstart', (event) => {
+                    event.preventDefault();
+                    handleProjectClick(projectElement, data[index]);
+                });
             });
         })
         .catch(error => console.error('Error fetching project data:', error));
@@ -47,4 +59,11 @@ function addProject(project) {
     // Append the project div to the projects container
     const projectsContainer = document.querySelector('.projects-type');
     projectsContainer.appendChild(projectDiv);
+}
+
+function handleProjectClick(project) {
+    // Define the behavior when a project is clicked
+    // For example, you can open a new page with more details
+    console.log('Project clicked:', project);
+    // Add your code to handle the click event, e.g., open a new page or display more details
 }

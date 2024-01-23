@@ -29,54 +29,6 @@ h1 {
     position: relative;
   }
 
-/* Add this CSS to your existing styles or create a new CSS file */
-
-.feedback-section {
-    background-color: #0b4b51; /* Adjust to match your website color scheme */
-    color: white;
-    margin-bottom: 2em;
-    padding: 2em; /* Add padding for spacing */
-    border-radius: 3vw; /* Match the border radius of your sections */
-}
-
-#feedbackForm {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: white; /* Adjust text color */
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px; /* Adjust padding */
-    margin-bottom: 16px;
-    border: 1px solid #ffffff8c; /* Adjust border color */
-    border-radius: 5px; /* Adjust border radius */
-    background-color: #ffffff1f; /* Adjust background color */
-    color: white; /* Adjust text color */
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 12px 24px; /* Adjust padding */
-    border: none;
-    border-radius: 5px; /* Adjust border radius */
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-
-
-
 ::-webkit-scrollbar {
     width: 6px;
 }
