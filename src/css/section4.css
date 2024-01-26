@@ -53,7 +53,6 @@
   padding-top: 1vh;
   margin-top: 5px;
   margin-bottom: 0;
-
 }
 
 .section4 .project .project-meta {
@@ -107,17 +106,17 @@
   color: #b0b0b0;
 }
 
- .section4 .project:active,
-  .section4 .project:focus {
-    transform: scale(0.98) translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Change color on touch for project heading */
-  .section4 .project:active .project-heading,
-  .section4 .project:focus .project-heading {
-    color: rgb(10, 250, 154);
-  }
+.section4 .project:active,
+.section4 .project:focus {
+  transform: scale(0.98) translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Change color on touch for project heading */
+.section4 .project:active .project-heading,
+.section4 .project:focus .project-heading {
+  color: rgb(10, 250, 154);
+}
 
 /* Media query for phones */
 @media only screen and (max-width: 600px) {
@@ -165,15 +164,10 @@
     transform: scale(0.98) translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Change color on touch for project heading */
   .section4 .project:active .project-heading,
   .section4 .project:focus .project-heading {
     color: rgb(10, 250, 154);
   }
 }
-
-
-
-  
-
