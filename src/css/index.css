@@ -14,11 +14,13 @@ body {
     gap:2vh;
     margin-left: 1vh;
     margin-right: 1vh;
+    
 
 }
 
 .sections > section:not(:first-child) {
     font-weight: 200;
+    border-radius: 2vh;
 }
 h1 {
     text-align: center;

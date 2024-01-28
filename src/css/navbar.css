@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(8, 0, 255, 0.101);
+    background-color: rgba(0, 0, 159, 0.114);
     right: 0;
     backdrop-filter: blur(800px);
     transition: background-color 0.3s ease;
@@ -32,6 +32,7 @@
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    font-size: larger;
 }
 
 .navbar a:hover {
