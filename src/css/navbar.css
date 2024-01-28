@@ -7,7 +7,7 @@
     z-index: 1000;
     background-color: rgba(0, 0, 159, 0.114);
     right: 0;
-    backdrop-filter: blur(800px);
+    backdrop-filter: blur(100px);
     transition: background-color 0.3s ease;
 }
 
@@ -58,9 +58,19 @@
 }
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
+
+    .navbar{
+        top:92%
+     }
+
+    .navbar a{
+
+        font-size: smaller
+    }
+   
     .navbar .menu-items{
-        display: none;
-       }
+        justify-content: center;
+    }
        
 }
 
