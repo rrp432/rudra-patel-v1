@@ -7,7 +7,7 @@
     z-index: 1000;
     background-color: rgba(0, 0, 159, 0.114);
     right: 0;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(900px);
     transition: background-color 0.3s ease;
 }
 
@@ -56,22 +56,45 @@
 .navbar .profile-image{
     display: none;
 }
+
+
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
-
-    .navbar{
-        top:92%
-     }
-
-    .navbar a{
-
-        font-size: smaller
+    .navbar {
+        position: fixed;
+        top:92%;
+        border-radius: 2vh;
+        width: 100%;
+        max-width: 100%;
+        height: 60px; /* Adjust height as needed */
+        background-color: rgba(0, 0, 159, 0.153); /* Adjust background color */
+        z-index: 1000;
     }
-   
-    .navbar .menu-items{
-        justify-content: center;
+
+    .navbar .menu-items {
+        display: flex;
+        justify-content: space-around; /* Center-align and distribute menu items evenly */
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
-       
+
+    .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 14px; /* Adjust font size as needed */
+        padding: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        color: rgb(43, 134, 105);
+    }
+
+    .navbar a.active {
+        font-weight: bold; /* Style for active menu item if needed */
+        color: rgb(10, 250, 174);
+    }
 }
-
-
