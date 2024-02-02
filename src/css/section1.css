@@ -161,7 +161,7 @@
     /* Hover effects with subtle animation and color change */
     &:hover {
     border-radius: 10px;
-    background-color: rgba(143, 79, 245, 0.8);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 12px #ffffffef,
     0 0 8px #117acf,
     0 0 4px #f5f5f5;
@@ -274,7 +274,7 @@
       
         /* Adjusting styles for the logo images in the connect section */
         .section1 .connect .logo img {
-          display: block;
+          display: flex;
           margin: 0 auto;
           max-height: 3rem;
           border-radius: 80%;
