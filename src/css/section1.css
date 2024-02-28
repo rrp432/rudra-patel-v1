@@ -4,320 +4,314 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(135deg, #1d9b9075, #06324f); /* Modern blue/green gradient */
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #003049); /* Dark gradient with shades of blue and teal */
 }
 
+/* Container styles within the main section */
+.section1 .container {
+	display: flex;
+	justify-content: space-around;
+}
 
+.section1 .profile-image {
+	display: flex;
+	margin-bottom: 2em;
+	width: 50%;
+	object-fit: cover;
+	animation: popUp 1s ease-in-out forwards;
+}
 
-  /* Container styles within the main section */
-  .section1 .container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .section1 .profile-image {
-    display: flex;
-    margin-bottom: 2em;
-    width: 50%;
-    object-fit: cover;
-    animation: popUp 1s ease-in-out forwards;
-  }
-  
-  /* Styles for the introductory content */
-  .section1 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    padding: 5em;
-    padding-bottom: 1vh;
-    margin-bottom: 3vh;
-    border-radius: 25px;
-    background-color: #ffffff26; /* Translucent version of background color */
-    backdrop-filter: blur(1000px);
-    animation: slideInLeft 1.2s ease-in-out forwards;
-  }
-  
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-99%);
-      opacity: 0;
-    }
-    90% {
-      transform: translateX(5%);
-      opacity: .5;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Heading 1 styles */
-  .section1 .intro h1 {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    font-size: 3.5em;
-    color: #ffffff; /* White for better contrast */
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-      0 8px 16px rgba(0, 0, 0, 0.1),
-      0 16px 24px rgba(0, 0, 0, 0.1),
-      0 32px 48px rgba(0, 0, 0, 0.1);
-    font-weight: 300; /* More modern, lighter weight */
-  }
-  
-  /* Heading 2 styles */
-  .section1 .intro h2 {
-    color: #f5f5f5; /* Lighter color for improved readability */
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    position: relative;
-    font-weight: 200;
-    text-align: center; /* Centered for mobile responsiveness */
-  }
-  
-  .section1 .intro h2::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, #f54ea2, #ffd54f); /* Neon accent gradient */
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-  
-  .section1 .intro h2:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  /* Paragraph styles */
-  .section1 .intro p {
-    color: #f7f7f7;
-    font-weight: 150; /* Lighter weight for readability */
-    font-size: 1em;
-    line-height: 1.6;
-    margin-top: 10px; /* Adjusted spacing */
-    margin-bottom: 10px;
-    opacity: 0.8;
-    animation: fadeIn 0.5s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.9;
-    }
-  }
-  
-  /* Styles for the 'me' section */
-  .me {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin-top: 1em;
-    padding-bottom: 2vh;
-    }
-    
-    .section1 .logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3rem;
-    width: 100%;
-    list-style: none;
-    }
-    
-    /* Styles for the connect section */
-    .section1 .connect {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: auto;
-    }
-    
-    /* Logo image styles */
-    .section1 .connect .logo img {
-    height: 40%;
-    width: 80%;
-    max-height: 3em;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
-    0 8px 16px rgba(0, 0, 0, 0.1),
-    0 16px 24px rgba(0, 0, 0, 0.1),
-    0 32px 48px rgba(0, 0, 0, 0.1);
-    animation: popUp 1s ease-in-out forwards;
-    
-    /* Hover effects with subtle animation and color change */
-    &:hover {
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 12px #ffffffef,
-    0 0 8px #117acf,
-    0 0 4px #f5f5f5;
-    cursor: pointer;
-  
-    transform: scale(1.05) rotate(-1deg);
-    }
-    }
-    
-    @keyframes popUp {
-    0% {
-    opacity: 0;
-    transform: scale(0);
-    transform: translateY(100%);
-    }
-    90% {
-    opacity: 0.5;
-    transform: scale(1);
-    transform: translateY(-25%);
-    }
-    100% {
-    opacity: 1;
-    transform: scale(1.5);
-    transform: translateY(0);
-    }
-    }
-    
-    /* Hover effect animation delay for individual logos */
-    .section1 .connect .logo:nth-child(1) img {
-    animation-delay: 0.40s;
-    }
-    .section1 .connect .logo:nth-child(2) img {
-    animation-delay: 0.45s;
-    }
-    .section1 .connect .logo:nth-child(3) img {
-    animation-delay: 0.5s;
-    }
-    .section1 .connect .logo:nth-child(4) img {
-    animation-delay: 0.55s;
-    }
-    .section1 .connect .logo:nth-child(5) img {
-    animation-delay: 0.5s;
-    }
-    
-    /* Contact information styles */
-    .section1 .contact-info {
-    padding-top: 4em;
-    font-size: 12px;
-    padding: 1em;
-    display: none;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: rgb(15, 27, 57);
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    
-    /* Hover effect with slight color shift */
-    &:hover {
-    background-color: rgba(69, 136, 255, 0.8);
-    }
-    }
-  
-    @media only screen and (max-width: 1000px) {
+/* Styles for the introductory content */
+.section1 .intro {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	padding: 5em;
+	padding-bottom: 1vh;
+	margin-bottom: 3vh;
+	border-radius: 25px;
+	background-color: #ffffff26; /* Translucent version of background color */
+	backdrop-filter: blur(1000px);
+	animation: slideInLeft 1.2s ease-in-out forwards;
+}
 
-        /* Re-adjusting styles for the main section */
-        .section1 {
-          flex-direction: column;
-        }
-      
-        .section1 .profile-image {
-          display: none;
-        }
-      
-        /* Adjusting styles for the introductory content */
-        .section1 .intro {
-          align-items: center;
-          width: 90%;
-          text-align: left;
-          padding: 1em;
-          padding-top: 4em;
-          z-index: 1;
-          animation: slideInTop 1s ease-in-out forwards;
-          animation-fill-mode: both;
-        }
-      
-        /* Animation keyframes for smaller screens */
-        @keyframes slideInTop {
-          0% {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
-          100% {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-      
-        /* Adjusting styles for the 'me' section */
-        .section1 .me {
-          width: 100%;
-        }
-      
-        .section1 .logos {
-          width: 80%;
-          padding: 0;
-          margin: 0;
-          gap: 1em;
-          justify-content: space-between;
-          align-items: center;
-        }
-      
-        /* Adjusting styles for the logo images in the connect section */
-        .section1 .connect .logo img {
-          display: flex;
-          margin: 0 auto;
-          max-height: 3rem;
-          border-radius: 80%;
-          width: 80%;
-          max-width: 100%;
-          height: auto;
-          transition: transform 0.36s ease-in-out, box-shadow 0.36s ease-in-out, opacity 0.36s ease-in-out, background-color 0.36s ease-in;
-        }
-      
-        /* Adjusting styles for the connect section */
-        .section1 .connect {
-          display: flex;
-          height: 100%;
-          align-items:flex-start;
-        
-          margin: 0;
-          gap: 2vh;
-          padding: 1em;
-        }
-      
-        /* Adjusting styles for Heading 1 in mobile view */
-        .section1 .intro h1 {
-          margin: 0;
-          padding: 0;
-          font-size: 2em;
-          font-weight: 300;
-        }
-      
-        .section1 .intro h2 {
-          margin: 0;
-          padding: 0;
-          text-align: center;
-          font-weight: 200;
-        }
-      
-        /* Adjusting styles for paragraphs in mobile view */
-        .section1 .intro p {
-          font-weight: 150;
-          font-size: 1em;
-          margin: 10px 0;
-          padding: 0;
-        }
-      
-      }
-      
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-99%);
+		opacity: 0;
+	}
+	90% {
+		transform: translateX(5%);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Heading 1 styles */
+.section1 .intro h1 {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	font-size: 3.5em;
+	color: #ffffff; /* White for better contrast */
+	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
+		0 16px 24px rgba(0, 0, 0, 0.1), 0 32px 48px rgba(0, 0, 0, 0.1);
+	font-weight: 300; /* More modern, lighter weight */
+}
+
+/* Heading 2 styles */
+.section1 .intro h2 {
+	color: #f5f5f5; /* Lighter color for improved readability */
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	position: relative;
+	font-weight: 200;
+	text-align: center; /* Centered for mobile responsiveness */
+}
+
+.section1 .intro h2::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(
+		to right,
+		#f54ea2,
+		#ffd54f
+	); /* Neon accent gradient */
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s ease;
+}
+
+.section1 .intro h2:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/* Paragraph styles */
+.section1 .intro p {
+	color: #f7f7f7;
+	font-weight: 150; /* Lighter weight for readability */
+	font-size: 1em;
+	line-height: 1.6;
+	margin-top: 10px; /* Adjusted spacing */
+	margin-bottom: 10px;
+	opacity: 0.8;
+	animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.9;
+	}
+}
+
+/* Styles for the 'me' section */
+.me {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	margin-top: 1em;
+	padding-bottom: 2vh;
+}
+
+.section1 .logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3rem;
+	width: 100%;
+	list-style: none;
+}
+
+/* Styles for the connect section */
+.section1 .connect {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: auto;
+}
+
+/* Logo image styles */
+.section1 .connect .logo img {
+	height: 40%;
+	width: 80%;
+	max-height: 3em;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
+		0 16px 24px rgba(0, 0, 0, 0.1), 0 32px 48px rgba(0, 0, 0, 0.1);
+	animation: popUp 1s ease-in-out forwards;
+
+	/* Hover effects with subtle animation and color change */
+	&:hover {
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0 0 12px #ffffffef, 0 0 8px #117acf, 0 0 4px #f5f5f5;
+		cursor: pointer;
+
+		transform: scale(1.05) rotate(-1deg);
+	}
+}
+
+@keyframes popUp {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+		transform: translateY(100%);
+	}
+	90% {
+		opacity: 0.5;
+		transform: scale(1);
+		transform: translateY(-25%);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1.5);
+		transform: translateY(0);
+	}
+}
+
+/* Hover effect animation delay for individual logos */
+.section1 .connect .logo:nth-child(1) img {
+	animation-delay: 0.4s;
+}
+.section1 .connect .logo:nth-child(2) img {
+	animation-delay: 0.45s;
+}
+.section1 .connect .logo:nth-child(3) img {
+	animation-delay: 0.5s;
+}
+.section1 .connect .logo:nth-child(4) img {
+	animation-delay: 0.55s;
+}
+.section1 .connect .logo:nth-child(5) img {
+	animation-delay: 0.5s;
+}
+
+/* Contact information styles */
+.section1 .contact-info {
+	padding-top: 4em;
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: rgb(15, 27, 57);
+	border-radius: 30px;
+	transition: all 0.3s ease;
+
+	/* Hover effect with slight color shift */
+	&:hover {
+		background-color: rgba(69, 136, 255, 0.8);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	/* Re-adjusting styles for the main section */
+	.section1 {
+		flex-direction: column;
+	}
+
+	.section1 .profile-image {
+		display: none;
+	}
+
+	/* Adjusting styles for the introductory content */
+	.section1 .intro {
+		align-items: center;
+		width: 90%;
+		text-align: left;
+		padding: 1em;
+		padding-top: 4em;
+		z-index: 1;
+		animation: slideInTop 1s ease-in-out forwards;
+		animation-fill-mode: both;
+	}
+
+	/* Animation keyframes for smaller screens */
+	@keyframes slideInTop {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	/* Adjusting styles for the 'me' section */
+	.section1 .me {
+		width: 100%;
+	}
+
+	.section1 .logos {
+		width: 80%;
+		padding: 0;
+		margin: 0;
+		gap: 1em;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* Adjusting styles for the logo images in the connect section */
+	.section1 .connect .logo img {
+		display: flex;
+		margin: 0 auto;
+		max-height: 3rem;
+		border-radius: 80%;
+		width: 80%;
+		max-width: 100%;
+		height: auto;
+		transition: transform 0.36s ease-in-out, box-shadow 0.36s ease-in-out,
+			opacity 0.36s ease-in-out, background-color 0.36s ease-in;
+	}
+
+	/* Adjusting styles for the connect section */
+	.section1 .connect {
+		display: flex;
+		height: 100%;
+		align-items: flex-start;
+
+		margin: 0;
+		gap: 2vh;
+		padding: 1em;
+	}
+
+	/* Adjusting styles for Heading 1 in mobile view */
+	.section1 .intro h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	.section1 .intro h2 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-weight: 200;
+	}
+
+	/* Adjusting styles for paragraphs in mobile view */
+	.section1 .intro p {
+		font-weight: 150;
+		font-size: 1em;
+		margin: 10px 0;
+		padding: 0;
+	}
+}
