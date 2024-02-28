@@ -48,6 +48,19 @@ function populateEducationTimeline() {
         })
         .catch(error => console.error('Error fetching JSON data:', error));
 }
-
+// Sliding this here for skills
+function toggleActive(element) {
+	element.classList.toggle("active");
+	if (element.classList.contains("active")) {
+		var computedStyle = window.getComputedStyle(element);
+		var backgroundColor = computedStyle.getPropertyValue("background-color");
+		var color = computedStyle.getPropertyValue("color");
+		element.style.backgroundColor = backgroundColor;
+		element.style.color = color;
+	} else {
+		element.style.backgroundColor = "";
+		element.style.color = "";
+	}
+}
 // Call the function when the DOM is ready
 document.addEventListener('DOMContentLoaded', populateEducationTimeline);

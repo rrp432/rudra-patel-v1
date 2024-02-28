@@ -105,4 +105,8 @@
         transition: background-color 0.3s, color 0.3s;
         touch-action: manipulation; /* Added for touch interactions */
     }
+    .active {
+    background-color: #ffffff; /* Change background color on click */
+    color: #000000; /* Change text color on click */
+}
 }

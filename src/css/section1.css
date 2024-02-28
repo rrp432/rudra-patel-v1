@@ -4,7 +4,7 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(135deg, #00c8ff, #00231f); /* Modern blue/green gradient */
+  background: linear-gradient(135deg, #1d9b9075, #06324f); /* Modern blue/green gradient */
 }
 
 
@@ -32,7 +32,7 @@
     padding-bottom: 1vh;
     margin-bottom: 3vh;
     border-radius: 25px;
-    background-color: #2454b432; /* Translucent version of background color */
+    background-color: #ffffff26; /* Translucent version of background color */
     backdrop-filter: blur(1000px);
     animation: slideInLeft 1.2s ease-in-out forwards;
   }
@@ -265,11 +265,12 @@
         }
       
         .section1 .logos {
-          width: 90%;
+          width: 80%;
           padding: 0;
           margin: 0;
           gap: 1em;
           justify-content: space-between;
+          align-items: center;
         }
       
         /* Adjusting styles for the logo images in the connect section */
@@ -287,10 +288,11 @@
         /* Adjusting styles for the connect section */
         .section1 .connect {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
+          height: 100%;
+          align-items:flex-start;
+        
           margin: 0;
+          gap: 2vh;
           padding: 1em;
         }
       
