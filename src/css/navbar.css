@@ -53,6 +53,7 @@
     0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 24px rgba(0, 0, 0, 0.1),
     0 32px 48px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgb(10, 250, 174) ;
 }
 .navbar .profile-image{
     display: none;
@@ -100,6 +101,7 @@
         color: rgb(10, 250, 174);
         border-radius: 10px;
         border: solid 2px rgba(3, 233, 199, 0.414);
+       
       
     }
 }
