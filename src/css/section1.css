@@ -19,7 +19,7 @@
     padding-bottom: 1vh;
     margin-bottom: 3vh;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker background */
+    background-color: rgba(20, 17, 46, 0.5); /* Darker background */
     backdrop-filter: blur(10px);
     animation: slideInLeft 1.2s ease-in-out forwards;
 }
@@ -29,7 +29,7 @@
     margin-bottom: 2vh;
     font-size: 3.5em;
     color: transparent; /* Transparent text */
-    font-weight: 00; /* More modern, lighter weight */
+    font-weight: 400; /* More modern, lighter weight */
     background: linear-gradient(to right, #ffffff, #0eedcb);
     -webkit-background-clip: text; /* Apply gradient only to text */
     -webkit-text-fill-color: transparent; /* Make text transparent */
@@ -150,6 +150,7 @@
 
 /* Media Query for smaller screens */
 @media only screen and (max-width: 1000px) {
+    /* Section 1 */
     .section1 {
         flex-direction: column;
     }
@@ -179,11 +180,11 @@
         }
     }
 
-    .section1 .me {
+    .me {
         width: 100%;
     }
 
-    .section1 .logos {
+    .logos {
         width: 80%;
         padding: 0;
         margin: 0;
@@ -192,9 +193,9 @@
         align-items: center;
     }
 
-    .section1 .connect {
+    .connect {
         display: flex;
-        flex-direction: column; /* Display items in a column */
+        flex-direction: column;
         height: 100%;
         align-items: flex-start;
         margin: 0;
@@ -202,6 +203,7 @@
         padding: 1em;
     }
 
+    /* Introduction Heading */
     .section1 .intro h1 {
         margin: 0;
         padding: 0;
@@ -209,6 +211,7 @@
         font-weight: 300;
     }
 
+    /* Introduction Subheading */
     .section1 .intro h2 {
         margin: 0;
         padding: 0;
@@ -216,9 +219,31 @@
         font-weight: 200;
     }
 
+    /* Introduction Paragraph */
     .section1 .intro p {
         margin: 10px 0;
         padding: 0;
     }
-}
 
+    /* Contact Information Button */
+    .section1 .contact-info {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 12px;
+        padding: 1em;
+        cursor: pointer;
+        font-weight: 500;
+        color: #000000;
+        background-color: #0eedcb;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover Effect for Contact Information Button */
+    .section1 .contact-info:hover {
+        background-color: #000000;
+        color: #0eedcb;
+    }
+}
