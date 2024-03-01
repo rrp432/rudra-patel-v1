@@ -1,6 +1,6 @@
 /* Base styles for both larger screens and phones */
 .section4 {
-  background: linear-gradient(135deg, #04656e, #07335c);
+    background: linear-gradient(-90deg, #04656e, #07335c);
 }
 
 .section4 h1 {

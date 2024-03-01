@@ -17,13 +17,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 5vh;
     margin: 2px;
     padding-right: 2em;
     list-style-type: none;
     overflow: hidden;
     text-align: center;
-    padding-bottom: 2px;
 }
 
 .navbar a {
@@ -32,8 +30,10 @@
     font-weight: 100;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    margin: 2px;
+    padding: 10px 12px; /* Adjust padding for smaller screens */
     font-size: larger;
+    border: solid 2px transparent;
 }
 
 .navbar a:hover {
@@ -41,67 +41,67 @@
     background-color: rgba(255, 255, 255, 0);
     color: rgb(23, 234, 167);
     transition: background-color 0.3s ease, color 0.3s ease, border-radius .2s ease;
-    
 }
-
 
 .navbar a:focus,
 .navbar a:active {
-    color: rgb(10, 250, 174);
+    color: black;
+    background-color: rgb(23, 234, 167);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
     0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 24px rgba(0, 0, 0, 0.1),
     0 32px 48px rgba(0, 0, 0, 0.1);
-    border: solid 2px rgb(10, 250, 174) ;
-}
-.navbar .profile-image{
-    display: none;
+    border: solid 2px rgb(10, 250, 174);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.navbar .profile-image {
+    display: none;
+}
 
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
     .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         position: fixed;
-        top:92%;
+        top: 92%;
         border-radius: 2vh;
         width: 100%;
         max-width: 100%;
         height: 60px; /* Adjust height as needed */
         background-color: black; /* Adjust background color */
         z-index: 1000;
-        
+
     }
 
     .navbar .menu-items {
         display: flex;
-        justify-content: space-around; /* Center-align and distribute menu items evenly */
+        justify-content: center;
         align-items: center;
         height: 100%;
         margin: 0;
-        padding: 0;
         list-style-type: none;
-       
     }
 
     .navbar a {
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 14px; /* Adjust font size as needed */
-        padding: 10px;
         transition: color 0.3s ease;
         border: solid 2px black;
         border-radius: 20px;
     }
 
-   
     .navbar a.active {
         font-weight: bold; /* Style for active menu item if needed */
-        color: rgb(10, 250, 174);
+        color: black;
+        background-color: rgb(23, 234, 167);
         border-radius: 10px;
         border: solid 2px rgba(3, 233, 199, 0.414);
-       
-      
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 }
