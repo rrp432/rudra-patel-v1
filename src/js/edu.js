@@ -70,3 +70,20 @@ function toggleActive(element) {
 
 // Call the function when the DOM is ready
 document.addEventListener("DOMContentLoaded", populateEducationTimeline);
+
+
+const typedText = document.querySelector(".typing-demo");
+const text = "Hello there! I'm Rudra Patel";
+let index = 0;
+
+function type() {
+	if (index < text.length) {
+		typedText.textContent += text.charAt(index);
+		index++;
+		setTimeout(type, 100); // Adjust typing speed (milliseconds)
+	}
+}
+
+
+
+type();

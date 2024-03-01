@@ -68,4 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
           document.querySelector(".loader").style.display = "none";
       }, 500);
   }, 1000); // Adjust the delay as needed
+
+  
 });
