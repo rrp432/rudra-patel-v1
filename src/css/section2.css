@@ -201,11 +201,11 @@
 	}
 
 	.section2 .timeline {
-		margin-left: 0;
+		margin-left: 10vh;
 		margin-right: 0;
 	}
 
 	.course-details {
-		max-width: 80%;
+		max-width: 60%;
 	}
 }

@@ -19,7 +19,7 @@
     padding-bottom: 1vh;
     margin-bottom: 3vh;
     border-radius: 25px;
-    background-color: rgba(20, 17, 46, 0.5); /* Darker background */
+    background-color: rgb(0, 0, 0); /* Darker background */
     backdrop-filter: blur(10px);
     animation: slideInLeft 1.2s ease-in-out forwards;
 }
