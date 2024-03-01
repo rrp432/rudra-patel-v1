@@ -24,27 +24,28 @@
     animation: slideInLeft 1.2s ease-in-out forwards;
 }
 
+
+/* Animation for text gradient fill */
+@keyframes gradientFill {
+    0% {
+        background: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .section1 .intro h1 {
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: 3.5em;
     color: transparent; /* Transparent text */
     font-weight: 400; /* More modern, lighter weight */
-    background: linear-gradient(to right, #ffffff, #0eedcb);
-    -webkit-background-clip: text; /* Apply gradient only to text */
-    -webkit-text-fill-color: transparent; /* Make text transparent */
-    transition: background 1s ease; /* Transition for the gradient effect */
+    color: #0eedcb;
 }
 
-/* Animation for text gradient fill */
-@keyframes gradientFill {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
+
+
 
 
 .section1 .intro h1 {

@@ -1,17 +1,96 @@
 [
-    { "term": "Fall '20", "courses": ["Programming in C++", "Computer Logic & Discrete Math", "Precalculus"] },
-    { "term": "Spring '21", "courses": ["Programming in C++ II", "College Composition I", "Calculus I"] },
-    { "term": "Summer I '21", "courses": ["College Student Success", "Calculus II"] },
-    { "term": "Summer II '21", "courses": ["Colleg Comp II", "Speech"] },
-    { "term": "Fall '21", "courses": ["Database Design and Concepts", "Java Programming", "DS & Algorithms", "Principles Of Macroeconomics", "Engineering Physics I"] },
-    { "term": "Winter '22", "courses": ["Cultures & Values"] },
-    { "term": "Spring '22", "courses": ["Cybersecurity", "Calculus III", "Principles of Sociology", "Data Structures And Adavance", "Introduction to Operating Systems"] },
-    { "term": "Fall '22", "courses": ["OOPS", "Java Programming", "DS & Algorithms", "Computer Architecture", "R Programming"] },
-    { "term": "Spring '23", "courses": ["OOPS", "Java Programming", "MS Access", "Cybersecurity"] },
-    { "term": "Fall '23", "courses": ["OOPS", "Java Programming", "MS Access", "Cybersecurity"] },
-    { "term": "Spring '24", "courses": ["Software Methodology", "Systems Programming", "Principles of Programming Languages", "Numerical Analysis Computing"] },
-    { "term": "Fall '24", "courses": ["Design Analysis", "Elective I", "Physics II", "Elective I"] }
-    
-
-
+	{
+		"term": "Fall '20",
+		"courses": [
+			{ "name": "Programming in C++", "link": "https://catalog.oit.edu/preview_entity.php?catoid=10&ent_oid=370/1000#" },
+			{ "name": "Computer Logic & Discrete Math", "link": "https://catalog.oit.edu/preview_entity.php?catoid=10&ent_oid=370/1000#" },
+			{ "name": "Precalculus", "link": "#" }
+		]
+	},
+	{
+		"term": "Spring '21",
+		"courses": [
+			{ "name": "Programming in C++ II", "link": "https://catalog.oit.edu/preview_entity.php?catoid=10&ent_oid=370/1000#" },
+			{ "name": "College Composition I", "link": "https://catalog.oit.edu/preview_entity.php?catoid=10&ent_oid=370/1000#" },
+			{ "name": "Calculus I", "link": "#" }
+		]
+	},
+	{
+		"term": "Summer I '21",
+		"courses": [
+			{ "name": "College Student Success", "link": "#" },
+			{ "name": "Calculus II", "link": "#" }
+		]
+	},
+	{
+		"term": "Summer II '21",
+		"courses": [
+			{ "name": "College Composition II", "link": "#" },
+			{ "name": "Speech", "link": "#" }
+		]
+	},
+	{
+		"term": "Fall '21",
+		"courses": [
+			{ "name": "Database Design and Concepts", "link": "#" },
+			{ "name": "Java Programming", "link": "#" },
+			{ "name": "DS & Algorithms", "link": "#" },
+			{ "name": "Principles Of Macroeconomics", "link": "#" },
+			{ "name": "Engineering Physics I", "link": "#" }
+		]
+	},
+	{
+		"term": "Winter '22",
+		"courses": [{ "name": "Cultures & Values", "link": "#" }]
+	},
+	{
+		"term": "Spring '22",
+		"courses": [
+			{ "name": "Cybersecurity", "link": "#" },
+			{ "name": "Calculus III", "link": "#" },
+			{ "name": "Principles of Sociology", "link": "#" },
+			{ "name": "Data Structures And Advance", "link": "#" },
+			{ "name": "Introduction to Operating Systems", "link": "#" }
+		]
+	},
+	{
+		"term": "Fall '22",
+		"courses": [
+			{ "name": "Intro to CS", "link": "https://introcs.cs.rutgers.edu/" },
+			{ "name": "Physics II", "link": "https://general.physics.rutgers.edu/spring/204/" },
+			{ "name": "Data 101 with R programming", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-142-data-101-data-literacy" }
+		]
+	},
+	{
+		"term": "Spring '23",
+		"courses": [
+			{ "name": "Data Structures And Algorithm", "link": "https://ds.cs.rutgers.edu/" },
+			{ "name": "Discrete Structure I", "link": "https://discrete.cs.rutgers.edu/" },
+			{ "name": "Intro to Linear Algebra", "link": "https://www.math.rutgers.edu/academics/undergraduate/courses/948-01-640-250-introductory-linear-algebra" }]
+	},
+	{
+		"term": "Fall '23",
+		"courses": [
+			{ "name": "Computer Architecture", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture" },
+			{ "name": "Data Mgmt for Data Science", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-210-data-management-for-data-science" },
+			{ "name": "Intro to Disct Struct II", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-206-introduction-to-discrete-structures-ii" }]
+	},
+	{
+		"term": "Spring '24",
+		"courses": [
+			{ "name": "Software Methodology", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-213-software-methodology" },
+			{ "name": "Systems Programming", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming" },
+			{ "name": "Principles of Programming Languages", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-314-principles-of-programming-languages" },
+			{ "name": "Numerical Analysis Computing", "link": "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-323-numerical-analysis-and-computing" }
+		]
+	},
+	{
+		"term": "Fall '24",
+		"courses": [
+			{ "name": "Design Analysis", "link": "#" },
+			{ "name": "Elective I", "link": "#" },
+			{ "name": "Physics II", "link": "#" },
+			{ "name": "Elective I", "link": "#" }
+		]
+	}
 ]
