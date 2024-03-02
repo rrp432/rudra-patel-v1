@@ -171,6 +171,9 @@
 	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
 }
 
+.profile-image-large {
+    display: none;
+}
 
 @media only screen and (max-width: 1000px) {
     /* Section 1 */
