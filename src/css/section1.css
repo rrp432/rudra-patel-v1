@@ -1,4 +1,5 @@
 /* Section 1 */
+/* Section 1 */
 .section1 {
 	display: flex;
 	justify-content: space-around;
@@ -169,6 +170,7 @@
 	color: #0eedcb;
 	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
 }
+
 
 @media only screen and (max-width: 1000px) {
     /* Section 1 */
