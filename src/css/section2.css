@@ -134,12 +134,12 @@
 }
 /* Remove underline and adjust styles for course links */
 .course-details ul li a {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgba(0, 255, 255, 0.421); /* Adjust the opacity as needed */
-    color: rgb(0, 0, 0);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 30px;
+	background-color: rgba(0, 255, 255, 0.421); /* Adjust the opacity as needed */
+	color: rgb(0, 0, 0);
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .course-details ul li a:hover {
@@ -171,7 +171,7 @@
 
 @media (max-width: 650px) {
 	.timeline-line {
-		left: 0;
+		left:  -10px;
 		height: 90%;
 		border: 1px solid rgb(0, 255, 187);
 	}
@@ -191,21 +191,5 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-	}
-}
-
-/* Media query for phones */
-@media only screen and (max-width: 600px) {
-	.section2 h1 {
-		padding-left: 5vh;
-	}
-
-	.section2 .timeline {
-		margin-left: 10vh;
-		margin-right: 0;
-	}
-
-	.course-details {
-		max-width: 60%;
 	}
 }

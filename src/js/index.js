@@ -28,10 +28,7 @@
             event.preventDefault();
             const contactType = this.getAttribute('data-type');
   
-            // Set content based on the clicked link
-            if (contactType === 'phone') {
-                contactInfo.innerText = '+15415708491';
-            } else if (contactType === 'email') {
+            if (contactType === 'email') {
                 contactInfo.innerText = 'rrp3827@gmail.com';
             }
   
@@ -45,10 +42,8 @@
     contactInfo.addEventListener('click', function () {
         const contactType = this.getAttribute('data-type');
   
-        // Open the respective app based on the saved contact type
-        if (contactType === 'phone') {
-            window.location.href = 'tel:+15415708491';
-        } else if (contactType === 'email') {
+       
+        if (contactType === 'email') {
             window.location.href = 'mailto:rrp3827@gmail.com';
             mailtoLink.click();
         }

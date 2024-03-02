@@ -61,12 +61,14 @@
 	content: "";
 	display: block;
 	width: 100%;
-	height: 3px;
+	height: 2px;
 	background: linear-gradient(
 		to right,
-		#f54ea2,
-		#ffd54f
+		#42fcfc,
+		#ffffff
 	); /* Neon accent gradient */
+	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
+
 	position: absolute;
 	bottom: -5px;
 	left: 0;
