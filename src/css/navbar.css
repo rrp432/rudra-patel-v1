@@ -9,7 +9,7 @@
 }
 
 :root {
-	--background-nav: rgba(14, 116, 134, 0.753);
+	--background-nav: rgb(0, 116, 136);
 	--font-color: rgb(255, 255, 255);
 	--hover-col: rgb(27, 24, 24);
     --active-button-bg-col:rgb(71, 230, 161);
