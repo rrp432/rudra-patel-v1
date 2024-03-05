@@ -48,21 +48,20 @@
             mailtoLink.click();
         }
     });
+
+
+    const darkModeCheckbox = document.getElementById("darkModeCheckbox");
+		const root = document.documentElement;
+
+		darkModeCheckbox.addEventListener("change", function () {
+			if (this.checked) {
+				root.classList.add("dark-mode");
+			} else {
+				root.classList.remove("dark-mode");
+			}
+		});
   });
   
 
-  
-document.addEventListener("DOMContentLoaded", function() {
-  // Simulate content loading delay
-  setTimeout(function() {
-      // Hide loader with fade-out effect
-      document.body.classList.remove("loading");
-      document.querySelector(".loader").classList.add("fade-out");
-      // Optional: Remove loader from the DOM after fade-out animation
-      setTimeout(function() {
-          document.querySelector(".loader").style.display = "none";
-      }, 500);
-  }, 1000); // Adjust the delay as needed
 
-  
-});
+

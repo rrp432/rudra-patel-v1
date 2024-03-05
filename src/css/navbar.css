@@ -1,20 +1,33 @@
-/* Default styles for larger screens */
+/* Dark Mode Colors */
+:root.dark-mode {
+	--background-nav: black;
+	--font-color: rgb(255, 255, 255);
+	--hover-col: rgb(23, 234, 167);
+    --active-button-bg-col:rgb(23, 234, 167);
+	--border-col-button:rgba(3, 233, 199, 0.414);
+	--active-button-text-col: black;
+}
+
+:root {
+	--background-nav: rgba(14, 116, 134, 0.753);
+	--font-color: rgb(255, 255, 255);
+	--hover-col: rgb(27, 24, 24);
+    --active-button-bg-col:rgb(71, 230, 161);
+}
+
 .navbar {
 	top: 0;
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	background-color: rgb(0, 0, 0);
+	background-color: var(--background-nav);
 	right: 0;
-	backdrop-filter: blur(900px);
+	backdrop-filter: blur(100px);
 	transition: background-color 0.3s ease;
 	border-radius: 5px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
-                    0 8px 16px rgba(0, 0, 0, 0.2), 
-                    0 16px 24px rgba(0, 0, 0, 0.2), 
-                    0 32px 48px rgba(0, 0, 0, 0.2); /* Adjust box shadow for 3D effect */
-
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
+		0 16px 24px rgba(0, 0, 0, 0.2), 0 32px 48px rgba(0, 0, 0, 0.2); /* Adjust box shadow for 3D effect */
 }
 
 .navbar .menu-items {
@@ -31,7 +44,7 @@
 
 .navbar a {
 	display: block;
-	color: rgb(255, 255, 255);
+	color: var(--font-color);
 	font-weight: 100;
 	text-align: center;
 	text-decoration: none;
@@ -44,7 +57,7 @@
 .navbar a:hover {
 	transform: scale(1.05);
 	background-color: rgba(255, 255, 255, 0);
-	color: rgb(23, 234, 167);
+	color: var(--hover-col);
 	transition: background-color 0.3s ease, color 0.3s ease,
 		border-radius 0.2s ease;
 }
@@ -52,7 +65,7 @@
 .navbar a:focus,
 .navbar a:active {
 	color: black;
-	background-color: rgb(23, 234, 167);
+	background-color: var(--active-button-bg-col);
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
 		0 16px 24px rgba(0, 0, 0, 0.1), 0 32px 48px rgba(0, 0, 0, 0.1);
@@ -63,24 +76,67 @@
 .navbar .profile-image {
 	display: none;
 }
+.dark-mode-toggle {
+    position: absolute; /* Position it absolutely within its container */
+    top: calc(2%+7px); /* Position it below the navbar */
+    right: 20px; /* Adjust as needed */
+    z-index: 1001; /* Ensure it's above navbar */
+    cursor: pointer;
+}
+
+
+/* Styles for the toggle input */
+.dark-mode-toggle .slider-checkbox {
+    display: none; /* Hide the default checkbox */
+}
+
+.dark-mode-toggle .slider {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: grey; /* Background color for the toggle */
+    border-radius: 20px; /* Roundness of the toggle */
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the toggle button */
+.dark-mode-toggle .slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white; /* Color of the toggle button */
+    border-radius: 50%; /* Shape of the button */
+    transition: transform 0.3s ease;
+}
+
+/* Styling for the toggle when it's checked */
+.dark-mode-toggle .slider-checkbox:checked + .slider {
+    background-color: #3ba55c; /* Color when toggle is on */
+}
+
+.dark-mode-toggle .slider-checkbox:checked + .slider::before {
+    transform: translateX(20px); /* Move button to the right when checked */
+}
 
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
 	.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 91.2%;
-    border-radius: 2vh;
-    width: 100%;
-    max-width: 100%;
-    height: 60px; /* Adjust height as needed */
-    background-color: black; /* Adjust background color */
-    z-index: 1000;
-    
-
-}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 91.2%;
+		border-radius: 2vh;
+		width: 100%;
+		max-width: 100%;
+		height: 60px; /* Adjust height as needed */
+		background-color: var(--background-nav); /* Adjust background color */
+		z-index: 1000;
+	}
 
 	.navbar .menu-items {
 		display: flex;
@@ -92,20 +148,29 @@
 	}
 
 	.navbar a {
-		color: rgb(255, 255, 255);
+		color: var(--font-color);
 		text-decoration: none;
 		font-size: 14px; /* Adjust font size as needed */
 		transition: color 0.3s ease;
-		border: solid 2px black;
+		border: solid 2px transparent;
 		border-radius: 20px;
 	}
 
+	.dark-mode-toggle {
+    position: absolute; /* Position it absolutely within its container */
+    bottom: calc(2% + 1px); /* Position it below the navbar */
+    right: 20px; /* Adjust as needed */
+    z-index: 1001; /* Ensure it's above navbar */
+    cursor: pointer;
+}
+
+
 	.navbar a.active {
 		font-weight: bold; /* Style for active menu item if needed */
-		color: black;
-		background-color: rgb(23, 234, 167);
+		color: var(--active-button-text-col);
+		background-color:var(--active-button-bg-col);
 		border-radius: 10px;
-		border: solid 2px rgba(3, 233, 199, 0.414);
+		border: solid 2px var(--border-col-button);
 		transition: background-color 0.3s ease, color 0.3s ease;
 	}
 }

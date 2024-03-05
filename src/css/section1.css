@@ -1,30 +1,66 @@
-/* Section 1 */
-/* Section 1 */
+/* Dark Mode Colors */
+:root.dark-mode {
+	--section-background: linear-gradient(-45deg, #0a525a, #08292d);
+	--background-color: #0d0d0d;
+	--text-color: #ffffff;
+	--accent-color: #229e8c;
+	--accent-color2: #7b9cb6;
+	--accent-color3: #7e7e7e;
+	
+	--font-color-paragraph: white;
+	--line-color: white;
+	--box-shadow: rgba(0, 0, 0, 0.2);
+	--button-bg-color: #0eedcb;
+	--button-color:rgb(0, 0, 0);
+	--logo-color:invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
+	
+
+}
+
+/* Light Mode Colors */
+:root {
+	--section-background: linear-gradient(-45deg, #ff5f6d, #ffc371);
+	--background-color: #f9f9f9;
+	--text-color: #333333;
+	--accent-color:  rgb(74, 127, 133);
+	--accent-color2:  rgb(74, 127, 133);
+	--accent-color3:  rgb(74, 127, 133);
+	--hover-color:var(white);
+	--font-color-paragraph: #666666;
+	
+	--line-color: #136e7c;
+	--box-shadow: rgba(133, 74, 74, 0.1);
+	--button-color:white;
+	--button-bg-color: var(--accent-color);
+	--logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
+	--logo-color-hover:invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(101%);
+
+}
+
 .section1 {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
 	width: 100%;
-	background: linear-gradient(-45deg, #04656e, #07335c);
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Matching theme font */
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: var(--section-background);
 }
-.profile-image-large{
-	display: none;
-}
+
 .section1 .intro {
 	display: flex;
 	flex-wrap: wrap;
-    margin-top: 2.25vh;
+	margin-top: 2.25vh;
 	width: 60%;
 	padding: 5em;
 	padding-bottom: 1vh;
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
 	border-radius: 25px;
-	background-color: rgb(0, 0, 0); /* Darker background */
 	backdrop-filter: blur(10px);
 	animation: slideInLeft 1.2s ease-in-out forwards;
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 40px 60px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 20px 40px var(--box-shadow), 0 40px 60px var(--box-shadow);
+	color: var(--font-color-paragraph);
+	background-color: var(--background-color);
 }
 
 /* Animation for text gradient fill */
@@ -41,22 +77,17 @@
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	font-size: 3.5em;
-	color: transparent; /* Transparent text */
-	font-weight: 400; /* More modern, lighter weight */
-	color: #0eedcb;
-}
-
-.section1 .intro h1 {
-	animation: gradientFill 2s ease forwards; /* Animation for gradient fill */
+	font-weight: 400;
+	color: var(--accent-color);
+	animation: gradientFill 2s ease forwards;
 }
 
 .section1 .intro h2 {
-	color: #f5f5f5; /* Lighter color for improved readability */
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	position: relative;
 	font-weight: 200;
-	text-align: center; /* Centered for mobile responsiveness */
+	text-align: center;
 }
 
 /* Hover effect for h2 underline */
@@ -65,18 +96,14 @@
 	display: block;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(
-		to right,
-		#fbfbfb,
-		#ffffff
-	); /* Neon accent gradient */
-	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
-
+	background: var(--line-color);
+	box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
 	position: absolute;
 	bottom: -5px;
 	left: 0;
 	transform: scaleX(0);
 	transition: transform 0.3s ease;
+	color: inherit;
 }
 
 .section1 .intro h2:hover::after {
@@ -84,7 +111,6 @@
 }
 
 .section1 .intro p {
-	color: #f7f7f7;
 	font-size: 1em;
 	line-height: 1.6;
 	margin-top: 10px;
@@ -111,6 +137,7 @@
 	gap: 3rem;
 	width: 100%;
 	list-style: none;
+	
 }
 
 .section1 .connect .logo img {
@@ -119,35 +146,42 @@
 	max-height: 3em;
 	border-radius: 50%;
 	transition: all 0.3s ease;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	animation: popUp 1s ease-in-out forwards;
+	filter: var(--logo-color);
+	
 }
 
 .section1 .connect .logo img:hover {
 	border-radius: 10px;
-	background-color: #000000; /* Updated background color */
-	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
+	background-color: var(--hover-color);
+	box-shadow: 0 0 12px var(--accent-color), 0 0 8px , 0 0 4px var(--accent-color2);
 	cursor: pointer;
 	transform: scale(1.05) rotate(-1deg);
 }
+
 /* Define initial style for the span */
 .section1 span {
-    color: white; /* Initial color */
-    font-style: italic;
-    transition: color 1s ease; /* Transition for color change */
+	color: var(--text-color);
+	font-style: italic;
+	transition: color 1s ease;
 }
 
 /* Define keyframes for animation */
 @keyframes changeColor {
-    0% { color: white; } /* Start color */
-    100% { color: #06ffb8; } /* End color */
+	0% {
+		color: var(--text-color);
+	}
+	100% {
+		color: var(--accent-color);
+	}
 }
 
 /* Apply animation to span after 5 seconds */
 .section1 span {
-    animation: changeColor 1s ease forwards; /* Apply animation */
-    animation-delay: 2s; /* Delay animation start by 5 seconds */
+	animation: changeColor 1s ease forwards;
+	animation-delay: 2s;
 }
+
 /* Contact information styles */
 .section1 .contact-info {
 	width: fit-content;
@@ -158,165 +192,167 @@
 	padding: 1em;
 	cursor: pointer;
 	font-weight: 500;
-	color: #000000;
-	background-color: #0eedcb; /* Background color matching logo color */
-	border-radius: 30px;
-	transition: background-color 0.3s ease; /* Smooth transition for background color */
+	color: var(--button-color) !important;
+	background-color: var(--button-bg-color) ;
+	border-radius: 20px;
+	transition: background-color 0.3s ease;
 }
 
 /* Hover effect with slight color shift */
 .section1 .contact-info:hover {
-	background-color: #000000; /* Darker shade on hover */
-	color: #0eedcb;
-	box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
+	border-radius: 20px;
+	background-color:var(--button-color);
+	color: var(--button-bg-color) !important;
+	box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
 }
 
-.profile-image-large {
-    display: none;
+.profile-image-small {
+	display: none;
 }
 
+.section1 .profile-image {
+		filter: var(--logo-color);
+	}
+/* Media Query for Responsive Design */
 @media only screen and (max-width: 1000px) {
-    /* Section 1 */
-    .section1 {
-        flex-direction: column;
-    }
+	.section1 {
+		flex-direction: column;
+	}
 
-    .section1 .profile-image {
-        display: none;
-    }
+	.section1 .profile-image {
+		display: none;
+	}
 
-    .profile-image-large {
+	.profile-image-small {
 		display: flex;
         justify-content: center;
         align-items: center;
         width: 50%;
         padding: 0;
-
         margin: 0 auto; /* Center the image horizontally */
         max-width: 100px; /* Set a maximum width for the image */
-        animation: fadeInUp 2s ease-in-out; /* Add animation */
+        animation: fadeInUp 2s ease-in-out;
+		z-index: 1000000; /* Add animation */
+		filter:var(--logo-color);
     }
 
-    @keyframes fadeInUp {
-        0% {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 
-    .section1 .intro {
-        align-items: center;
-        width: 90%;
-        text-align: left;
-        padding: 2em 1em; /* Adjust padding-top and padding-bottom */
-        z-index: 1;
-        animation: slideInTop 1s ease-in-out forwards;
-    }
+	.section1 .intro {
+		align-items: center;
+		width: 90%;
+		text-align: left;
+		padding: 2em 1em;
+		z-index: 1;
+		animation: slideInTop 1s ease-in-out forwards;
+	}
 
-    @keyframes slideInTop {
-        0% {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
+	@keyframes slideInTop {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
 
-    .logos {
-        width: 80%;
-        padding: 0;
-        margin: 0;
-        gap: 1em;
-        justify-content: center;
-        align-items: center;
-    }
+	.logos {
+		width: 80%;
+		padding: 0;
+		margin: 0;
+		gap: 1em;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .connect {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        align-items: flex-start;
-        margin: 0;
-        gap: 2vh;
-        padding: 1em;
-    }
+	.connect {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+		margin: 0;
+		gap: 2vh;
+		padding: 1em;
+	}
 
-    /* Introduction Heading */
-    .section1 .intro h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-        font-weight: 300;
-        line-height: 1.2; /* Adjust line height for better readability */
-    }
+	/* Introduction Heading */
+	.section1 .intro h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 2em;
+		font-weight: 300;
+		line-height: 1.2;
+	}
 
- /* Apply animation to ::after pseudo-element */
-.section1 .intro h2::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #fbfbfb, #ffffff); /* Neon accent gradient */
-    box-shadow: 0 0 12px #0eedcb, 0 0 8px #7b9cb6, 0 0 4px #7e7e7e; /* Updated box shadow */
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease; /* Adjust transition properties as needed */
+	/* Apply animation to ::after pseudo-element */
+	.section1 .intro h2::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: var(--line-color);
+		box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		transform: scaleX(0);
+		transition: transform 0.3s ease;
+	}
+
+	/* Apply animation on load for ::after pseudo-element */
+	.section1 .intro h2::after {
+		animation: animateH2 0.5s ease-in-out forwards;
+		animation-delay: 1s;
+	}
+
+	/* Define keyframes for animation */
+	@keyframes animateH2 {
+		0% {
+			transform: scaleX(0);
+		}
+		100% {
+			transform: scaleX(1);
+		}
+	}
+
+	/* Introduction Paragraph */
+	.section1 .intro p {
+		margin: 10px 0;
+		padding: 0;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	/* Contact Information Button */
+	.section1 .contact-info {
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+		font-size: 12px;
+		padding: 1em;
+		cursor: pointer;
+		font-weight: 500;
+		color: var(--text-color);
+		background-color: var(--accent-color);
+		border-radius: 30px;
+		transition: background-color 0.3s ease;
+	}
+
+	/* Hover Effect for Contact Information Button */
+	.section1 .contact-info:hover {
+		background-color: var(--hover-color);
+		color: var(--accent-color);
+	}
 }
-
-/* Apply animation on load for ::after pseudo-element */
-.section1 .intro h2::after {
-    animation: animateH2 0.5s ease-in-out forwards;
-    animation-delay: 1s; /* Delay animation by 1 second */
-}
-
-/* Define keyframes for animation */
-@keyframes animateH2 {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-
-    /* Introduction Paragraph */
-    .section1 .intro p {
-        margin: 10px 0;
-        padding: 0;
-        font-size: 16px; /* Adjust font size */
-        line-height: 1.6; /* Adjust line height for better readability */
-    }
-
-    /* Contact Information Button */
-    .section1 .contact-info {
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        font-size: 12px;
-        padding: 1em;
-        cursor: pointer;
-        font-weight: 500;
-        color: #000000;
-        background-color: #0eedcb;
-        border-radius: 30px;
-        transition: background-color 0.3s ease;
-    }
-
-    /* Hover Effect for Contact Information Button */
-    .section1 .contact-info:hover {
-        background-color: #000000;
-        color: #0eedcb;
-    }
-}
-
-
