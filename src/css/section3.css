@@ -1,5 +1,44 @@
+/* Dark Mode Colors */
+:root.dark-mode {
+	--section-background: linear-gradient(-425deg, #0a525a, #08292d);
+	--background-color: #000000;
+	--text-color: #ffffff;
+	--accent-color: #229e8c;
+	--accent-color2: #7b9cb6;
+	--accent-color3: #7e7e7e;
+	
+	--font-color-paragraph: white;
+	--line-color: white;
+	--box-shadow: rgba(0, 0, 0, 0.2);
+	--button-bg-color: #0eedcb;
+	--button-color:rgb(0, 0, 0);
+	--logo-color:invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
+	
+
+}
+
+/* Light Mode Colors */
+:root {
+	--section-background: linear-gradient(-425deg, #ff5f6d, #ffc371);
+	--background-color: #f9f9f9;
+	--text-color: #333333;
+	--accent-color:  rgb(74, 127, 133);
+	--accent-color2:  rgb(74, 127, 133);
+	--accent-color3:  rgb(74, 127, 133);
+	--hover-color:var(white);
+	--font-color-paragraph: #666666;
+	
+	--line-color: #136e7c;
+	--box-shadow: rgba(133, 74, 74, 0.1);
+	--button-color:white;
+	--button-bg-color: var(--accent-color);
+	--logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
+	--logo-color-hover:invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(101%);
+
+}
+
 .section3 {
-    background: linear-gradient(-425deg, #04656e, #07335c);
+    background:var(--section-background);
     width: 100%;
     padding-bottom: 1em;
 }

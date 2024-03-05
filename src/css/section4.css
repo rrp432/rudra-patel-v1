@@ -1,12 +1,37 @@
-/* Base styles for both larger screens and phones */
+:root.dark-mode {
+    --section-background-4: linear-gradient(-45deg, #0a525a, #08292d);
+    --accent-color: #229e8c;
+    --card-bg: #0c0c0c52; /* Background color for project cards */
+    --card-font-col: #ffffff; /* Font color for project cards */
+    --project-heading: #0af7d9; /* Color for project heading */
+    --project-tags: #ffffff; /* Color for project tags */
+    --project-completion-col: #b0b0b0; /* Color for completion date */
+    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+}
+
+:root {
+    --section-background-4: linear-gradient(-135deg, #ff5f6d, #ffc371);
+    --accent-color: rgb(74, 127, 133);
+    --card-bg: var(--accent-color); /* Background color for project cards */
+    --card-font-col: #ffffff; /* Font color for project cards */
+    --project-heading: rgb(10, 250, 174); /* Color for project heading */
+    --project-tags: #ffffff; /* Color for project tags */
+    --project-completion-col: #b0b0b0; /* Color for completion date */
+    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+}
+
+
+
 .section4 {
-    background: linear-gradient(-90deg, #04656e, #07335c);
+    background: var(--section-background-4);
 }
 
 .section4 h1 {
   text-align: center;
-  color: rgb(255, 255, 255);
-  font-weight: 200;
+  color: var(--accent-color);
+  font-weight: 400;
   position: relative;
 }
 
@@ -25,8 +50,8 @@
   max-width: 350px;
   text-align: center;
   border-radius: 50px;
-  background-color: rgba(213, 214, 215, 0.148);
-  color: rgb(255, 255, 255);
+  background-color:var(--card-bg);
+  color: var(--card-font-col);
   font-weight: 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -46,7 +71,7 @@
 
 /* Change color on hover for project heading */
 .section4 .project:hover .project-heading {
-  color: rgb(10, 250, 174);
+  color:var(--project-heading);
 }
 
 .section4 .project-heading {
@@ -83,7 +108,7 @@
   border-radius: 20px;
   margin: 1vh;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--project-tags);
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -103,7 +128,7 @@
 .completion-date {
   margin-top: 10px;
   font-style: italic;
-  color: #b0b0b0;
+  color: var(--project-completion-col);
 }
 
 .section4 .project:active,
@@ -171,13 +196,13 @@
   /* Change color on touch for project heading */
   .section4 .project:active .project-heading,
   .section4 .project:focus .project-heading {
-    color: rgb(10, 250, 154);
+    color: var(--project-heading-onclick);
     
   }
 
   .section4 .project:active,
   .section4 .project:focus{
-    background-color: #07335c;
+    background-color: var(--active-card-bg);
     
   }
 }

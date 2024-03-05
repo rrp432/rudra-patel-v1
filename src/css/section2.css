@@ -1,6 +1,31 @@
 /* Base styles for both larger screens and phones */
+:root.dark-mode {
+    --section-background-2: linear-gradient(-90deg, #0a525a, #08292d);
+    --accent-color: #229e8c;
+    --card-bg-c: rgba(207, 207, 207, 0.132); /* Background color for project cards */
+    --card-font-col: #ffffff; /* Font color for project cards */
+    --project-heading: #0af7d9; /* Color for project heading */
+    --project-tags: #ffffff; /* Color for project tags */
+    --project-completion-col: #b0b0b0; /* Color for completion date */
+    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+}
+
+:root {
+    --section-background-2: linear-gradient(-90deg, #ff5f6d, #ffc371);
+    --accent-color: rgb(74, 127, 133);
+    --card-bg-c: rgba(207, 207, 207, 0.132); /* Background color for project cards */
+    --card-font-col: #ffffff; /* Font color for project cards */
+    --project-heading: rgb(10, 250, 174); /* Color for project heading */
+    --project-tags: #ffffff; /* Color for project tags */
+    --project-completion-col: #b0b0b0; /* Color for completion date */
+    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+}
+
+
 .section2 {
-	background: linear-gradient(-45deg, #04656e, #07335c);
+	background: var(--section-background-2);
 	color: white;
 }
 
@@ -25,6 +50,7 @@
 	animation: jump 1s infinite ease;
 	text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.503),
 		0 -8px 16px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
 
 @keyframes jump {
@@ -74,7 +100,7 @@
 }
 
 .timeline-node-container .course-details:hover {
-	background-color: rgba(8, 19, 63, 0.573);
+	background-color: var(--accent-color);
 	transition: background-color 0.2s ease-in-out;
 	box-shadow: 0 0 12px #ffffffcf;
 }
@@ -85,7 +111,7 @@
 	align-items: center;
 	width: 100%;
 	max-width: 250px;
-	background-color: rgba(207, 207, 207, 0.132);
+	background-color:var(--card-bg-c) ;
 	z-index: 2;
 	color: rgb(237, 226, 226);
 	border-radius: 30px;
