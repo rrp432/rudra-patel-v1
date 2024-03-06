@@ -65,9 +65,11 @@
 }
 
 /* Change color on hover for project heading */
-.section4 .project:hover .project-heading {
-  color:var(--project-heading);
+.section4 .project:hover .project-heading,
+.section4 .project:hover .fullDescriptionButton {
+  color: var(--project-heading);
 }
+
 
 .section4 .project-heading {
   padding-top: 1vh;
@@ -148,9 +150,54 @@
     cursor: pointer;
     transition: color 0.3s; /* Add transition effect */
 }
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    z-index: 1000;
+}
 
-.fullDescriptionButton:hover {
-    color: rgb(0, 255, 174); /* Change text color on hover */
+.left-panel {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-panel {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* Hide scrollbar for right panel */
+.right-panel::-webkit-scrollbar {
+    display: none;
 }
 
 
