@@ -60,8 +60,25 @@
 				root.classList.remove("dark-mode");
 			}
 		});
-  });
+
+    
+    // Get all project elements
+    const projects = document.querySelectorAll('.section4 .project');
+
+// Loop through each project element
+    projects.forEach(project => {
+        // Add click event listener
+        project.addEventListener('click', function() {
+            // Toggle the 'clicked' class on the project element
+            this.classList.toggle('clicked');
+        });
+
+
+
+
+      });
   
 
 
 
+  });

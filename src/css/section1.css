@@ -1,41 +1,37 @@
 /* Dark Mode Colors */
 :root.dark-mode {
-	--section-background: linear-gradient(-45deg, #0a525a, #08292d);
-	--background-color: #0d0d0d;
-	--text-color: #ffffff;
-	--accent-color: #229e8c;
-	--accent-color2: #7b9cb6;
-	--accent-color3: #7e7e7e;
-	
-	--font-color-paragraph: white;
-	--line-color: white;
-	--box-shadow: rgba(0, 0, 0, 0.2);
-	--button-bg-color: #0eedcb;
-	--button-color:rgb(0, 0, 0);
-	--logo-color:invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
-	
+    --section-background: linear-gradient(-45deg, #0a525a, #08292d);
+    --background-color-intro: #0e2c4d;
+    --text-color: #ffffff;
+    --accent-color-01-s1: #ffffff;
+    --accent-color-02-s1: #000000;
+    --accent-color-013-s1: #000000;
 
+    --font-color-paragraph: white;
+    --line-color: white;
+    --box-shadow-01: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+    --button-bg-color: #0eedcb;
+    --button-color: rgb(0, 0, 0);
+    --logo-color: invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
 }
 
-/* Light Mode Colors */
 :root {
-	--section-background: linear-gradient(-45deg, #ff5f6d, #ffc371);
-	--background-color: #f9f9f9;
-	--text-color: #333333;
-	--accent-color:  rgb(74, 127, 133);
-	--accent-color2:  rgb(74, 127, 133);
-	--accent-color3:  rgb(74, 127, 133);
-	--hover-color:var(white);
-	--font-color-paragraph: #666666;
-	
-	--line-color: #136e7c;
-	--box-shadow: rgba(133, 74, 74, 0.1);
-	--button-color:white;
-	--button-bg-color: var(--accent-color);
-	--logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
-	--logo-color-hover:invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(101%);
-
+    --section-background: linear-gradient(-45deg, #ff5f6d, #ffc371);
+    --background-color-intro: #f9f9f9;
+    --text-color: #333333;
+    --accent-color-01-s1: rgb(74, 127, 133);
+    --accent-color-02-s1: rgb(74, 127, 133);
+    --accent-color-03-s1: rgb(74, 127, 133);
+    
+    --font-color-paragraph: #666666;
+    --line-color: #136e7c;
+    --box-shadow-01: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
+    --button-color: white;
+    --button-bg-color: var(--accent-color-01-s1);
+    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
+    --logo-color-hover: invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(101%);
 }
+
 
 .section1 {
 	display: flex;
@@ -58,9 +54,9 @@
 	border-radius: 25px;
 	backdrop-filter: blur(10px);
 	animation: slideInLeft 1.2s ease-in-out forwards;
-	box-shadow: 0 20px 40px var(--box-shadow), 0 40px 60px var(--box-shadow);
+	box-shadow: var(--box-shadow-01);
 	color: var(--font-color-paragraph);
-	background-color: var(--background-color);
+	background-color: var(--background-color-intro);
 }
 
 /* Animation for text gradient fill */
@@ -78,7 +74,7 @@
 	margin-bottom: 2vh;
 	font-size: 3.5em;
 	font-weight: 400;
-	color: var(--accent-color);
+	color: var(--accent-color-01-s1);
 	animation: gradientFill 2s ease forwards;
 }
 
@@ -97,7 +93,7 @@
 	width: 100%;
 	height: 2px;
 	background: var(--line-color);
-	box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
+	box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
 	position: absolute;
 	bottom: -5px;
 	left: 0;
@@ -154,10 +150,11 @@
 .section1 .connect .logo img:hover {
 	border-radius: 10px;
 	background-color: var(--hover-color);
-	box-shadow: 0 0 12px var(--accent-color), 0 0 8px , 0 0 4px var(--accent-color2);
+	box-shadow: var(--box-shadow-01);
 	cursor: pointer;
 	transform: scale(1.05) rotate(-1deg);
 }
+
 
 /* Define initial style for the span */
 .section1 span {
@@ -172,7 +169,7 @@
 		color: var(--text-color);
 	}
 	100% {
-		color: var(--accent-color);
+		color: var(--accent-color-01-s1);
 	}
 }
 
@@ -203,7 +200,7 @@
 	border-radius: 20px;
 	background-color:var(--button-color);
 	color: var(--button-bg-color) !important;
-	box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
+	box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
 }
 
 .profile-image-small {
@@ -302,7 +299,7 @@
 		width: 100%;
 		height: 2px;
 		background: var(--line-color);
-		box-shadow: 0 0 12px var(--accent-color), 0 0 8px var(--accent-color2), 0 0 4px var(--accent-color3);
+		box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
 		position: absolute;
 		bottom: -5px;
 		left: 0;
@@ -345,7 +342,7 @@
 		cursor: pointer;
 		font-weight: 500;
 		color: var(--text-color);
-		background-color: var(--accent-color);
+		background-color: var(--accent-color-01-s1);
 		border-radius: 30px;
 		transition: background-color 0.3s ease;
 	}
@@ -353,6 +350,6 @@
 	/* Hover Effect for Contact Information Button */
 	.section1 .contact-info:hover {
 		background-color: var(--hover-color);
-		color: var(--accent-color);
+		color: var(--accent-color-01-s1);
 	}
 }

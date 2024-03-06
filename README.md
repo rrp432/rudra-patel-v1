@@ -26,13 +26,13 @@ Welcome to the repository of my personal portfolio! This project showcases my sk
 
 The home section provides a brief introduction about me, Rudra Patel. It includes information about my academic background, programming skills, and a welcoming message.
 
-### Education
-
-This section outlines my academic journey, detailing the courses I've taken over the years. It offers insights into the subjects I've studied, providing a comprehensive overview of my educational background.
-
 ### Skills
 
 In this section, you'll find a list of my programming languages, database systems, and web technologies skills. It provides a quick glance at the technologies I'm proficient in.
+
+### Education
+
+This section outlines my academic journey, detailing the courses I've taken over the years. It offers insights into the subjects I've studied, providing a comprehensive overview of my educational background.
 
 ### Projects
 
@@ -70,10 +70,6 @@ This section allows visitors to provide feedback. It includes a form with fields
 - `/img`: Stores images used in the portfolio.
 - `/js`: Includes scripts for scrolling and other functionalities.
 - `/css`: Holds stylesheets for different sections.
-
-## Feedback
-
-Feel free to use the feedback form in the portfolio to share your thoughts. Your input is valuable and will help me enhance my skills and presentation.
 
 ## License
 

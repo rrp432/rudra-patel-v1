@@ -26,40 +26,55 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addProject(project) {
-    // Create HTML elements for the project
-    const projectDiv = document.createElement('div');
-    projectDiv.className = 'project';
+	// Create HTML elements for the project
+	const projectDiv = document.createElement("div");
+	projectDiv.className = "project";
 
-    const heading = document.createElement('h2');
-    heading.className = 'project-heading';
-    heading.textContent = project.heading;
+	const heading = document.createElement("h2");
+	heading.className = "project-heading";
+	heading.textContent = project.heading;
 
-    const description = document.createElement('p');
-    description.className = 'project-meta';
-    description.textContent = project.description;
+	const description = document.createElement("p");
+	description.className = "project-meta";
+	const truncatedDescription =
+		project.description.substring(0, 150) +
+		(project.description.length > 150 ? "..." : "");
+	description.textContent = truncatedDescription;
 
-    const tags = document.createElement('div');
-    tags.className = 'tags';
-    project.tags.forEach(tag => {
-        const tagElement = document.createElement('a');
-        tagElement.textContent = tag;
-        tags.appendChild(tagElement);
-    });
+	const fullDescriptionButton = document.createElement("button");
+    fullDescriptionButton.className = "fullDescriptionButton";
+	fullDescriptionButton.textContent = "...";
+	fullDescriptionButton.addEventListener("click", () => {
+		description.textContent = project.description;
+		fullDescriptionButton.style.display = "none";
+	});
 
-    const completionDate = document.createElement('span');
-    completionDate.className = 'completion-date';
-    completionDate.textContent = 'Completion Date: ' + project.completion_date;
+	const tags = document.createElement("div");
+	tags.className = "tags";
+	project.tags.forEach((tag) => {
+		const tagElement = document.createElement("a");
+		tagElement.textContent = tag;
+		tags.appendChild(tagElement);
+	});
 
-    // Append elements to the project div
-    projectDiv.appendChild(heading);
-    projectDiv.appendChild(description);
-    projectDiv.appendChild(tags);
-    projectDiv.appendChild(completionDate);
+	const completionDate = document.createElement("span");
+	completionDate.className = "completion-date";
+	completionDate.textContent = "Completion Date: " + project.completion_date;
 
-    // Append the project div to the projects container
-    const projectsContainer = document.querySelector('.projects-type');
-    projectsContainer.appendChild(projectDiv);
+	// Append elements to the project div
+	projectDiv.appendChild(heading);
+	projectDiv.appendChild(description);
+	if (project.description.length > 150) {
+		projectDiv.appendChild(fullDescriptionButton);
+	}
+	projectDiv.appendChild(tags);
+	projectDiv.appendChild(completionDate);
+
+	// Append the project div to the projects container
+	const projectsContainer = document.querySelector(".projects-type");
+	projectsContainer.appendChild(projectDiv);
 }
+
 
 function handleProjectClick(project) {
     // Define the behavior when a project is clicked

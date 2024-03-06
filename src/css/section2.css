@@ -29,12 +29,7 @@
 	color: white;
 }
 
-.section2 h1 {
-	text-align: center;
-	color: rgb(255, 255, 255);
-	font-weight: 200;
-	position: relative;
-}
+
 
 .expand-button {
 	display: flex;
@@ -100,7 +95,8 @@
 }
 
 .timeline-node-container .course-details:hover {
-	background-color: var(--accent-color);
+	background-color: var(--active-card-bg);
+
 	transition: background-color 0.2s ease-in-out;
 	box-shadow: 0 0 12px #ffffffcf;
 }
@@ -156,6 +152,7 @@
 #CurrTerm:hover {
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	transform: translateY(1);
+	color: white;
 	box-shadow: 0 0 16px #96ff4bef, 0 0 12px #5eae25ef, 0 0 8px #ffffffef;
 }
 /* Remove underline and adjust styles for course links */
@@ -163,7 +160,7 @@
 	text-decoration: none;
 	padding: 10px;
 	border-radius: 30px;
-	background-color: rgba(0, 255, 255, 0.421); /* Adjust the opacity as needed */
+	background-color:rgba(255, 255, 255, 0.105) ;/* Adjust the opacity as needed */
 	color: rgb(0, 0, 0);
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

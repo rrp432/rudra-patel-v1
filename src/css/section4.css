@@ -12,7 +12,7 @@
 
 :root {
     --section-background-4: linear-gradient(-135deg, #ff5f6d, #ffc371);
-    --accent-color: rgb(74, 127, 133);
+    --accent-color: rgb(36, 104, 114);
     --card-bg: var(--accent-color); /* Background color for project cards */
     --card-font-col: #ffffff; /* Font color for project cards */
     --project-heading: rgb(10, 250, 174); /* Color for project heading */
@@ -28,12 +28,7 @@
     background: var(--section-background-4);
 }
 
-.section4 h1 {
-  text-align: center;
-  color: var(--accent-color);
-  font-weight: 400;
-  position: relative;
-}
+
 
 .section4 .projects-type {
   margin: 3vh;
@@ -145,6 +140,20 @@
   
 }
 
+.fullDescriptionButton{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 30px; /* Adjust the font size as needed */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: color 0.3s; /* Add transition effect */
+}
+
+.fullDescriptionButton:hover {
+    color: rgb(0, 255, 174); /* Change text color on hover */
+}
+
+
 /* Media query for phones */
 @media only screen and (max-width: 600px) {
   .section4 .project {
@@ -171,6 +180,7 @@
 
   .section4 .project .project-meta {
     margin: 1vh;
+    margin-bottom: 0;
   }
 
   .section4 .project .project-meta p {
