@@ -19,7 +19,7 @@
     --project-heading: rgb(10, 250, 174); /* Color for project heading */
     --project-tags: #ffffff; /* Color for project tags */
     --project-completion-col: #b0b0b0; /* Color for completion date */
-    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --active-card-bg: #0e2030; /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
 }
 
@@ -95,7 +95,6 @@
 }
 
 .timeline-node-container .course-details:hover {
-	background-color: var(--active-card-bg);
 
 	transition: background-color 0.2s ease-in-out;
 	box-shadow: 0 0 12px #ffffffcf;
@@ -161,13 +160,12 @@
 	padding: 10px;
 	border-radius: 30px;
 	background-color:rgba(255, 255, 255, 0.105) ;/* Adjust the opacity as needed */
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .course-details ul li a:hover {
-	background-color: rgba(0, 0, 0, 0.573);
-	color: rgb(0, 255, 213);
+	background-color: var(--accent-color);
 }
 
 .course-details ul li a:active {
