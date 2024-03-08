@@ -1,18 +1,8 @@
 /* Dark Mode Colors */
 :root.dark-mode {
 	--section-background: linear-gradient(-425deg, #0a525a, #08292d);
-	--background-color: #000000;
-	--text-color: #ffffff;
-	--accent-color: #229e8c;
-	--accent-color2: #7b9cb6;
-	--accent-color3: #7e7e7e;
+
 	
-	--font-color-paragraph: white;
-	--line-color: white;
-	--box-shadow: rgba(0, 0, 0, 0.2);
-	--button-bg-color: #0eedcb;
-	--button-color:rgb(0, 0, 0);
-	--logo-color:invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
 	
 
 }
@@ -20,20 +10,7 @@
 /* Light Mode Colors */
 :root {
 	--section-background: linear-gradient(-425deg, #ff5f6d, #ffc371);
-	--background-color: #f9f9f9;
-	--text-color: #333333;
-	--accent-color:  rgb(74, 127, 133);
-	--accent-color2:  rgb(74, 127, 133);
-	--accent-color3:  rgb(74, 127, 133);
-	--hover-color:var(white);
-	--font-color-paragraph: #666666;
 	
-	--line-color: #136e7c;
-	--box-shadow: rgba(133, 74, 74, 0.1);
-	--button-color:white;
-	--button-bg-color: var(--accent-color);
-	--logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
-	--logo-color-hover:invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(104%) contrast(101%);
 
 }
 
@@ -103,38 +80,40 @@
 
 /* ... Your existing styles ... */
 
+/* ... Existing CSS rules ... */
+
 @media only screen and (max-width: 768px) {
     .space {
         display: block;
+        margin-bottom: 1em; /* Add margin bottom for spacing */
     }
 
     .section3 h1 {
-        margin-bottom: 0;
+        margin-bottom: 0em; /* Adjust margin for heading */
     }
 
     .section3 .SkillsContainer {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content:flex-start;
+        align-items:flex-start;
         flex-direction: column;
-        margin-left: 2vh;
+        margin: 0 auto; /* Center align and remove left margin */
         width: 90%;
+        max-width: 90%; /* Limit width for smaller screens */
     }
 
     .section3 .SkillsContainer ul {
-        padding: 0;
+        padding: 8px;
         margin: 0;
     }
 
     .section3 .SkillsContainer ul li {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 0;
-        touch-action: manipulation; /* Added for touch interactions */
+        margin: -4px;
+        padding: 2px;
     }
 
     .section3 .SkillsContainer ul li a {
-        padding: 10px;
+        padding: 3px 5px; /* Increase padding for better touch interaction */
         margin: 3px;
         border-radius: 30px;
         background-color: #4e54c800;
@@ -143,9 +122,12 @@
         text-align: center;
         transition: background-color 0.3s, color 0.3s;
         touch-action: manipulation; /* Added for touch interactions */
+
     }
+
     .active {
-    background-color: #ffffff; /* Change background color on click */
-    color: #000000; /* Change text color on click */
+        background-color: #ffffff; /* Change background color on click */
+        color: #000000; /* Change text color on click */
+    }
 }
-}
+

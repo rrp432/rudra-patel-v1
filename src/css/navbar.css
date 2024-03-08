@@ -6,13 +6,18 @@
     --active-button-bg-col:rgb(23, 234, 167);
 	--border-col-button:rgba(3, 233, 199, 0.414);
 	--active-button-text-col: black;
+	    --accent-color: #229e8c;
+
+
 }
 
 :root {
-	--background-nav: rgb(0, 116, 136);
+	--background-nav: rgb(2, 45, 53);
 	--font-color: rgb(255, 255, 255);
-	--hover-col: rgb(27, 24, 24);
+	--hover-col: rgb(0, 255, 157);
     --active-button-bg-col:rgb(71, 230, 161);
+	--accent-color:  #136e7c;
+
 }
 
 .navbar {
@@ -115,7 +120,7 @@
 
 /* Styling for the toggle when it's checked */
 .dark-mode-toggle .slider-checkbox:checked + .slider {
-    background-color: #3ba55c; /* Color when toggle is on */
+    background-color: var(--accent-color); /* Color when toggle is on */
 }
 
 .dark-mode-toggle .slider-checkbox:checked + .slider::before {
