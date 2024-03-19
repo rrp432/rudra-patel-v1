@@ -9,17 +9,19 @@
     --project-completion-col: #b0b0b0; /* Color for completion date */
     --active-card-bg: #0e2030; /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
 }
 
 /* Dark mode */
 :root.dark-mode {
     --section-background-2: linear-gradient(-90deg, #0a525a, #08292d);
     --accent-color: rgb(34, 158, 140);
+    --logo-color: invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
 }
 
 /* Timeline Section */
 .timeline-section {
-    padding: 20px; /* Padding for all devices */
+    padding: 0; /* Remove default padding */
     background: var(--section-background-2);
     color: var(--background-color-intro);
 }
@@ -29,6 +31,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 95%; /* Occupy 95% of available space */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Timeline Item */
@@ -60,6 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 /* Course Link */
@@ -72,6 +77,7 @@
     font-size: 16px;
     margin: 5px;
     display: inline-block; /* Ensure links are clickable on mobile devices */
+    
 }
 
 .course-list a:hover {
@@ -79,14 +85,54 @@
     color: white;
 }
 
+/* Logo styles */
+.college-logo {
+   display: none;
+}
 
-/* Responsive Layout */
+.college-logo.hccc-logo {
+    filter: var(--logo-color);
+    height: 80px;
+}
+
 @media (max-width: 768px) {
     .timeline-item {
-        flex-basis: calc(80%); /* Adjusted width for smaller screens to display side by side */
+        flex-basis: 85%; /* Set item width to 85% for smaller screens */
+        margin: 5px auto; /* Center the item horizontally with small margin */
+        position: relative; /* Position the logo container relative to the timeline item */
+    }
+
+    .college-logo {
+        max-width: 120px; /* Adjust the width as needed */
+        height: 80px; /* Maintain aspect ratio */
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        border-radius: 8px; /* Make the logo circular */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Apply box shadow only at the bottom */
+        transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+        position: relative; /* Position the logo relative to its parent */
+        top: 5%; /* Adjust the top position */
+        left: 50%; /* Position the logo at the horizontal center of its parent */
+        transform: translateX(-50%); /* Center the logo horizontally using translation */
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+
+    /* Adjust box shadow on hover */
+    .college-logo:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
     }
 
     .university-name {
-        font-size: 18px; /* Reduced font size for smaller screens */
+        display: none; /* Hide the university name on smaller screens */
     }
 }
+
+
+
+
+
+
+
+
