@@ -1,89 +1,40 @@
-function addCourseDetails(term, courses) {
-	var container = document.createElement("div");
-	container.classList.add("timeline-node-container");
+fetch('/rudra-patel-v1/src/js/edu.json')
+	.then(response => response.json())
+	.then(data => populateEducationTimeline(data))
+	.catch(error => console.error('Error fetching JSON data:', error));
 
-	var details = document.createElement("div");
-	details.classList.add("course-details");
+function populateEducationTimeline(data) {
+	const timelineContainer = document.querySelector('.timeline-container');
 
-	var termElement = document.createElement("p");
-	termElement.textContent = term;
-	details.appendChild(termElement);
+	data.forEach(college => {
+		const universityContainer = document.createElement('div');
+		universityContainer.classList.add('timeline-item');
 
-	var coursesList = document.createElement("ul");
-	courses.forEach(function (course) {
-		var courseItem = document.createElement("li");
-		var courseLink = document.createElement("a");
-		courseLink.textContent = course.name;
-		courseLink.href = course.link;
-		courseLink.target = "_blank"; // Open link in new tab
-		courseItem.appendChild(courseLink);
-		coursesList.appendChild(courseItem);
+		const universityName = document.createElement('h2');
+		universityName.classList.add('university-name');
+		universityName.textContent = college.college;
+
+		// Add event listener to college name
+		universityName.addEventListener('click', () => {
+			// Toggle visibility of course list
+			const courseList = universityContainer.querySelector('.course-list');
+			courseList.classList.toggle('show-course-list');
+		});
+
+		universityContainer.appendChild(universityName);
+
+		const courseList = document.createElement('div');
+		courseList.classList.add('course-list');
+
+		college.courses.forEach(course => {
+			const courseLink = document.createElement('a');
+			courseLink.textContent = course.name;
+			courseLink.href = course.link || '#'; // Set default link if missing
+			courseList.appendChild(courseLink);
+		});
+
+		universityContainer.appendChild(courseList);
+
+		timelineContainer.appendChild(universityContainer);
 	});
-	details.appendChild(coursesList);
-
-	container.appendChild(details);
-	return container;
 }
-
-function createTimelineLine() {
-	var timelineLine = document.createElement("div");
-	timelineLine.classList.add("timeline-line");
-	return timelineLine;
-}
-
-function populateEducationTimeline() {
-	var timeline = document.getElementById("educationTimeline");
-
-	// Create and append timeline line
-	var timelineLine = createTimelineLine();
-	timeline.appendChild(timelineLine);
-
-	// Fetch JSON data
-	fetch("/rudra-patel-v1/src/js/edu.json")
-		.then((response) => response.json())
-		.then((data) => {
-			data.forEach(function (termAndCourses) {
-				var node = addCourseDetails(
-					termAndCourses.term,
-					termAndCourses.courses
-				);
-				timeline.appendChild(node);
-			});
-		})
-		.catch((error) => console.error("Error fetching JSON data:", error));
-}
-
-// Sliding this here for skills
-function toggleActive(element) {
-	element.classList.toggle("active");
-	if (element.classList.contains("active")) {
-		var computedStyle = window.getComputedStyle(element);
-		var backgroundColor = computedStyle.getPropertyValue("background-color");
-		var color = computedStyle.getPropertyValue("color");
-		element.style.backgroundColor = backgroundColor;
-		element.style.color = color;
-	} else {
-		element.style.backgroundColor = "";
-		element.style.color = "";
-	}
-}
-
-// Call the function when the DOM is ready
-document.addEventListener("DOMContentLoaded", populateEducationTimeline);
-
-
-const typedText = document.querySelector(".typing-demo");
-const text = "Hello there! I'm Rudra Patel";
-let index = 0;
-
-function type() {
-	if (index < text.length) {
-		typedText.textContent += text.charAt(index);
-		index++;
-		setTimeout(type, 100); // Adjust typing speed (milliseconds)
-	}
-}
-
-
-
-type();
