@@ -21,7 +21,7 @@
 .timeline-section {
     padding: 20px; /* Padding for all devices */
     background: var(--section-background-2);
-    color: white;
+    color: var(--background-color-intro);
 }
 
 /* Timeline Container */
@@ -83,7 +83,7 @@
 /* Responsive Layout */
 @media (max-width: 768px) {
     .timeline-item {
-        flex-basis: calc(50% - 20px); /* Adjusted width for smaller screens to display side by side */
+        flex-basis: calc(80%); /* Adjusted width for smaller screens to display side by side */
     }
 
     .university-name {
