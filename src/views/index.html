@@ -12,7 +12,17 @@
 
 <body>
 
-
+    <div class="loading-overlay">
+        <h1 class="loading-element">
+            <span class="loading let1">l</span>
+            <span class="loading let2">o</span>
+            <span class="loading let3">a</span>
+            <span class="loading let4">d</span>
+            <span class="loading let5">i</span>
+            <span class="loading let6">n</span>
+            <span class="loading let7">g</span>
+        </h1>
+    </div>
     <nav class="navbar">
         <ul class="menu-items">
             <li><a href="#home" onclick="scrollToSectionHeading('home'); return false;">Home</a></li>
@@ -116,16 +126,12 @@
             </div>
         </section>
 
-<section id="education" class="section2">
-    <h1>Education</h1>
-    <div class="section2">
-        <div class="timeline-container"></div>
-    </div>
-</section>
-
-
-
-
+        <section id="education" class="section2">
+            <h1>Education</h1>
+            <div class="section2">
+                <div class="timeline-container"></div>
+            </div>
+        </section>
 
         <section id="projects" class="section4">
             <h1>Projects</h1>
@@ -133,13 +139,7 @@
                 <!-- Projects will be dynamically added here by JavaScript -->
             </div>
         </section>
-
-
-
-
-
-
-    </div>
+    
 
     <footer>
         <div class="footer-content">
@@ -156,7 +156,12 @@
     <script src="/rudra-patel-v1/src/js/scroll.js"></script>
     <script src="/rudra-patel-v1/src/js/proj.js"></script>
     <script src="/rudra-patel-v1/src/js/edu.js"></script>
-
+    <script>
+        // Hide the loading overlay after 5 seconds
+        setTimeout(function () {
+            document.querySelector('.loading-overlay').style.display = 'none';
+        }, 1500);
+    </script>
 
 
 

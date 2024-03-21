@@ -18,6 +18,30 @@
   
   // Contact Information Display and Click Functionality
   document.addEventListener("DOMContentLoaded", function () {
+
+    /*Typing animation*/
+    const typingDemo = document.querySelector('.typing-demo');
+    const text = "Hello there I'm Rudra Patel";
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typingDemo.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 200); // Adjust typing speed (in milliseconds)
+      }
+    }
+
+    setTimeout(type, 1600); 
+    /*ends*/
+
+
+
+
+
+
+
+
     // Get elements related to showing contact information
     const showContactLinks = document.querySelectorAll('.show-contact');
     const contactInfo = document.getElementById('contact-info');

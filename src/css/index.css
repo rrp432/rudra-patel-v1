@@ -87,3 +87,89 @@ footer {
 
 
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-90deg, #ff5f6d, #ffc371); /* Match with your theme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.loading-overlay h1 {
+    position: relative;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+}
+
+.loading {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: drop 0.7s ease-in-out forwards;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+
+span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+span:nth-child(7) {
+    animation-delay: 0.6s;
+}
