@@ -21,7 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Check if the heading exists within the section
                 if (heading) {
                     const rect = heading.getBoundingClientRect();
-                    const scrollPosition = window.scrollY + (rect.top + rect.height / 2) - (window.innerHeight / 2);
+                    let scrollPosition;
+
+                    if (sectionId == 'home') {
+                        console.log('scroll to section1')
+                        // For section1, set offset to 0
+                        scrollPosition = 0;
+                    } else {
+                        // For other sections, set offset to 30px
+                        const offset = 30; // Adjust this value as needed
+                        scrollPosition = window.scrollY + rect.top - offset;
+                    }
 
                     window.scrollTo({
                         top: scrollPosition,
@@ -30,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
-        
     }
+
 });
 

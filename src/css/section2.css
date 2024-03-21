@@ -20,7 +20,7 @@
 }
 
 /* Timeline Section */
-.timeline-section {
+.section2 {
     padding: 0; /* Remove default padding */
     background: var(--section-background-2);
     color: var(--background-color-intro);

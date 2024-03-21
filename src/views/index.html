@@ -15,10 +15,10 @@
 
     <nav class="navbar">
         <ul class="menu-items">
-            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
-            <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
-            <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
-            <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#home" onclick="scrollToSectionHeading('home'); return false;">Home</a></li>
+            <li><a href="#education" onclick="scrollToSectionHeading('education'); return false;">Education</a></li>
+            <li><a href="#skills" onclick="scrollToSectionHeading('skills'); return false;">Skills</a></li>
+            <li><a href="#projects" onclick="scrollToSectionHeading('projects'); return false;">Projects</a></li>
         </ul>
         </div>
     </nav>
@@ -116,12 +116,11 @@
             </div>
         </section>
 
-<section id="educationTimeline" class="timeline-section">
+<section id="education" class="section2">
     <h1>Education</h1>
-    <div class="timeline-section">
-    <div class="timeline-container"></div>
-
-</div>
+    <div class="section2">
+        <div class="timeline-container"></div>
+    </div>
 </section>
 
 
@@ -148,7 +147,7 @@
             <ul class="footer-links">
                 <li><a>Privacy Policy</a></li>
                 <li><a>Terms of Service</a></li>
-                <li><a href="#home" onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="#home" onclick="scrollToSectionHeading('contact'); return false;">Contact</a></li>
             </ul>
         </div>
     </footer>
