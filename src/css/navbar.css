@@ -127,6 +127,31 @@
     transform: translateX(20px); /* Move button to the right when checked */
 }
 
+.tooltip {
+    visibility: hidden;
+    width: max-content;
+    background-color: rgb(0, 254, 182);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+	border: solid 2px;
+	border-radius: 30px;
+}
+
+.tooltip.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 /* Media query for smaller screens (max-width: 767px) */
 @media only screen and (max-width: 767px) {
 	.navbar {

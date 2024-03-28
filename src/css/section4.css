@@ -200,6 +200,39 @@
     display: none;
 }
 
+/* Search Input Styles */
+#searchInput {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+    outline: none; /* Remove default focus outline */
+    width: 200px; /* Adjust width as needed */
+    transition: background-color 0.3s, width 0.3s ease; /* Add transition effect */
+}
+
+/* Search Button Styles */
+#searchButton {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4caf4f, #00ffcb); /* Gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+    transition: background-color 0.3s; /* Add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Hover effect for the button */
+#searchButton:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
 
 /* Media query for phones */
 @media only screen and (max-width: 600px) {

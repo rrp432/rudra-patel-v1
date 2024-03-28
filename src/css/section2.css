@@ -9,7 +9,8 @@
     --project-completion-col: #b0b0b0; /* Color for completion date */
     --active-card-bg: #0e2030; /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
-    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
+
+    --logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(80%) contrast(85%);
 }
 
 /* Dark mode */
@@ -87,8 +88,21 @@
 
 /* Logo styles */
 .college-logo {
-   display: none;
-}
+        max-width: 120px; /* Adjust the width as needed */
+        height: 80px; /* Maintain aspect ratio */
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        border-radius: 8px; /* Make the logo circular */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Apply box shadow only at the bottom */
+        transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+        position: relative; /* Position the logo relative to its parent */
+        top: 5%; /* Adjust the top position */
+        left: 50%; /* Position the logo at the horizontal center of its parent */
+        transform: translateX(-50%); /* Center the logo horizontally using translation */
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
 
 .college-logo.hccc-logo {
     filter: var(--logo-color);

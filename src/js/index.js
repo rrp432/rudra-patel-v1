@@ -33,9 +33,7 @@
     }
 
     setTimeout(type, 1600); 
-    /*ends*/
-
-
+  
 
 
 
