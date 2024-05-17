@@ -1,7 +1,7 @@
 :root.dark-mode {
     --section-background-4: linear-gradient(-45deg, #0a525a, #08292d);
     --accent-color: #229e8c;
-    --card-bg: #0c0c0c52; /* Background color for project cards */
+    --card-bg: #000000; /* Background color for project cards */
     --card-font-col: #ffffff; /* Font color for project cards */
     --project-heading: #0af7d9; /* Color for project heading */
     --project-tags: #ffffff; /* Color for project tags */
@@ -36,7 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1vh;
+  gap: 5vh;
 }
 
 /* Project Card Styles */
@@ -55,19 +55,22 @@
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   padding: 2vh;
+  
 }
 
 /* Hover Effect on Project Card */
 .section4 .project:hover {
   transform: scale(1.02) translateY(-3px);
-  box-shadow: 0 4px 8px rgba(247, 245, 245, 0.334);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 /* Change color on hover for project heading */
 .section4 .project:hover .project-heading,
 .section4 .project:hover .fullDescriptionButton {
+  
   color: var(--project-heading);
+ 
 }
 
 
@@ -97,18 +100,24 @@
   bottom: 0;
   width: 100%;
   margin-bottom: 2vh;
+  
 }
 
 .section4 .project .tags a {
   font-size: small;
-  padding: vh;
+  padding: 5px;
   border-radius: 20px;
-  margin: 1vh;
+  
   text-decoration: none;
   color: var(--project-tags);
   transition: background-color 0.2s ease-in-out;
+  padding: 1vh;
 }
-
+.section4 .project .tags a:hover {
+  
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.375);
+    transition: box-shadow 0.2s ease-in-out;
+}
 .section4 .project .project-meta::-webkit-scrollbar {
   width: 0;
 }
@@ -142,97 +151,14 @@
   
 }
 
-.fullDescriptionButton{
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    font-size: 30px; /* Adjust the font size as needed */
-    border: none; /* Remove border */
-    cursor: pointer;
-    transition: color 0.3s; /* Add transition effect */
-}
-.modal-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
-    z-index: 1000;
-}
 
-.left-panel {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.left-panel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.right-panel {
-    width: 50%;
-    height: 100%;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    color: #fff;
-}
 
 .project-details {
     margin-top: 20px;
 }
 
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #ff0000;
-    cursor: pointer;
-}
 
-/* Hide scrollbar for right panel */
-.right-panel::-webkit-scrollbar {
-    display: none;
-}
 
-/* Search Input Styles */
-#searchInput {
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 25px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif; /* Use a modern font */
-    outline: none; /* Remove default focus outline */
-    width: 200px; /* Adjust width as needed */
-    transition: background-color 0.3s, width 0.3s ease; /* Add transition effect */
-}
-
-/* Search Button Styles */
-#searchButton {
-    padding: 10px 20px;
-    background: linear-gradient(to right, #4caf4f, #00ffcb); /* Gradient background */
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif; /* Use a modern font */
-    transition: background-color 0.3s; /* Add transition effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
-}
-
-/* Hover effect for the button */
-#searchButton:hover {
-    background-color: #45a049; /* Change background color on hover */
-}
 
 /* Media query for phones */
 @media only screen and (max-width: 600px) {
@@ -254,7 +180,7 @@
 
   .section4 .project .tags a {
     font-size: smaller;
-    padding: 0.5vh;
+    padding: 1vh;
     margin: 0.5vh;
   }
 

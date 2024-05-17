@@ -1,7 +1,7 @@
 /* Dark Mode Colors */
 :root.dark-mode {
     --section-background: linear-gradient(-45deg, #0a525a, #08292d);
-    --background-color-intro: #0c2642;
+    --background-color-intro: #141414;
     --text-color: #ffffff;
     --accent-color-01-s1: #ffffff;
     --accent-color-02-s1: #ffffff;

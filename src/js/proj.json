@@ -1,34 +1,34 @@
 [
     {
         "heading": "Library Kiosk System",
-        "description": "Developed a collaborative Library Kiosk application utilizing object-oriented principles. Designed classes like Book, Library, and Date to manage the library catalog. The Kiosk interface facilitates adding, removing, checking out/in books, and displaying the library's collection.",
+        "description": "Created a collaborative Library Kiosk application utilizing object-oriented principles. Key features include managing the library catalog through classes like Book, Library, and Date. The Kiosk interface supports adding, removing, checking out/in books, and displaying the library's collection.",
         "tags": [
             "Java",
-            "Object-Oriented Design (OOD)",
+            "Object-Oriented Design",
             "Console Application Development",
-            "Data Structures (Arrays)",
-            "Input/Output (Scanning)"
+            "Data Structures",
+            "Input/Output"
         ],
         "completion_date": "TBD"
     },
     {
         "heading": "Two-Player Chess Game",
-        "description": "Implemented a text-based Chess game for two players. The program renders the chessboard, prompts user input for moves, and enforces game rules. Key functionalities include legal moves for all pieces, castling, en passant, promotion, check detection/checkmate identification, and handling illegal moves, resignations, and draw offers.",
+        "description": "Developed a text-based Chess game for two players. Features include rendering the chessboard, legal move enforcement, castling, en passant, promotion, check/checkmate detection, and handling resignations and draw offers.",
         "tags": [
             "Java",
-            "Object-Oriented Design (OOD)",
+            "Object-Oriented Design",
             "Game Development",
             "Bitbucket Version Control",
-            "Command Line Interface (CLI)"
+            "Command Line Interface"
         ],
-        "completion_date": "Fall'24"
+        "completion_date": "Fall 2024"
     },
     {
         "heading": "Payroll Processing System",
-        "description": "Designed and built a Payroll Processing System to manage employee payments. Implemented classes like Employee, Fulltime, Parttime, Management, Profile, Company, PayrollProcessing, and RunProject2. The system processes console commands, handles exceptions, and offers functionalities for adding/removing employees, calculating salaries, and generating paystubs.",
+        "description": "Engineered a Payroll Processing System for managing employee payments. Implemented comprehensive functionalities like adding/removing employees, calculating salaries, and generating paystubs using classes such as Employee, Fulltime, Parttime, Management, and Company.",
         "tags": [
             "Java",
-            "Object-Oriented Design (OOD)",
+            "Object-Oriented Design",
             "Inheritance",
             "JUnit Testing",
             "Exception Handling",
@@ -38,47 +38,47 @@
     },
     {
         "heading": "Music Database Design & Querying",
-        "description": "Designed and implemented a relational database for a music streaming service (similar to Spotify or Amazon Music) using SQLite and SQL. The database schema minimizes data redundancy through foreign keys and normalization, featuring tables for artists, albums, songs, users, playlists, and ratings.",
+        "description": "Designed and implemented a relational database for a music streaming service using SQLite and SQL. The schema includes tables for artists, albums, songs, users, playlists, and ratings, ensuring minimal data redundancy and efficient querying.",
         "tags": [
             "Python",
-            "SQLite Database Management",
-            "SQL Database Design",
+            "SQLite",
+            "SQL",
             "Database Schema Design",
             "Query Optimization"
         ],
-        "completion_date": "Fall'23"
+        "completion_date": "Fall 2023"
     },
     {
         "heading": "Kindergarten Classroom Simulation",
-        "description": "Developed a comprehensive classroom simulation project using Singly Linked Lists, 2D arrays, and Circular Linked Lists. The simulation efficiently manages student entry, seating arrangements, and a musical chairs game. It implements fair student seating logic based on seating availability and height order, enhancing gameplay realism.",
+        "description": "Developed a classroom simulation using Singly Linked Lists, 2D arrays, and Circular Linked Lists. The simulation manages student entry, seating arrangements, and a musical chairs game, implementing fair seating logic based on availability and height order.",
         "tags": [
             "Java",
-            "Object-Oriented Programming (OOP)",
-            "Data Structures (Linked Lists, Arrays)",
+            "Object-Oriented Programming",
+            "Data Structures",
             "Algorithms"
         ],
-        "completion_date": "Spring'23"
+        "completion_date": "Spring 2023"
     },
     {
         "heading": "Huffman Coding for Text Compression",
-        "description": "Designed and implemented a highly efficient Huffman Coding algorithm in Java, achieving significant file size reduction (up to 60%). The implementation ensures data integrity throughout the compression process, showcasing expertise in algorithmic efficiency and accuracy. Graph traversal algorithms (DFS and BFS) were employed for efficient graph exploration and analysis.",
+        "description": "Implemented a Huffman Coding algorithm in Java for efficient text compression, achieving up to 60% file size reduction. The project showcases algorithmic efficiency and accuracy, utilizing graph traversal algorithms (DFS and BFS) for exploration and analysis.",
         "tags": [
             "Java",
-            "Object-Oriented Programming (OOP)",
-            "Algorithms (Huffman Coding, Graph Traversal)",
-            "Data Structures (Trees, Arrays)"
+            "Object-Oriented Programming",
+            "Algorithms",
+            "Data Structures"
         ],
-        "completion_date": "Spring'23"
+        "completion_date": "Spring 2023"
     },
     {
         "heading": "Graph Algorithm Exploration (Infinity War)",
-        "description": "This project delves into advanced graph algorithms and adjacency matrix implementation to tackle complex challenges. Designed and created Java classes for seamless input/output, utilizing advanced data structures like Array Lists and HashMaps for efficient data management.",
+        "description": "Explored advanced graph algorithms and implemented an adjacency matrix in Java. The project includes seamless input/output operations and utilizes data structures like ArrayLists and HashMaps for efficient data management.",
         "tags": [
             "Java",
-            "Object-Oriented Programming (OOP)",
-            "Algorithms (Graph Algorithms)",
-            "Data Structures (Arrays, HashMaps)"
+            "Object-Oriented Programming",
+            "Algorithms",
+            "Data Structures"
         ],
-        "completion_date": "Spring'23"
+        "completion_date": "Spring 2023"
     }
 ]

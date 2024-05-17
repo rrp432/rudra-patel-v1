@@ -12,8 +12,8 @@ body {
     flex-direction: column;
     overflow: auto;
     gap:2vh;
-    margin-left: 8vh;
-    margin-right: 8vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
     
 
 }

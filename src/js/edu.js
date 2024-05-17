@@ -2,17 +2,23 @@
 fetch('/rudra-patel-v1/src/js/edu.json')
 	.then(response => response.json())
 	.then(data => {
-		populateeducation(data);
+		populateEducation(data.colleges);
 		appendCollegeLogos();
 	})
 	.catch(error => console.error('Error fetching JSON data:', error));
 
-function populateeducation(data) {
+function populateEducation(colleges) {
 	const timelineContainer = document.querySelector('.timeline-container');
 
-	data.forEach(college => {
+	colleges.forEach((college, index) => {
 		const universityContainer = document.createElement('div');
 		universityContainer.classList.add('timeline-item');
+
+		// Add start and end dates
+		const dates = document.createElement('div');
+		dates.classList.add('dates');
+		dates.innerHTML = `<strong></strong> ${college.start} to <strong></strong> ${college.end}`;
+		universityContainer.appendChild(dates);
 
 		const courseList = document.createElement('div');
 		courseList.classList.add('course-list');
@@ -25,7 +31,6 @@ function populateeducation(data) {
 		});
 
 		universityContainer.appendChild(courseList);
-
 		timelineContainer.appendChild(universityContainer);
 	});
 }
@@ -57,13 +62,10 @@ function appendCollegeLogos() {
 	});
 }
 
-
-
 function createLogoElement(src, alt, ...classNames) {
 	const logo = document.createElement('img');
 	logo.src = src;
 	logo.alt = alt;
 	logo.classList.add(...classNames);
-
 	return logo;
 }
