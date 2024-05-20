@@ -17,7 +17,7 @@ function populateEducation(colleges) {
 		// Add start and end dates
 		const dates = document.createElement('div');
 		dates.classList.add('dates');
-		dates.innerHTML = `<strong></strong> ${college.start} to <strong></strong> ${college.end}`;
+		dates.innerHTML = `<strong></strong> ${college.start} - <strong></strong> ${college.end}`;
 		universityContainer.appendChild(dates);
 
 		const courseList = document.createElement('div');

@@ -2,8 +2,8 @@
 	"colleges": [
 		{
 			"college": "Oregon Tech",
-			"start": "Fall-2020",
-			"end": "Spring-2021",
+			"start": "Fall '20",
+			"end": "Spring '21",
 			"courses": [
 				{
 					"name": "Programming in C++",
@@ -21,8 +21,8 @@
 		},
 		{
 			"college": "Hudson County Community College",
-			"start": "Spring-21",
-			"end": "Spring-22",
+			"start": "Spring '21",
+			"end": "Spring '22",
 			"courses": [
 				{
 					"name": "Database Design and Concepts",
@@ -52,8 +52,8 @@
 		},
 		{
 			"college": "Rutgers University",
-			"start": "Fall-22",
-			"end": "Fall-24",
+			"start": "Fall '22",
+			"end": "Fall '24",
 			"courses": [
 				{
 					"name": "Intro to CS",

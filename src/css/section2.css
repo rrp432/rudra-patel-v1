@@ -9,7 +9,7 @@
     --project-completion-col: #b0b0b0; /* Color for completion date */
     --active-card-bg: #0e2030; /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
-    --logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(80%) contrast(85%);
+--logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(60%) contrast(95%);
 }
 
 /* Dark mode */
@@ -33,6 +33,7 @@
     justify-content: center;
     width: 95%; /* Occupy 95% of available space */
     margin: 0 auto; /* Center the container */
+    margin-bottom: 2em;
 }
 
 /* Timeline Item */
@@ -117,6 +118,10 @@
 .college-logo.hccc-logo {
     filter: var(--logo-color);
     height: 80px;
+}
+
+.college-logo:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
