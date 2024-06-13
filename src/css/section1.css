@@ -1,36 +1,37 @@
 /* Dark Mode Colors */
 :root.dark-mode {
-    --section-background: linear-gradient(-45deg, #0a525a, #08292d);
-    --background-color-intro: #141414;
-    --text-color: #ffffff;
-    --accent-color-01-s1: #ffffff;
-    --accent-color-02-s1: #ffffff;
-    --accent-color-03-s1: #ffffff;
+    --section-background: linear-gradient(-45deg, #023e58, #021d30);
+    --background-color-intro: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color-01-s1: #0eedcb;
+    --accent-color-02-s1: #0a84ff;
+    --accent-color-03-s1: #e040fb;
 
-    --font-color-paragraph: white;
-    --line-color: white;
-    --box-shadow-01: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+    --font-color-paragraph: #f0f0f0;
+    --line-color: #0eedcb;
+    --box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.6);
     --button-bg-color: #0eedcb;
-    --button-color: rgb(0, 0, 0);
-	--logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);}
-
-:root {
-    --section-background: linear-gradient(-45deg, #ff5f6d, #ffc371);
-    --background-color-intro: #f9f9f9;
-    --text-color: #333333;
-    --accent-color-01-s1: rgb(74, 127, 133);
-    --accent-color-02-s1: rgb(74, 127, 133);
-    --accent-color-03-s1: rgb(74, 127, 133);
-    
-    --font-color-paragraph: #666666;
-    --line-color: #00ffe5;
-    --box-shadow-01: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
-    --button-color: white;
-    --button-bg-color: var(--accent-color-01-s1);
-
-    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(70%) contrast(80%);
+    --button-color: #1a1a1a;
+    --hover-color: rgba(255, 145, 0, 0.1);
+    --logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
 }
 
+:root {
+    --section-background: linear-gradient(-45deg, #ff8e53, #ff7e5f);
+    --background-color-intro: #f0f0f0;
+    --text-color: #333333;
+    --accent-color-01-s1: #ff6f61;
+    --accent-color-02-s1: #5e60ce;
+    --accent-color-03-s1: #ffcb6b;
+
+    --font-color-paragraph: #444444;
+    --line-color: #ff6f61;
+    --box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
+    --button-color: #ffffff;
+    --button-bg-color: #ff6f61;
+    --hover-color: rgba(29, 14, 239, 0.341);
+    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(70%) contrast(80%);
+}
 
 .section1 {
 	display: flex;
@@ -355,4 +356,16 @@
 		background-color: var(--hover-color);
 		color: var(--accent-color-01-s1);
 	}
+}
+
+/* Custom text selection styling for Webkit browsers (Chrome, Safari, etc.) */
+::selection {
+    background: var(--accent-color-01-s1); /* Match with your theme */
+    color: var(--button-color); /* White text color for better contrast */
+}
+
+/* Custom text selection styling for Firefox */
+::-moz-selection {
+    background: var(--accent-color-01-s1); /* Match with your theme */
+    color: var(--button-color); /* White text color for better contrast */
 }

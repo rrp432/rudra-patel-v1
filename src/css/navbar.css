@@ -3,23 +3,19 @@
 	--background-nav: black;
 	--font-color: rgb(255, 255, 255);
 	--hover-col: rgb(23, 234, 167);
-    --active-button-bg-col:rgb(23, 234, 167);
-	--border-col-button:rgba(3, 233, 199, 0.414);
+	--active-button-bg-col: rgb(23, 234, 167);
+	--border-col-button: rgba(3, 233, 199, 0.414);
 	--active-button-text-col: black;
-	    --accent-color: #229e8c;
-
-
+	--accent-color: #229e8c;
 }
 
 :root {
 	--background-nav: rgb(2, 45, 53);
 	--font-color: rgb(255, 255, 255);
 	--hover-col: rgb(0, 255, 157);
-    --active-button-bg-col:rgb(71, 230, 161);
-	--accent-color:  #136e7c;
-
+	--active-button-bg-col: rgb(71, 230, 161);
+	--accent-color: #136e7c;
 }
-
 .navbar {
 	top: 0;
 	overflow: hidden;

@@ -187,3 +187,8 @@ span:nth-child(6) {
 span:nth-child(7) {
     animation-delay: 0.6s;
 }
+
+.section2, .section3, .section4, .section5 {
+    user-select: none; /* Disable text selection */
+}
+

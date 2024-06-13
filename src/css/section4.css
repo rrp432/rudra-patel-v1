@@ -6,7 +6,7 @@
     --project-heading: #0af7d9; /* Color for project heading */
     --project-tags: #ffffff; /* Color for project tags */
     --project-completion-col: #b0b0b0; /* Color for completion date */
-    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --active-card-bg: hsl(0, 0%, 10%); /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
 }
 
@@ -18,7 +18,7 @@
     --project-heading: rgb(10, 250, 174); /* Color for project heading */
     --project-tags: #ffffff; /* Color for project tags */
     --project-completion-col: #b0b0b0; /* Color for completion date */
-    --active-card-bg: #07335c; /* Background color for active/focused project card */
+    --active-card-bg:  hsl(0, 0%, 100%); /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
 }
 

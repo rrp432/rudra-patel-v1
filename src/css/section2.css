@@ -99,8 +99,8 @@
 
 /* Logo styles */
 .college-logo {
-    max-width: 120px; /* Adjust the width as needed */
-    height: 80px; /* Maintain aspect ratio */
+    max-width: 100%; /* Adjust the width as needed */
+    height: 60px; /* Maintain aspect ratio */
     display: flex; /* Use flexbox */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -157,3 +157,4 @@
         display: none; /* Hide the university name on smaller screens */
     }
 }
+

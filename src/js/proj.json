@@ -1,7 +1,7 @@
 [
     {
         "heading": "Library Kiosk System",
-        "description": "Created a collaborative Library Kiosk application utilizing object-oriented principles. Key features include managing the library catalog through classes like Book, Library, and Date. The Kiosk interface supports adding, removing, checking out/in books, and displaying the library's collection.",
+        "description": "Developed a collaborative Library Kiosk application that leverages object-oriented principles to manage library operations. The system includes functionalities for adding, removing, checking out/in books, and displaying the library's collection, using classes such as Book, Library, and Date. This application enhances library management by providing a user-friendly interface for efficient transaction processing.",
         "tags": [
             "Java",
             "Object-Oriented Design",
@@ -13,7 +13,7 @@
     },
     {
         "heading": "Two-Player Chess Game",
-        "description": "Developed a text-based Chess game for two players. Features include rendering the chessboard, legal move enforcement, castling, en passant, promotion, check/checkmate detection, and handling resignations and draw offers.",
+        "description": "Created a text-based Chess game that allows two players to engage in standard chess matches. The game features chessboard rendering, legal move enforcement, special moves like castling and en passant, promotion, and check/checkmate detection. This project provides an accessible way to play Chess digitally while adhering to all official rules.",
         "tags": [
             "Java",
             "Object-Oriented Design",
@@ -25,7 +25,7 @@
     },
     {
         "heading": "Payroll Processing System",
-        "description": "Engineered a Payroll Processing System for managing employee payments. Implemented comprehensive functionalities like adding/removing employees, calculating salaries, and generating paystubs using classes such as Employee, Fulltime, Parttime, Management, and Company.",
+        "description": "Engineered a Payroll Processing System to manage employee payments effectively. The system includes functionalities for adding/removing employees, calculating salaries, and generating paystubs. Utilizing classes such as Employee, Fulltime, Parttime, Management, and Company, the system streamlines payroll operations and minimizes errors, enhancing efficiency.",
         "tags": [
             "Java",
             "Object-Oriented Design",
@@ -38,7 +38,7 @@
     },
     {
         "heading": "Music Database Design & Querying",
-        "description": "Designed and implemented a relational database for a music streaming service using SQLite and SQL. The schema includes tables for artists, albums, songs, users, playlists, and ratings, ensuring minimal data redundancy and efficient querying.",
+        "description": "Designed and implemented a relational database for a music streaming service using SQLite and SQL. The database schema includes tables for artists, albums, songs, users, playlists, and ratings, ensuring minimal data redundancy and efficient querying. This project supports robust data management for the streaming service.",
         "tags": [
             "Python",
             "SQLite",
@@ -50,7 +50,7 @@
     },
     {
         "heading": "Kindergarten Classroom Simulation",
-        "description": "Developed a classroom simulation using Singly Linked Lists, 2D arrays, and Circular Linked Lists. The simulation manages student entry, seating arrangements, and a musical chairs game, implementing fair seating logic based on availability and height order.",
+        "description": "Developed a classroom simulation using Singly Linked Lists, 2D arrays, and Circular Linked Lists. The simulation manages student entry, seating arrangements, and a musical chairs game, implementing fair seating logic based on availability and height order. This project offers insights into classroom management and student seating strategies.",
         "tags": [
             "Java",
             "Object-Oriented Programming",
@@ -61,7 +61,7 @@
     },
     {
         "heading": "Huffman Coding for Text Compression",
-        "description": "Implemented a Huffman Coding algorithm in Java for efficient text compression, achieving up to 60% file size reduction. The project showcases algorithmic efficiency and accuracy, utilizing graph traversal algorithms (DFS and BFS) for exploration and analysis.",
+        "description": "Implemented a Huffman Coding algorithm in Java to achieve efficient text compression, reducing file sizes by up to 60%. The project utilizes graph traversal algorithms (DFS and BFS) for exploration and analysis, demonstrating significant improvements in storage efficiency.",
         "tags": [
             "Java",
             "Object-Oriented Programming",
@@ -72,7 +72,7 @@
     },
     {
         "heading": "Graph Algorithm Exploration (Infinity War)",
-        "description": "Explored advanced graph algorithms and implemented an adjacency matrix in Java. The project includes seamless input/output operations and utilizes data structures like ArrayLists and HashMaps for efficient data management.",
+        "description": "Explored advanced graph algorithms and implemented an adjacency matrix in Java. The project involved seamless input/output operations and employed data structures like ArrayLists and HashMaps for efficient data management. This work enhances the understanding and application of complex graph algorithms.",
         "tags": [
             "Java",
             "Object-Oriented Programming",
