@@ -1,17 +1,12 @@
 /* Dark Mode Colors */
 :root.dark-mode {
-	--section-background: linear-gradient(-425deg, #0a525a, #08292d);
-
-	
-	
-
+	--section-background: linear-gradient(-425deg, #023e58,
+        #021d30);
 }
 
 /* Light Mode Colors */
 :root {
-	--section-background: linear-gradient(-425deg, #ff5f6d, #ffc371);
-	
-
+    --section-background: linear-gradient(-135deg, #ff5f6d, #ffc371);
 }
 
 .section3 {

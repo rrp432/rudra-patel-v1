@@ -23,35 +23,35 @@
             <span class="loading let7">g</span>
         </h1>
     </div>
-    <nav class="navbar">
-        <ul class="menu-items">
-            <li><a href="#home" onclick="scrollToSectionHeading('home'); return false;">Home</a></li>
-            <li><a href="#education" onclick="scrollToSectionHeading('education'); return false;">Education</a></li>
-            <li><a href="#skills" onclick="scrollToSectionHeading('skills'); return false;">Skills</a></li>
-            <li><a href="#projects" onclick="scrollToSectionHeading('projects'); return false;">Projects</a></li>
-        </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+    <ul class="menu-items">
+        <li><a href="#home" onclick="scrollToSection('home'); return false;">Home</a></li>
+        <li><a href="#education" onclick="scrollToSection('education'); return false;">Education</a></li>
+        <li><a href="#skills" onclick="scrollToSection('skills'); return false;">Skills</a></li>
+        <li><a href="#projects" onclick="scrollToSection('projects'); return false;">Projects</a></li>
+        <li><a href="#leetcode" onclick="scrollToSection('leetcode'); return false;">LeetCode</a></li>
+    </ul>
+   
+</nav>
+
+
 
 
 
     <div class="sections">
-
+        
 
         <section id="home" class="section1">
 
             <div class="intro">
-
-                <div class="dark-mode-toggle">
-                    <input type="checkbox" id="darkModeCheckbox" class="slider-checkbox">
-                    <label for="darkModeCheckbox" class="slider"></label>
-                </div>
-
-                <img src="/rudra-patel-v1/src/img/logo.png" alt="Rudra Patel" class="profile-image-small">
-
-                <h1>Transforming Ideas into Innovative Solutions &nbsp; &nbsp; &nbsp; &nbsp;</h1>
+               
                 
-                <h2 class="typing-demo"></h2>
+
+                <img src="/rudra-patel-v1/src/img/logo.png" alt="Rudra Patel" class="profile-image">
+
+                <h1>Transforming Ideas into Innovative Solutions &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</h1>
+               
+                <h2 style="display: block"; class="typing-demo">This is typing demo</h2>
                 <p>A passionate software developer with a knack for transforming ideas into robust,
                     user-friendly solutions.
                     Currently, I'm a senior pursuing a Bachelor's degree in Computer Science at Rutgers University. I am
@@ -87,11 +87,14 @@
                     <div id="contact-info" class="contact-info" style="display: none;"></div>
                 </div>
                 <br>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="darkModeCheckbox" class="slider-checkbox">
+                    <label for="darkModeCheckbox" class="slider"></label>
+                
+                </div>
             </div>
 
-            <div class="me">
-                <img src="/rudra-patel-v1/src/img/logo.png" alt="Rudra Patel" class="profile-image">
-            </div>
+            
 
         </section>
 
@@ -151,6 +154,9 @@
             </div>
         </section>
 
+        <section id="leetcode" class="section5">
+            <!-- LeetCode section content -->
+        </section>
 
         <footer>
             <div class="footer-content">
@@ -167,7 +173,7 @@
         <script src="/rudra-patel-v1/src/js/scroll.js"></script>
         <script src="/rudra-patel-v1/src/js/proj.js"></script>
         <script src="/rudra-patel-v1/src/js/edu.js"></script>
-        <script src="/rudra-patel-v1/src/js/bot.js"></script>
+     
         <script>
             // Hide the loading overlay after 5 seconds
             setTimeout(function () {

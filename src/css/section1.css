@@ -1,38 +1,41 @@
+/* Default Light Mode Colors */
+:root {
+	--section-background-1: linear-gradient(-45deg, #ff5f6d,
+		#ffc371);
+	--background-color-intro: #f0f0f0;
+	--text-color: #333333;
+	--accent-color-01-s1: #ff6f61;
+	--accent-color-02-s1: #5e60ce;
+	--accent-color-03-s1: #ffcb6b;
+
+	--font-color-paragraph: #444444;
+	--line-color: #ff6f61;
+	--box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
+	--button-color: #ffffff;
+	--button-bg-color: #ff6f61;
+	--hover-color: #3442db1f;
+	--logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(70%) contrast(80%);
+}
+
 /* Dark Mode Colors */
 :root.dark-mode {
-    --section-background: linear-gradient(-45deg, #023e58, #021d30);
-    --background-color-intro: #1a1a1a;
-    --text-color: #e0e0e0;
-    --accent-color-01-s1: #0eedcb;
-    --accent-color-02-s1: #0a84ff;
-    --accent-color-03-s1: #e040fb;
+	--section-background-1: linear-gradient(-45deg, #023e58, #021d30);
+	--background-color-intro: #1a1a1a;
+	--text-color: #e0e0e0;
+	--accent-color-01-s1: #0eedcb;
+	--accent-color-02-s1: #0a84ff;
+	--accent-color-03-s1: #e040fb;
 
-    --font-color-paragraph: #f0f0f0;
-    --line-color: #0eedcb;
-    --box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.6);
-    --button-bg-color: #0eedcb;
-    --button-color: #1a1a1a;
-    --hover-color: rgba(255, 145, 0, 0.1);
-    --logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
+	--font-color-paragraph: #f0f0f0;
+	--line-color: #0eedcb;
+	--box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.6);
+	--button-bg-color: #0eedcb;
+	--button-color: #1a1a1a;
+	--hover-color:#ffffff20;
+	--logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
 }
 
-:root {
-    --section-background: linear-gradient(-45deg, #ff8e53, #ff7e5f);
-    --background-color-intro: #f0f0f0;
-    --text-color: #333333;
-    --accent-color-01-s1: #ff6f61;
-    --accent-color-02-s1: #5e60ce;
-    --accent-color-03-s1: #ffcb6b;
-
-    --font-color-paragraph: #444444;
-    --line-color: #ff6f61;
-    --box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
-    --button-color: #ffffff;
-    --button-bg-color: #ff6f61;
-    --hover-color: rgba(29, 14, 239, 0.341);
-    --logo-color: invert(44%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(70%) contrast(80%);
-}
-
+/* Section 1 */
 .section1 {
 	display: flex;
 	justify-content: space-around;
@@ -40,13 +43,14 @@
 	overflow: hidden;
 	width: 100%;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background: var(--section-background);
+	background: var(--section-background-1);
 }
 
+/* Intro Section */
 .section1 .intro {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 2.25vh;
+	margin-top: 2.vh;
 	width: 60%;
 	padding: 5em;
 	padding-bottom: 1vh;
@@ -64,15 +68,17 @@
 	0% {
 		background: 0% 50%;
 	}
+
 	100% {
 		background-position: 100% 50%;
 	}
 }
 
+/* Intro Headings */
 .section1 .intro h1 {
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	font-size: 3.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 2.5em;
 	font-weight: 400;
 	color: var(--accent-color-01-s1);
 	animation: gradientFill 2s ease forwards;
@@ -107,6 +113,7 @@
 	transform: scaleX(1);
 }
 
+/* Intro Paragraph */
 .section1 .intro p {
 	font-size: 1em;
 	line-height: 1.6;
@@ -116,6 +123,7 @@
 	animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+/* Me Section */
 .me {
 	width: 80%;
 	display: flex;
@@ -127,6 +135,7 @@
 	padding-bottom: 2vh;
 }
 
+/* Logos Section */
 .section1 .logos {
 	display: flex;
 	align-items: center;
@@ -134,7 +143,6 @@
 	gap: 3rem;
 	width: 100%;
 	list-style: none;
-	
 }
 
 .section1 .connect .logo img {
@@ -145,45 +153,42 @@
 	transition: all 0.3s ease;
 	animation: popUp 1s ease-in-out forwards;
 	filter: var(--logo-color);
-	
 }
 
 .section1 .connect .logo img:hover {
-    border-radius: 10px;
-    background-color: var(--hover-color);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow for 3D effect */
-    cursor: pointer;
-    transform: translateY(-3px) scale(1.03); /* Added translation for 3D effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smoother effect */
+	border-radius: 10px;
+	background-color: var(--hover-color);
+		/* Soft Blue */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transform: translateY(-3px) scale(1.03);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-
-/* Define initial style for the span */
+/* Span Styling */
 .section1 span {
 	color: var(--text-color);
 	font-style: italic;
 	transition: color 1s ease;
 }
 
-/* Define keyframes for animation */
+/* Keyframes for span color change */
 @keyframes changeColor {
 	0% {
 		color: var(--text-color);
 	}
+
 	100% {
 		color: var(--accent-color-01-s1);
 	}
 }
 
-/* Apply animation to span after 5 seconds */
 .section1 span {
 	animation: changeColor 1s ease forwards;
 	animation-delay: 2s;
 }
 
-/* Contact information styles */
+/* Contact Information Styles */
 .section1 .contact-info {
 	width: fit-content;
 	display: flex;
@@ -194,58 +199,63 @@
 	cursor: pointer;
 	font-weight: 500;
 	color: var(--button-color) !important;
-	background-color: var(--button-bg-color) ;
+	background-color: var(--button-bg-color);
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
 
-/* Hover effect with slight color shift */
+/* Hover effect for contact information */
 .section1 .contact-info:hover {
 	border-radius: 20px;
-	background-color:var(--button-color);
+	background-color: var(--button-color);
 	color: var(--button-bg-color) !important;
 	box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
 }
 
-.profile-image-small {
-	display: none;
+/* Profile Image */
+.profile-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 150px;
+	animation: fadeInUp 2s ease-in-out;
+	z-index: 1000000;
+	filter: var(--logo-color);
 }
 
-.section1 .profile-image {
-		filter: var(--logo-color);
+/* Keyframes for profile image animation */
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
 	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 /* Media Query for Responsive Design */
 @media only screen and (max-width: 1000px) {
 	.section1 {
 		flex-direction: column;
 	}
 
-	.section1 .profile-image {
-		display: none;
-	}
-
-	.profile-image-small {
+	.profile-image {
 		display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        padding: 0;
-        margin: 0 auto; /* Center the image horizontally */
-        max-width: 100px; /* Set a maximum width for the image */
-        animation: fadeInUp 2s ease-in-out;
-		z-index: 1000000; /* Add animation */
-		filter:var(--logo-color);
-    }
-
-	@keyframes fadeInUp {
-		0% {
-			opacity: 0;
-			transform: translateY(50px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		padding: 0;
+		margin: 0 auto;
+		max-width: 100px;
+		animation: fadeInUp 2s ease-in-out;
+		z-index: 1000000;
+		filter: var(--logo-color);
 	}
 
 	.section1 .intro {
@@ -261,101 +271,159 @@
 		0% {
 			transform: translateY(-100%);
 			opacity: 0;
-		}
-		100% {
-			transform: translateY(0);
-			opacity: 1;
-		}
-	}
+			        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
-	.logos {
-		width: 80%;
-		padding: 0;
-		margin: 0;
-		gap: 1em;
-		justify-content: center;
-		align-items: center;
-	}
+    .logos {
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
 
-	.connect {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		align-items: center;
-		margin: 0;
-		gap: 2vh;
-		padding: 1em;
-	}
+    .connect {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+        gap: 2vh;
+        padding: 1em;
+    }
 
-	/* Introduction Heading */
-	.section1 .intro h1 {
-		margin: 0;
-		padding: 0;
-		font-size: 2em;
-		font-weight: 300;
-		line-height: 1.2;
-	}
+    /* Introduction Heading */
+    .section1 .intro h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.2;
+    }
 
-	/* Apply animation to ::after pseudo-element */
-	.section1 .intro h2::after {
-		content: "";
-		display: block;
-		width: 100%;
-		height: 1px;
-		background: var(--accent-color-01-s1);
-		box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
-		position: absolute;
-		bottom: -5px;
-		left: 0;
-		transform: scaleX(0);
-		transition: transform 0.3s ease;
-	}
+    /* Apply animation to ::after pseudo-element */
+    .section1 .intro h2::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: var(--accent-color-01-s1);
+        box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
 
-	/* Apply animation on load for ::after pseudo-element */
-	.section1 .intro h2::after {
-		animation: animateH2 0.5s ease-in-out forwards;
-		animation-delay: 1s;
-	}
+    /* Apply animation on load for ::after pseudo-element */
+    .section1 .intro h2::after {
+        animation: animateH2 0.5s ease-in-out forwards;
+        animation-delay: 1s;
+    }
 
-	/* Define keyframes for animation */
-	@keyframes animateH2 {
-		0% {
-			transform: scaleX(0);
-		}
-		100% {
-			transform: scaleX(1);
-		}
-	}
+    /* Define keyframes for animation */
+    @keyframes animateH2 {
+        0% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }
+    }
 
-	/* Introduction Paragraph */
-	.section1 .intro p {
-		margin: 10px 0;
-		padding: 0;
-		font-size: 16px;
-		line-height: 1.6;
-	}
+    /* Introduction Paragraph */
+    .section1 .intro p {
+        margin: 10px 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
 
-	/* Contact Information Button */
-	.section1 .contact-info {
-		width: fit-content;
-		display: flex;
-		flex-direction: column;
-		margin: 5px;
-		font-size: 12px;
-		padding: 1em;
-		cursor: pointer;
-		font-weight: 500;
-		color: var(--text-color);
-		background-color: var(--accent-color-01-s1);
-		border-radius: 30px;
-		transition: background-color 0.3s ease;
-	}
+    /* Contact Information Button */
+    .section1 .contact-info {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 12px;
+        padding: 1em;
+        cursor: pointer;
+        font-weight: 500;
+        color: var(--text-color);
+        background-color: var(--accent-color-01-s1);
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+    }
 
-	/* Hover Effect for Contact Information Button */
-	.section1 .contact-info:hover {
-		background-color: var(--hover-color);
-		color: var(--accent-color-01-s1);
-	}
+    /* Hover Effect for Contact Information Button */
+    .section1 .contact-info:hover {
+        background-color: var(--hover-color);
+        color: var(--accent-color-01-s1);
+    }
+}
+
+/* Navbar for smaller screens (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 91.2%;
+        border-radius: 2vh;
+        width: 100%;
+        max-width: 100%;
+        height: 60px;
+        background-color: var(--background-nav);
+        z-index: 1000;
+    }
+
+    .navbar .menu-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .navbar a {
+        color: var(--font-color);
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+        border: solid 2px transparent;
+        border-radius: 20px;
+    }
+
+    .dark-mode-toggle-laptop {
+        display: none;
+    }
+
+    .dark-mode-toggle-mobile {
+        position: absolute;
+        bottom: calc(2% + 1px);
+        right: 20px;
+        z-index: 1001;
+        cursor: pointer;
+        top: unset;
+        transform: none;
+    }
+
+    .navbar a.active {
+        font-weight: bold;
+        color: var(--active-button-text-col);
+        background-color: var(--active-button-bg-col);
+        border-radius: 10px;
+        border: solid 2px var(--border-col-button);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 }
 
 /* Custom text selection styling for Webkit browsers (Chrome, Safari, etc.) */
@@ -368,4 +436,38 @@
 ::-moz-selection {
     background: var(--accent-color-01-s1); /* Match with your theme */
     color: var(--button-color); /* White text color for better contrast */
+}
+
+/* Animation for popUp effect */
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for slideInLeft effect */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

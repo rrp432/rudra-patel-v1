@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
     --section-background-2: linear-gradient(-90deg, #ff5f6d, #ffc371);
-    --accent-color: rgb(74, 127, 133);
+    --accent-color: rgb(0, 0, 0);
     --card-bg-c: rgba(207, 207, 207, 0.132); /* Background color for project cards */
     --card-font-col: #ffffff; /* Font color for project cards */
     --project-heading: rgb(10, 250, 174); /* Color for project heading */
@@ -9,13 +9,13 @@
     --project-completion-col: #b0b0b0; /* Color for completion date */
     --active-card-bg: #0e2030; /* Background color for active/focused project card */
     --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
---logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(60%) contrast(95%);
+    --logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(60%) contrast(95%);
 }
 
 /* Dark mode */
 :root.dark-mode {
-    --section-background-2: linear-gradient(-90deg, #0a525a, #08292d);
-    --accent-color: rgb(34, 158, 140);
+    --section-background-2: linear-gradient(-90deg, #023e58, #021d30);
+    --accent-color: rgb(34, 96, 158);
     --logo-color: invert(78%) sepia(75%) saturate(716%) hue-rotate(104deg) brightness(98%) contrast(89%);
 }
 

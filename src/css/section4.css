@@ -1,31 +1,45 @@
 :root.dark-mode {
-    --section-background-4: linear-gradient(-45deg, #0a525a, #08292d);
-    --accent-color: #229e8c;
-    --card-bg: #000000; /* Background color for project cards */
-    --card-font-col: #ffffff; /* Font color for project cards */
-    --project-heading: #0af7d9; /* Color for project heading */
-    --project-tags: #ffffff; /* Color for project tags */
-    --project-completion-col: #b0b0b0; /* Color for completion date */
-    --active-card-bg: hsl(0, 0%, 10%); /* Background color for active/focused project card */
-    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+  --section-background-4: linear-gradient(-45deg, #023e58, #021d30);
+  --accent-color: #229e8c;
+  --card-bg: #000000;
+  /* Background color for project cards */
+  --card-font-col: #ffffff;
+  /* Font color for project cards */
+  --project-heading: #0af7d9;
+  /* Color for project heading */
+  --project-tags: #ffffff;
+  /* Color for project tags */
+  --project-completion-col: #b0b0b0;
+  /* Color for completion date */
+  --active-card-bg: hsl(0, 0%, 100%);
+  /* Background color for active/focused project card */
+  --project-heading-onclick: rgb(0, 0, 0);
+  /* Color for project heading on click */
 }
 
 :root {
-    --section-background-4: linear-gradient(-135deg, #ff5f6d, #ffc371);
-    --accent-color: rgb(36, 104, 114);
-    --card-bg: var(--accent-color); /* Background color for project cards */
-    --card-font-col: #ffffff; /* Font color for project cards */
-    --project-heading: rgb(10, 250, 174); /* Color for project heading */
-    --project-tags: #ffffff; /* Color for project tags */
-    --project-completion-col: #b0b0b0; /* Color for completion date */
-    --active-card-bg:  hsl(0, 0%, 100%); /* Background color for active/focused project card */
-    --project-heading-onclick: rgb(10, 250, 154); /* Color for project heading on click */
+  --section-background-4: linear-gradient(-135deg, #ff5f6d, #ffc371);
+  --accent-color: rgb(36, 104, 114);
+  --card-bg: var(--accent-color);
+  /* Background color for project cards */
+  --card-font-col: #ffffff;
+  /* Font color for project cards */
+  --project-heading: rgb(10, 250, 174);
+  /* Color for project heading */
+  --project-tags: #ffffff;
+  /* Color for project tags */
+  --project-completion-col: #b0b0b0;
+  /* Color for completion date */
+  --active-card-bg: hsl(0, 64%, 44%);
+  /* Background color for active/focused project card */
+  --project-heading-onclick: rgb(10, 158, 250);
+  /* Color for project heading on click */
 }
 
 
 
 .section4 {
-    background: var(--section-background-4);
+  background: var(--section-background-4);
 }
 
 
@@ -45,7 +59,7 @@
   max-width: 350px;
   text-align: center;
   border-radius: 50px;
-  background-color:var(--card-bg);
+  background-color: var(--card-bg);
   color: var(--card-font-col);
   font-weight: 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,7 +69,7 @@
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   padding: 2vh;
-  
+
 }
 
 /* Hover Effect on Project Card */
@@ -68,9 +82,9 @@
 /* Change color on hover for project heading */
 .section4 .project:hover .project-heading,
 .section4 .project:hover .fullDescriptionButton {
-  
+
   color: var(--project-heading);
- 
+
 }
 
 
@@ -100,24 +114,26 @@
   bottom: 0;
   width: 100%;
   margin-bottom: 2vh;
-  
+
 }
 
 .section4 .project .tags a {
   font-size: small;
   padding: 5px;
   border-radius: 20px;
-  
+
   text-decoration: none;
   color: var(--project-tags);
   transition: background-color 0.2s ease-in-out;
   padding: 1vh;
 }
+
 .section4 .project .tags a:hover {
-  
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.375);
-    transition: box-shadow 0.2s ease-in-out;
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.375);
+  transition: box-shadow 0.2s ease-in-out;
 }
+
 .section4 .project .project-meta::-webkit-scrollbar {
   width: 0;
 }
@@ -127,7 +143,8 @@
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
-  margin-right: 10px; /* Add spacing between status tag and completion date */
+  margin-right: 10px;
+  /* Add spacing between status tag and completion date */
 }
 
 /* Completion Date Styles */
@@ -141,20 +158,20 @@
 .section4 .project:focus {
   transform: scale(0.98) translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- 
+
 }
 
 /* Change color on touch for project heading */
 .section4 .project:active .project-heading,
 .section4 .project:focus .project-heading {
   color: rgb(10, 250, 154);
-  
+
 }
 
 
 
 .project-details {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
@@ -169,7 +186,8 @@
   }
 
   .section4 .project-heading {
-    font-size: 1.2em; /* Adjust heading font size for phones */
+    font-size: 1.2em;
+    /* Adjust heading font size for phones */
     padding-top: 0vh;
     margin-top: 2vh;
   }
@@ -208,17 +226,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   }
-  
+
   /* Change color on touch for project heading */
   .section4 .project:active .project-heading,
   .section4 .project:focus .project-heading {
     color: var(--project-heading-onclick);
-    
+
   }
 
   .section4 .project:active,
-  .section4 .project:focus{
+  .section4 .project:focus {
     background-color: var(--active-card-bg);
-    
+
   }
 }

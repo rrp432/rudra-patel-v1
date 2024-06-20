@@ -1,23 +1,24 @@
 /* styles.css */
 
-/* Contents of index.css */
-@import url('/rudra-patel-v1/src/css/index.css');
-
-/* Contents of navbar.css */
-@import url('/rudra-patel-v1/src/css/navbar.css');
-
-/* Contents of section1.css */
-@import url('/rudra-patel-v1/src/css/section1.css');
-
-/* Contents of section2.css */
-@import url('/rudra-patel-v1/src/css/section2.css');
-
-/* Contents of section3.css */
-@import url('/rudra-patel-v1/src/css/section3.css');
+/* Contents of section5.css */
+@import url('/rudra-patel-v1/src/css/section5.css');
 
 /* Contents of section4.css */
 @import url('/rudra-patel-v1/src/css/section4.css');
 
-/* Add more imports as needed */
+/* Contents of section3.css */
+@import url('/rudra-patel-v1/src/css/section3.css');
 
-/**/
+/* Contents of section2.css */
+@import url('/rudra-patel-v1/src/css/section2.css');
+
+/* Contents of section1.css */
+@import url('/rudra-patel-v1/src/css/section1.css');
+
+/* Contents of navbar.css */
+@import url('/rudra-patel-v1/src/css/navbar.css');
+
+/* Contents of index.css */
+@import url('/rudra-patel-v1/src/css/index.css');
+
+/* Add more imports as needed */

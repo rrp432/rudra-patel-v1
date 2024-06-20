@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typing animation
   const typingDemo = document.querySelector('.typing-demo');
-  const text = "Hello there I'm Rudra Patel";
+  const text = "Hello there ! I'm Rudra Patel";
   let index = 0;
 
   function type() {
@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Delay the typing animation until the page has fully loaded
-  setTimeout(type, 2000); // Adjust delay as needed
+  setTimeout(() => {
+    typingDemo.textContent = ""; // Clear current text
+    type();
+  }, 1000); // Adjust delay as needed
 
   // Get elements related to showing contact information
   const showContactLinks = document.querySelectorAll('.show-contact');
