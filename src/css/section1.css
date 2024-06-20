@@ -27,9 +27,9 @@
 	--accent-color-03-s1: #e040fb;
 
 	--font-color-paragraph: #f0f0f0;
-	--line-color: #0eedcb;
+	--line-color: #0edeed;
 	--box-shadow-01: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.6);
-	--button-bg-color: #0eedcb;
+	--button-bg-color: #46c4f2;
 	--button-color: #1a1a1a;
 	--hover-color:#ffffff20;
 	--logo-color: invert(90%) sepia(21%) saturate(704%) hue-rotate(138deg) brightness(98%) contrast(91%);
@@ -198,7 +198,6 @@
 	padding: 1em;
 	cursor: pointer;
 	font-weight: 500;
-	color: var(--button-color) !important;
 	background-color: var(--button-bg-color);
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
@@ -207,9 +206,7 @@
 /* Hover effect for contact information */
 .section1 .contact-info:hover {
 	border-radius: 20px;
-	background-color: var(--button-color);
-	color: var(--button-bg-color) !important;
-	box-shadow: 0 0 12px var(--accent-color-01-s1), 0 0 8px var(--accent-color-02-s1), 0 0 4px var(--accent-color-03-s1);
+
 }
 
 /* Profile Image */
@@ -363,7 +360,7 @@
 
     /* Hover Effect for Contact Information Button */
     .section1 .contact-info:hover {
-		background-color: var(--button-color);
+		
 		color: white;
     }
 }
