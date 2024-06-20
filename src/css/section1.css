@@ -22,7 +22,7 @@
 	--section-background-1: linear-gradient(-45deg, #023e58, #021d30);
 	--background-color-intro: #1a1a1a;
 	--text-color: #e0e0e0;
-	--accent-color-01-s1: #0eedcb;
+	--accent-color-01-s1: #0edeed;
 	--accent-color-02-s1: #0a84ff;
 	--accent-color-03-s1: #e040fb;
 
@@ -302,7 +302,7 @@
         margin: 0;
         padding: 0;
         font-size: 2em;
-        font-weight: 300;
+        font-weight: 200;
         line-height: 1.2;
     }
 
@@ -355,16 +355,16 @@
         padding: 1em;
         cursor: pointer;
         font-weight: 500;
-        color: var(--text-color);
-        background-color: var(--accent-color-01-s1);
+		color: var(--button-color) !important;
+		background-color: var(--button-bg-color);
         border-radius: 30px;
         transition: background-color 0.3s ease;
     }
 
     /* Hover Effect for Contact Information Button */
     .section1 .contact-info:hover {
-        background-color: var(--hover-color);
-        color: var(--accent-color-01-s1);
+		background-color: var(--button-color);
+		color: white;
     }
 }
 
