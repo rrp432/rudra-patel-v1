@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane minWidth="620" minHeight="300" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clinic.ClinicManagerController">
+
+    <!-- Top Navigation Bar with Tabs -->
+    <top>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Schedule / Cancel">
+                <BorderPane>
+                    <left>
+                        <GridPane hgap="10" vgap="10" BorderPane.alignment="CENTER">
+                            <padding>
+                                <Insets bottom="15" left="15" right="15" top="15" />
+                            </padding>
+
+                            <!-- Appointment Date -->
+                            <Label text="Appointment Date:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <DatePicker fx:id="appointmentDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <!-- Patient Information -->
+                            <Label text="Patient" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="firstNameField" promptText="First name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <TextField fx:id="lastNameField" promptText="Last name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                            <DatePicker fx:id="birthDatePicker" promptText="Date of birth" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+                            <!-- Visit Type -->
+                            <HBox spacing="10" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                <RadioButton fx:id="officeVisitRadio" text="Office Visit" onAction="#handleAppointmentTypeSelection" />
+                                <RadioButton fx:id="imagingServiceRadio" text="Imaging Service" onAction="#handleAppointmentTypeSelection" />
+                            </HBox>
+
+                            <!-- Room Selection for Imaging Service -->
+                            <ComboBox fx:id="roomCombo" promptText="Select Imaging Room" GridPane.columnIndex="1" GridPane.rowIndex="3" disable="true" />
+
+                            <!-- Timeslot, Provider, and Load Providers Button -->
+                            <ComboBox fx:id="timeslotCombo" promptText="Timeslot" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                            <ComboBox fx:id="providerCombo" promptText="Provider" GridPane.columnIndex="2" GridPane.rowIndex="4" disable="true" />
+                            <Button fx:id="loadProvidersButton" onAction="#handleLoadProviders" text="Load Providers" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+                            <!-- Schedule, Cancel, and Clear Buttons -->
+                            <Button onAction="#handleSchedule" text="Schedule" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                            <Button onAction="#handleCancel" text="Cancel" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                            <Button onAction="#handleClear" text="Clear" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+
+                            <!-- Column and Row Constraints -->
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints valignment="CENTER" />
+                            </rowConstraints>
+                        </GridPane>
+                    </left>
+                </BorderPane>
+            </Tab>
+
+            <Tab text="Reschedule">
+                <!-- Content for rescheduling -->
+            </Tab>
+
+            <Tab text="Clinic Locations">
+                <!-- Content for clinic locations -->
+            </Tab>
+
+            <Tab text="Demo Menu">
+                <!-- Content for demo menu -->
+            </Tab>
+        </TabPane>
+    </top>
+
+    <!-- Center Output Area -->
+    <center>
+        <TextArea fx:id="outputArea" editable="false" minHeight="200.0" minWidth="620.0" prefHeight="200.0" wrapText="true" />
+    </center>
+
+</BorderPane>
