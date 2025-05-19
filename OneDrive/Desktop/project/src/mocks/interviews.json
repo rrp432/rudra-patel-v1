@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "jobId": "2",
+    "date": "2024-04-15T14:00:00Z",
+    "title": "Technical Interview"
+  },
+  {
+    "id": "2",
+    "jobId": "2",
+    "date": "2024-04-18T10:30:00Z",
+    "title": "System Design Discussion"
+  },
+  {
+    "id": "3",
+    "jobId": "7",
+    "date": "2024-04-20T15:00:00Z",
+    "title": "Initial Screening"
+  },
+  {
+    "id": "4",
+    "jobId": "7",
+    "date": "2024-04-25T13:00:00Z",
+    "title": "Technical Assessment"
+  },
+  {
+    "id": "5",
+    "jobId": "7",
+    "date": "2024-05-02T11:00:00Z",
+    "title": "Final Round with CTO"
+  }
+]

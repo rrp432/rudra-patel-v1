@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "Frontend Developer",
+    "company": "TechCorp",
+    "location": "San Francisco, CA (Remote)",
+    "status": "APPLIED",
+    "appliedAt": "2024-04-01T14:00:00Z",
+    "tags": ["React", "TypeScript", "Frontend"]
+  },
+  {
+    "id": "2",
+    "title": "Senior Software Engineer",
+    "company": "InnovateSoft",
+    "location": "New York, NY",
+    "status": "INTERVIEWING",
+    "appliedAt": "2024-03-28T10:30:00Z",
+    "tags": ["Java", "Spring Boot", "Microservices"]
+  },
+  {
+    "id": "3",
+    "title": "UX Designer",
+    "company": "DesignHub",
+    "location": "Remote",
+    "status": "SAVED",
+    "tags": ["Figma", "UI/UX", "User Research"]
+  },
+  {
+    "id": "4",
+    "title": "DevOps Engineer",
+    "company": "CloudWorks",
+    "location": "Seattle, WA",
+    "status": "REJECTED",
+    "appliedAt": "2024-03-15T09:15:00Z",
+    "tags": ["AWS", "Kubernetes", "CI/CD"]
+  },
+  {
+    "id": "5",
+    "title": "Product Manager",
+    "company": "ProductSphere",
+    "location": "Austin, TX",
+    "status": "OFFER",
+    "appliedAt": "2024-03-10T11:45:00Z",
+    "tags": ["Product Management", "Agile", "Market Research"]
+  },
+  {
+    "id": "6",
+    "title": "Data Scientist",
+    "company": "DataInsights",
+    "location": "Boston, MA (Hybrid)",
+    "status": "APPLIED",
+    "appliedAt": "2024-04-02T13:20:00Z",
+    "tags": ["Python", "Machine Learning", "SQL"]
+  },
+  {
+    "id": "7",
+    "title": "Fullstack Developer",
+    "company": "WebSolutions",
+    "location": "Chicago, IL",
+    "status": "INTERVIEWING",
+    "appliedAt": "2024-03-25T15:10:00Z",
+    "tags": ["JavaScript", "Node.js", "React"]
+  },
+  {
+    "id": "8",
+    "title": "Mobile Developer",
+    "company": "AppCreators",
+    "location": "Remote",
+    "status": "SAVED",
+    "tags": ["React Native", "iOS", "Android"]
+  }
+]

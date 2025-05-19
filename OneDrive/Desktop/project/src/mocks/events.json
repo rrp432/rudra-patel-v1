@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "Tech Career Fair 2024",
+    "date": "2024-05-15T10:00:00Z",
+    "location": "Convention Center, San Francisco",
+    "description": "Annual tech job fair with 50+ companies hiring",
+    "type": "JOB_FAIR"
+  },
+  {
+    "id": "2",
+    "title": "Frontend Developer Meetup",
+    "date": "2024-04-28T18:00:00Z",
+    "location": "TechHub Coworking Space",
+    "description": "Monthly meetup for frontend developers to network and share knowledge",
+    "type": "MEETUP"
+  },
+  {
+    "id": "3",
+    "title": "Resume Building Workshop",
+    "date": "2024-05-05T14:00:00Z",
+    "location": "Public Library, Conference Room B",
+    "description": "Learn how to optimize your resume for tech roles",
+    "type": "WORKSHOP"
+  },
+  {
+    "id": "4",
+    "title": "Women in Tech Networking Event",
+    "date": "2024-05-20T17:30:00Z",
+    "location": "Innovation Center",
+    "description": "Networking event for women in technology fields",
+    "type": "MEETUP"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "linkedin.com",
+    "customLogoUrl": "https://cdn-icons-png.flaticon.com/512/174/174857.png"
+  },
+  {
+    "domain": "indeed.com",
+    "customLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Indeed_logo.svg/2560px-Indeed_logo.svg.png"
+  },
+  {
+    "domain": "glassdoor.com",
+    "customLogoUrl": "https://www.glassdoor.com/app/static/img/partners/facebook/logo-1200x630.png"
+  },
+  {
+    "domain": "angel.co",
+    "customLogoUrl": "https://angel.co/images/static_pages/logo/AngelList_Black_Victory_Hand.png"
+  },
+  {
+    "domain": "wellfound.com",
+    "customLogoUrl": null
+  },
+  {
+    "domain": "stackoverflow.com/jobs",
+    "customLogoUrl": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png"
+  }
+]
